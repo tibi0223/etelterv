@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Edit, User, Heart, Utensils, Settings, Star, Save, X, Shield, Calendar, ArrowLeft, Eye, EyeOff, Lock } from "lucide-react";
+import { Edit, User, Heart, Utensils, Settings, Star, Save, X, Shield, Calendar, ArrowLeft, Eye, EyeOff, Lock, Target } from "lucide-react";
 import { supabase } from '@/integrations/supabase/client';
 import { fetchUserPreferences, FoodPreference } from "@/services/foodPreferencesQueries";
 import { updateUserProfile } from "@/services/profileQueries";
@@ -295,7 +295,11 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
         age: editableProfile?.age || null,
         weight: editableProfile?.weight || null,
         height: editableProfile?.height || null,
-        activity_level: editableProfile?.activity_level || null
+        activity_level: editableProfile?.activity_level || null,
+        target_protein: editableProfile?.target_protein || null,
+        target_carbs: editableProfile?.target_carbs || null,
+        target_fat: editableProfile?.target_fat || null,
+        target_calories: editableProfile?.target_calories || null
       });
 
       // Password update if provided
@@ -681,6 +685,78 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
                         <div className="bg-blue-500/10 border border-blue-400/20 rounded-lg p-2 sm:p-3 max-w-md">
                           <p className="text-xs sm:text-sm text-blue-300">
                             💡 <strong>Jelszó változtatás:</strong> Ha meg szeretnéd változtatni a jelszavad, töltsd ki mindhárom mezőt. Ha nem szeretnéd változtatni, hagyd őket üresen.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Makró célok szekció */}
+                      <div className="space-y-2 sm:space-y-4 border-t border-white/10 pt-2 sm:pt-4">
+                        <h4 className="text-sm sm:text-lg font-medium text-white profile-portrait-card-title flex items-center gap-2">
+                          <Target className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
+                          Napi Makró Célok
+                        </h4>
+                        
+                        <div className="grid grid-cols-2 gap-2 sm:gap-4">
+                          <div>
+                            <Label htmlFor="targetProtein" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
+                              Fehérje (g)
+                            </Label>
+                            <Input
+                              id="targetProtein"
+                              type="number"
+                              value={editableProfile?.target_protein || ''}
+                              onChange={(e) => handleInputChange('target_protein', parseInt(e.target.value) || '')}
+                              placeholder="120"
+                              className="bg-white/10 border-white/20 text-white placeholder:text-white/50 text-xs sm:text-sm profile-mobile-input"
+                            />
+                          </div>
+                          
+                          <div>
+                            <Label htmlFor="targetCarbs" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
+                              Szénhidrát (g)
+                            </Label>
+                            <Input
+                              id="targetCarbs"
+                              type="number"
+                              value={editableProfile?.target_carbs || ''}
+                              onChange={(e) => handleInputChange('target_carbs', parseInt(e.target.value) || '')}
+                              placeholder="160"
+                              className="bg-white/10 border-white/20 text-white placeholder:text-white/50 text-xs sm:text-sm profile-mobile-input"
+                            />
+                          </div>
+                          
+                          <div>
+                            <Label htmlFor="targetFat" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
+                              Zsír (g)
+                            </Label>
+                            <Input
+                              id="targetFat"
+                              type="number"
+                              value={editableProfile?.target_fat || ''}
+                              onChange={(e) => handleInputChange('target_fat', parseInt(e.target.value) || '')}
+                              placeholder="50"
+                              className="bg-white/10 border-white/20 text-white placeholder:text-white/50 text-xs sm:text-sm profile-mobile-input"
+                            />
+                          </div>
+                          
+                          <div>
+                            <Label htmlFor="targetCalories" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
+                              Kalória (kcal)
+                            </Label>
+                            <Input
+                              id="targetCalories"
+                              type="number"
+                              value={editableProfile?.target_calories || ''}
+                              onChange={(e) => handleInputChange('target_calories', parseInt(e.target.value) || '')}
+                              placeholder="1700"
+                              className="bg-white/10 border-white/20 text-white placeholder:text-white/50 text-xs sm:text-sm profile-mobile-input"
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="bg-purple-500/10 border border-purple-400/20 rounded-lg p-2 sm:p-3 max-w-md">
+                          <p className="text-xs sm:text-sm text-purple-300">
+                            💡 <strong>Makró célok:</strong> Ezek az értékek lesznek használva az étrend tervezésnél. A makró skálázó automatikusan betölti ezeket az értékeket.
                           </p>
                         </div>
                       </div>

@@ -11,6 +11,10 @@ export interface UserProfile {
   dietary_preferences: string[] | null;
   allergies: string[] | null;
   avatar_url: string | null;
+  target_protein: number | null;
+  target_carbs: number | null;
+  target_fat: number | null;
+  target_calories: number | null;
   created_at: string;
   updated_at: string;
 }

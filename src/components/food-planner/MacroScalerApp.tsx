@@ -10,7 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import cloneDeep from 'lodash/cloneDeep';
 import { fetchCombinedRecipes } from '@/services/newDatabaseQueries';
 import { fetchAlapanyagok, fetchReceptAlapanyagV2 } from '@/services/database/fetchers';
-import { Target, Scale, Calculator, TrendingUp } from 'lucide-react';
+import { Target, Scale, Calculator, TrendingUp, User } from 'lucide-react';
 import { getUserPreferences, UserPreference } from '@/services/preferenceFilters';
 import { getUserFavorites, UserFavorite } from '@/services/userFavorites';
 import { normalizeText } from '@/utils/textNormalization';
@@ -24,6 +24,7 @@ import { useDataCache } from './DataCacheContext';
 import { calculateTotalMacros } from '@/services/macroScaler';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/use-toast';
+import { fetchUserProfile } from '@/services/profileQueries';
 
 interface MacroScalerAppProps {
   user: any;
@@ -100,6 +101,7 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
   const [targetCarbs, setTargetCarbs] = useState('160');
   const [targetFat, setTargetFat] = useState('50');
   const [targetCalories, setTargetCalories] = useState('1700');
+  const [profileLoaded, setProfileLoaded] = useState(false);
   const [allNutritionData, setAllNutritionData] = useState<Alapanyag[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [mealPlanResult, setMealPlanResult] = useState<MealPlanOutput | null>(null);
@@ -118,6 +120,27 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
   const [selectedMeal, setSelectedMeal] = useState<any | null>(null);
   const [showModal, setShowModal] = useState(false);
   const { toast } = useToast();
+
+  // Profil betöltése és makró célok beállítása
+  useEffect(() => {
+    const loadProfile = async () => {
+      try {
+        const profile = await fetchUserProfile(user.id);
+        if (profile) {
+          // Ha vannak mentett makró célok, használjuk őket
+          if (profile.target_protein) setTargetProtein(profile.target_protein.toString());
+          if (profile.target_carbs) setTargetCarbs(profile.target_carbs.toString());
+          if (profile.target_fat) setTargetFat(profile.target_fat.toString());
+          if (profile.target_calories) setTargetCalories(profile.target_calories.toString());
+        }
+        setProfileLoaded(true);
+      } catch (error) {
+        console.error('Profil betöltési hiba:', error);
+        setProfileLoaded(true); // Folytatjuk a betöltést
+      }
+    };
+    loadProfile();
+  }, [user.id]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -567,50 +590,57 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
             <CardTitle className="text-white flex items-center gap-2">
               <Target className="h-5 w-5 text-purple-400" />
               Napi Makró Célok
+              <div className="flex items-center gap-2 ml-auto">
+                <User className="h-4 w-4 text-gray-400" />
+                <span className="text-sm text-gray-400">Profilból betöltve</span>
+              </div>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="protein" className="text-white/90">Fehérje (g)</Label>
+                <Label htmlFor="protein" className="text-white/70">Fehérje (g)</Label>
                 <Input
                   id="protein"
                   type="number"
                   value={targetProtein}
-                  onChange={(e) => setTargetProtein(e.target.value)}
-                  className="bg-white/10 border-white/20 text-white"
+                  disabled
+                  className="bg-white/5 border-white/10 text-white/60 cursor-not-allowed"
                 />
               </div>
               <div>
-                <Label htmlFor="carbs" className="text-white/90">Szénhidrát (g)</Label>
+                <Label htmlFor="carbs" className="text-white/70">Szénhidrát (g)</Label>
                 <Input
                   id="carbs"
                   type="number"
                   value={targetCarbs}
-                  onChange={(e) => setTargetCarbs(e.target.value)}
-                  className="bg-white/10 border-white/20 text-white"
+                  disabled
+                  className="bg-white/5 border-white/10 text-white/60 cursor-not-allowed"
                 />
               </div>
               <div>
-                <Label htmlFor="fat" className="text-white/90">Zsír (g)</Label>
+                <Label htmlFor="fat" className="text-white/70">Zsír (g)</Label>
                 <Input
                   id="fat"
                   type="number"
                   value={targetFat}
-                  onChange={(e) => setTargetFat(e.target.value)}
-                  className="bg-white/10 border-white/20 text-white"
+                  disabled
+                  className="bg-white/5 border-white/10 text-white/60 cursor-not-allowed"
                 />
               </div>
               <div>
-                <Label htmlFor="calories" className="text-white/90">Kalória (kcal)</Label>
+                <Label htmlFor="calories" className="text-white/70">Kalória (kcal)</Label>
                 <Input
                   id="calories"
                   type="number"
                   value={targetCalories}
-                  onChange={(e) => setTargetCalories(e.target.value)}
-                  className="bg-white/10 border-white/20 text-white"
+                  disabled
+                  className="bg-white/5 border-white/10 text-white/60 cursor-not-allowed"
                 />
               </div>
+            </div>
+            <div className="text-xs text-gray-400 text-center">
+              A makró célok a profilban módosíthatók
             </div>
             <Button
               onClick={handleGenerateMealPlan}

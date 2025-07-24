@@ -9,6 +9,11 @@ CREATE TABLE public.profiles (
   activity_level TEXT CHECK (activity_level IN ('sedentary', 'lightly_active', 'moderately_active', 'very_active', 'extra_active')),
   dietary_preferences TEXT[],
   allergies TEXT[],
+  -- Makró célok hozzáadása
+  target_protein INTEGER DEFAULT 120,
+  target_carbs INTEGER DEFAULT 160,
+  target_fat INTEGER DEFAULT 50,
+  target_calories INTEGER DEFAULT 1700,
   created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
   updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
   

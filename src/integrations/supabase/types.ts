@@ -378,6 +378,10 @@ export type Database = {
           id: string
           updated_at: string
           weight: number | null
+          target_protein: number | null
+          target_carbs: number | null
+          target_fat: number | null
+          target_calories: number | null
         }
         Insert: {
           activity_level?: string | null
@@ -391,6 +395,10 @@ export type Database = {
           id: string
           updated_at?: string
           weight?: number | null
+          target_protein?: number | null
+          target_carbs?: number | null
+          target_fat?: number | null
+          target_calories?: number | null
         }
         Update: {
           activity_level?: string | null
@@ -404,6 +412,10 @@ export type Database = {
           id?: string
           updated_at?: string
           weight?: number | null
+          target_protein?: number | null
+          target_carbs?: number | null
+          target_fat?: number | null
+          target_calories?: number | null
         }
         Relationships: [
           {

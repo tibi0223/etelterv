@@ -20,6 +20,7 @@ import { processMealTypes } from '@/utils/dataProcessors';
 import { generateAndScaleMealPlan } from '@/services/mealPlanGenerator';
 import { Alapanyag } from '@/services/database/types';
 import { useDataCache } from './DataCacheContext';
+import { fetchUserProfile } from '@/services/profileQueries';
 
 interface MultiDayScaledMealPlan {
   day: number;
@@ -67,9 +68,39 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
   const [userPreferences, setUserPreferences] = useState<any[]>([]);
   const [mealTypeRecipes, setMealTypeRecipes] = useState<Record<string, string[]>>({});
   const [isLoading, setIsLoading] = useState(true);
+  const [profileLoaded, setProfileLoaded] = useState(false);
+  const [dailyTarget, setDailyTarget] = useState({
+    calories: 1700,
+    protein: 120,
+    carbs: 160,
+    fat: 50
+  });
 
   const { toast } = useToast();
   const summaryRef = useRef<HTMLDivElement>(null);
+
+  // Profil betöltése és makró célok beállítása
+  useEffect(() => {
+    const loadProfile = async () => {
+      try {
+        const profile = await fetchUserProfile(user.id);
+        if (profile) {
+          // Ha vannak mentett makró célok, használjuk őket
+          setDailyTarget({
+            calories: profile.target_calories || 1700,
+            protein: profile.target_protein || 120,
+            carbs: profile.target_carbs || 160,
+            fat: profile.target_fat || 50
+          });
+        }
+        setProfileLoaded(true);
+      } catch (error) {
+        console.error('Profil betöltési hiba:', error);
+        setProfileLoaded(true); // Folytatjuk a betöltést
+      }
+    };
+    loadProfile();
+  }, [user.id]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -105,11 +136,12 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
         setAllRecipes(recipesWithIngredients);
         setAllNutritionData(nutritionData);
         setUserPreferences(preferences);
-        setMealTypeRecipes(processMealTypes(mealTypesData || []));
+        const processedMealTypes = processMealTypes(mealTypesData || []);
+        setMealTypeRecipes(processedMealTypes);
         // Frissítjük a cache-t is
         setRecipes(recipesWithIngredients);
         setAlapanyagok(nutritionData);
-        setMealTypes(processMealTypes(mealTypesData || []));
+        setMealTypes(Object.keys(processedMealTypes));
         setIsLoaded(true);
       } catch (error) {
         console.error('Hiba az adatok betöltése közben:', error);
@@ -221,12 +253,12 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
     const newPlan: any[] = [];
     
     try {
-      // Napi célmakrók (példa: 2000 kcal, 150g fehérje, 200g szénhidrát, 70g zsír)
-      const dailyTarget = {
-        calories: 2000,
-        protein: 150,
-        carbs: 200,
-        fat: 70
+      // Napi célmakrók a profilból
+      const targetMacros = {
+        calories: dailyTarget.calories,
+        protein: dailyTarget.protein,
+        carbs: dailyTarget.carbs,
+        fat: dailyTarget.fat
       };
       
       // Párhuzamos generálás a napokra
@@ -239,7 +271,7 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
         try {
           const scalingResult = await generateAndScaleMealPlan({
             mealCount: selectedMeals.length,
-            dailyTarget,
+            dailyTarget: targetMacros,
             allNutritionData,
             availableRecipes: filteredRecipes,
             mealTypes: selectedMeals,
@@ -249,9 +281,9 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
           
           if (scalingResult.success) {
             // Ellenőrizzük, hogy a makrók 5%-os tolerancián belül vannak-e
-            const proteinDiff = Math.abs(scalingResult.finalTotals.protein - dailyTarget.protein) / dailyTarget.protein;
-            const carbsDiff = Math.abs(scalingResult.finalTotals.carbs - dailyTarget.carbs) / dailyTarget.carbs;
-            const fatDiff = Math.abs(scalingResult.finalTotals.fat - dailyTarget.fat) / dailyTarget.fat;
+            const proteinDiff = Math.abs(scalingResult.finalTotals.protein - targetMacros.protein) / targetMacros.protein;
+            const carbsDiff = Math.abs(scalingResult.finalTotals.carbs - targetMacros.carbs) / targetMacros.carbs;
+            const fatDiff = Math.abs(scalingResult.finalTotals.fat - targetMacros.fat) / targetMacros.fat;
             
             // Csak a fehérje, szénhidrát és zsír számít a toleranciába
             const isWithinTolerance = proteinDiff <= 0.05 && carbsDiff <= 0.05 && fatDiff <= 0.05;

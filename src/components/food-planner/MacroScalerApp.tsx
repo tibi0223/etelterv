@@ -377,7 +377,7 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
   const handleNewCombination = useCallback(() => {
     setMealPlanResult(null);
     setIsGenerating(true);
-    setLoadingMessage('Új kombináció keresése...');
+    setLoadingMessage('🔄 Új kombináció keresése...');
     setLoadingTime(0);
 
     // Loading idő követése
@@ -386,12 +386,19 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
       const elapsed = Math.floor((Date.now() - startTime) / 1000);
       setLoadingTime(elapsed);
       
-      if (elapsed > 5) {
-        setLoadingMessage('Még mindig keresek új kombinációkat...');
-      } else if (elapsed > 3) {
-        setLoadingMessage('Új receptek skálázása...');
-      } else if (elapsed > 1) {
-        setLoadingMessage('Makró célok ellenőrzése...');
+      // Dinamikus üzenetek az időtartam alapján
+      if (elapsed <= 3) {
+        setLoadingMessage('🔍 Receptek szűrése és kategorizálása...');
+      } else if (elapsed <= 6) {
+        setLoadingMessage('⚖️ Makró célok ellenőrzése...');
+      } else if (elapsed <= 10) {
+        setLoadingMessage('📊 Receptek skálázása és optimalizálása...');
+      } else if (elapsed <= 15) {
+        setLoadingMessage('🎯 Megfelelő kombinációk keresése...');
+      } else if (elapsed <= 20) {
+        setLoadingMessage('🔄 Még mindig keresek új kombinációkat...');
+      } else {
+        setLoadingMessage('⏰ Ez hosszabb időt vesz igénybe, kérlek várj...');
       }
     }, 1000);
     
@@ -658,20 +665,64 @@ export function MacroScalerApp({ user, onBack }: MacroScalerAppProps) {
             </Button>
 
             {isGenerating && (
-              <div className="mt-4 p-4 bg-blue-500/20 border border-blue-500/30 rounded-lg">
-                <div className="text-blue-300 font-semibold mb-2">⏳ Étrend generálása folyamatban...</div>
-                <div className="text-blue-200 text-sm mb-3">
-                  {loadingMessage}
-                  <br />
-                  {loadingTime > 0 && (
-                    <span className="text-blue-300">Időtartam: {loadingTime} másodperc</span>
-                  )}
-                </div>
-                <div className="w-full bg-blue-500/30 rounded-full h-2">
-                  <div className="bg-blue-400 h-2 rounded-full animate-pulse" style={{ width: '100%' }}></div>
-                </div>
-                <div className="text-blue-200 text-xs mt-2 text-center">
-                  {loadingTime > 10 ? 'Ez hosszabb időt vesz igénybe, kérlek várj...' : 'Receptek keresése és skálázása...'}
+              <div className="mt-4 p-6 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg backdrop-blur-sm">
+                <div className="text-center">
+                  {/* Fő animáció */}
+                  <div className="flex justify-center mb-4">
+                    <div className="relative">
+                      <div className="w-16 h-16 border-4 border-blue-400/30 border-t-blue-400 rounded-full animate-spin"></div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Cím */}
+                  <div className="text-blue-300 font-bold text-lg mb-2">
+                    ⏳ Étrend generálása folyamatban...
+                  </div>
+                  
+                  {/* Dinamikus üzenetek */}
+                  <div className="text-blue-200 text-sm mb-4">
+                    <div className="font-semibold mb-1">{loadingMessage}</div>
+                    {loadingTime > 0 && (
+                      <div className="text-blue-300 text-xs">
+                        Időtartam: {loadingTime} másodperc
+                      </div>
+                    )}
+                  </div>
+                  
+                  {/* Progress bar */}
+                  <div className="w-full bg-blue-500/30 rounded-full h-3 mb-4">
+                    <div 
+                      className="bg-gradient-to-r from-blue-400 to-purple-400 h-3 rounded-full transition-all duration-500 ease-out animate-pulse" 
+                      style={{ 
+                        width: `${Math.min(loadingTime * 10, 95)}%`,
+                        animation: 'pulse 2s infinite'
+                      }}
+                    ></div>
+                  </div>
+                  
+                  {/* Dinamikus üzenetek */}
+                  <div className="text-blue-200 text-xs space-y-1">
+                    {loadingTime <= 5 && (
+                      <div className="animate-fade-in">🔍 Receptek szűrése és kategorizálása...</div>
+                    )}
+                    {loadingTime > 5 && loadingTime <= 10 && (
+                      <div className="animate-fade-in">⚖️ Makró célok ellenőrzése...</div>
+                    )}
+                    {loadingTime > 10 && loadingTime <= 15 && (
+                      <div className="animate-fade-in">📊 Receptek skálázása és optimalizálása...</div>
+                    )}
+                    {loadingTime > 15 && (
+                      <div className="animate-fade-in">🎯 Még mindig keresek megfelelő kombinációkat...</div>
+                    )}
+                    {loadingTime > 20 && (
+                      <div className="text-yellow-300 animate-pulse">
+                        ⏰ Ez hosszabb időt vesz igénybe, kérlek várj...
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             )}

@@ -295,12 +295,11 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
         age: editableProfile?.age || null,
         weight: editableProfile?.weight || null,
         height: editableProfile?.height || null,
-        activity_level: editableProfile?.activity_level || null
-        // Makró célok ideiglenesen eltávolítva, amíg az adatbázis nem frissül
-        // target_protein: editableProfile?.target_protein || null,
-        // target_carbs: editableProfile?.target_carbs || null,
-        // target_fat: editableProfile?.target_fat || null,
-        // target_calories: editableProfile?.target_calories || null
+        activity_level: editableProfile?.activity_level || null,
+        target_protein: editableProfile?.target_protein || null,
+        target_carbs: editableProfile?.target_carbs || null,
+        target_fat: editableProfile?.target_fat || null,
+        target_calories: editableProfile?.target_calories || null
       });
 
       // Password update if provided

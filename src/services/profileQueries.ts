@@ -35,22 +35,58 @@ export const fetchUserProfile = async (userId: string): Promise<UserProfile | nu
 };
 
 export const updateUserProfile = async (userId: string, profileData: Partial<UserProfile>) => {
-  const { data, error } = await supabase
-    .from('profiles')
-    .update({
-      ...profileData,
-      updated_at: new Date().toISOString()
-    })
-    .eq('id', userId)
-    .select()
-    .single();
+  try {
+    // Először ellenőrizzük, hogy a felhasználó profilja létezik-e
+    const { data: existingProfile, error: fetchError } = await supabase
+      .from('profiles')
+      .select('*')
+      .eq('id', userId)
+      .single();
 
-  if (error) {
-    console.error('Profil frissítési hiba:', error);
+    if (fetchError && fetchError.code === 'PGRST116') {
+      // Ha nem létezik a profil, létrehozzuk
+      const { data, error } = await supabase
+        .from('profiles')
+        .insert({
+          id: userId,
+          ...profileData,
+          updated_at: new Date().toISOString()
+        })
+        .select()
+        .single();
+
+      if (error) {
+        console.error('Profil létrehozási hiba:', error);
+        throw error;
+      }
+
+      return data;
+    } else if (fetchError) {
+      console.error('Profil lekérdezési hiba:', fetchError);
+      throw fetchError;
+    }
+
+    // Ha létezik, frissítjük
+    const { data, error } = await supabase
+      .from('profiles')
+      .update({
+        ...profileData,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', userId)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Profil frissítési hiba:', error);
+      throw error;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Profil művelet hiba:', error);
     throw error;
   }
-
-  return data;
 };
 
 export const createUserProfile = async (userId: string, profileData: Partial<UserProfile>) => {

@@ -1,0 +1,330 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 9% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    .recipe-result {
+      @apply mx-2 p-3;
+    }
+    
+    .recipe-result h2 {
+      @apply text-lg leading-tight;
+    }
+    
+    .recipe-result h3 {
+      @apply text-sm leading-tight;
+    }
+    
+    .recipe-result button {
+      @apply text-xs px-3 py-2;
+    }
+    
+    /* Improve touch targets for mobile */
+    button, a, [role="button"] {
+      @apply min-h-[44px];
+    }
+    
+    /* Prevent zoom on input focus on iOS */
+    input, select, textarea {
+      font-size: 16px;
+    }
+
+    /* Mobile container optimizations */
+    .mobile-container {
+      @apply min-h-screen w-full px-2 py-4;
+    }
+
+    /* Fix auth form for mobile */
+    .auth-form-container {
+      @apply w-full max-w-none px-4 py-6;
+    }
+
+    /* Mobile auth card adjustments */
+    .auth-card-mobile {
+      @apply w-full mx-0 p-4 rounded-lg;
+    }
+
+    /* Prevent horizontal overflow */
+    .no-horizontal-scroll {
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
+    /* Mobile navigation fixes */
+    .mobile-nav-compact {
+      @apply px-1 py-1 text-xs;
+    }
+
+    /* Profile page mobile optimizations - MUCH SMALLER TEXTS */
+    .profile-mobile-text {
+      @apply text-xs leading-tight;
+    }
+
+    .profile-mobile-title {
+      @apply text-sm font-medium;
+    }
+
+    .profile-mobile-container {
+      @apply px-1 py-1 space-y-2;
+    }
+
+    .profile-mobile-card {
+      @apply p-2 space-y-1;
+    }
+
+    .profile-mobile-input {
+      @apply text-xs px-2 py-1;
+    }
+
+    .profile-mobile-button {
+      @apply text-xs px-2 py-1;
+    }
+
+    /* Portrait mode specific fixes - VERY COMPACT */
+    @media (orientation: portrait) {
+      .profile-portrait-spacing {
+        @apply pt-1 pb-2;
+      }
+
+      .profile-portrait-text {
+        @apply text-xs leading-tight;
+      }
+
+      .profile-portrait-title {
+        @apply text-xs font-medium;
+      }
+
+      .profile-portrait-header {
+        @apply text-sm leading-tight;
+      }
+
+      .profile-portrait-card-title {
+        @apply text-sm font-medium;
+      }
+
+      .profile-portrait-stats {
+        @apply text-xs;
+      }
+
+      .profile-portrait-number {
+        @apply text-base font-bold;
+      }
+
+      .profile-portrait-container {
+        @apply px-1 py-1 space-y-1;
+      }
+    }
+
+    /* Landscape mode fixes for mobile - REMOVE STICKY COMPLETELY FOR PROFILE */
+    @media (orientation: landscape) and (max-height: 500px) {
+      .sticky-header-mobile {
+        position: relative !important;
+      }
+      
+      .mobile-landscape-compact {
+        @apply py-1 px-2;
+      }
+      
+      .mobile-landscape-text {
+        @apply text-xs leading-tight;
+      }
+
+      /* Profile specific landscape fixes - COMPLETELY REMOVE STICKY */
+      .profile-landscape-container {
+        @apply pt-1 pb-2;
+      }
+
+      .profile-landscape-text {
+        @apply text-xs;
+      }
+
+      .profile-landscape-spacing {
+        @apply space-y-1;
+      }
+
+      .profile-landscape-card {
+        @apply p-2;
+      }
+
+      /* FORCE REMOVE sticky positioning in landscape for profile pages */
+      .profile-header-landscape {
+        position: static !important;
+        top: auto !important;
+        @apply relative;
+      }
+
+      /* Force non-sticky header for profile in landscape */
+      .profile-landscape-header-force {
+        position: static !important;
+        top: auto !important;
+        @apply relative bg-transparent;
+      }
+    }
+  }
+
+  /* Tablet optimizations */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .tablet-container {
+      @apply max-w-4xl mx-auto px-6 py-8;
+    }
+
+    .tablet-auth-card {
+      @apply max-w-md mx-auto;
+    }
+  }
+
+  /* Checkbox specific mobile fixes */
+  @media (max-width: 640px) {
+    .mobile-checkbox {
+      @apply w-5 h-5;
+    }
+
+    .mobile-checkbox-container {
+      @apply flex items-center gap-3 py-3;
+    }
+
+    .mobile-checkbox-label {
+      @apply text-sm leading-relaxed;
+    }
+  }
+
+  /* Better mobile menu spacing */
+  @media (max-width: 640px) {
+    .mobile-menu-item {
+      @apply px-2 py-1.5 text-sm;
+    }
+    
+    .mobile-header-compact {
+      @apply px-2 py-2;
+    }
+  }
+}
+
+/* Full viewport height utility for mobile browsers */
+.min-h-screen-mobile {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Prevent white bars on mobile */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Safe area insets for mobile devices */
+  .safe-area-container {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  /* Landscape mode specific fixes */
+  @media (orientation: landscape) and (max-height: 500px) {
+    .sticky {
+      position: relative !important;
+    }
+    
+    .landscape-header {
+      @apply py-1;
+    }
+    
+    .landscape-nav {
+      @apply text-xs px-2 py-1;
+    }
+  }
+}

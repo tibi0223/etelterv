@@ -1,0 +1,2507 @@
+ID,Recept_ID,Élelmiszerek,Élelmiszer ID,Mennyiség,Mértékegység,Tipus,Kötés
+1,1,Szafi Reform gluténmentes rostkeverék,246,60,g,FŐ_MAKRO,R1-A
+2,1,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+3,1,Sütőpor,170,0.5,csomag,KÖTÖTT,R1-A
+4,1,Só,165,1,csipet,ÍZESÍTŐ,NULL
+5,1,Őrölt fahéj,63,1,ízlés szerint,ÍZESÍTŐ,NULL
+6,1,Vanília aroma,194,1,kevés,ÍZESÍTŐ,NULL
+7,1,Tojás,183,1,db,KÖTÖTT,R1-A
+8,1,Kókuszzsír,103,20,g,KÖTÖTT,R1-A
+9,1,Alma,7,50,g,KIEGÉSZÍTŐ,NULL
+10,1,Sárgarépa,160,25,g,KIEGÉSZÍTŐ,NULL
+11,1,Dió (darált),45,20,g,KIEGÉSZÍTŐ,NULL
+12,2,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+13,2,Ananász / Őszibarack,9,85,g,KIEGÉSZÍTŐ,NULL
+14,2,Só,165,1,csipet,ÍZESÍTŐ,NULL
+15,2,Fekete bors,226,1,csipet,ÍZESÍTŐ,NULL
+16,2,Olaj,132,0.5,teáskanál,FŐ_MAKRO,NULL
+17,2,Basmati rizs,18,40,g,FŐ_MAKRO,R2-A
+18,2,Víz / Zöldség alaplé,197 / 5,100,ml,KÖTÖTT,R2-A
+19,3,Avokádó,13,1,db,FŐ_MAKRO,NULL
+20,3,Füstölt lazac,71,50,g,FŐ_MAKRO,NULL
+21,3,Tojás,183,2,db,FŐ_MAKRO,NULL
+22,3,Citromlé,31,2,teáskanál,ÍZESÍTŐ,NULL
+23,3,Kapor / Snidling,90 / 126,1,evőkanál,ÍZESÍTŐ,NULL
+24,3,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+25,3,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+26,4,Tojás,183,2,db,FŐ_MAKRO,NULL
+27,4,Avokádó,13,70,g,FŐ_MAKRO,NULL
+28,4,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+29,4,Paprika,137,40,g,KIEGÉSZÍTŐ,NULL
+30,4,Uborka,98,50,g,KIEGÉSZÍTŐ,NULL
+31,4,Vöröshagyma,199,15,g,ÍZESÍTŐ,NULL
+32,4,Kovászos kenyér,106,60,g,FŐ_MAKRO,NULL
+33,4,Citromlé,31,1,ízlés szerint,ÍZESÍTŐ,NULL
+34,4,Só,165,1,csipet,ÍZESÍTŐ,NULL
+35,4,Fekete bors,226,1,csipet,ÍZESÍTŐ,NULL
+36,4,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+37,5,Tojás,183,2,db,FŐ_MAKRO,NULL
+38,5,Avokádó,13,50,g,FŐ_MAKRO,NULL
+39,5,Lilahagyma,115,25,g,KIEGÉSZÍTŐ,NULL
+40,5,Mustár (cukormentes),128,1,teáskanál,ÍZESÍTŐ,NULL
+41,5,Kovászos kenyér,106,60,g,FŐ_MAKRO,NULL
+42,5,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+43,5,Feketebors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+44,5,Citromlé,31,1,pár csepp,ÍZESÍTŐ,NULL
+45,6,Tortilla lap (teljes kiőrlésű),187,1,db,FŐ_MAKRO,NULL
+46,6,Csirkemellfilé,42,100,g,FŐ_MAKRO,NULL
+47,6,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+48,6,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+49,6,Fokhagyma granulátum/por,68,1,ízlés szerint,ÍZESÍTŐ,NULL
+50,6,Fűszerpaprika,75,1,ízlés szerint,ÍZESÍTŐ,NULL
+51,6,Avokádó,13,0.5,db,FŐ_MAKRO,NULL
+52,6,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+53,6,Kígyóuborka,98,0.5,db,KIEGÉSZÍTŐ,NULL
+54,6,Cukormentes ketchup,35,30,g,ÍZESÍTŐ,NULL
+55,6,Citromlé,31,1,pár csepp,ÍZESÍTŐ,NULL
+56,7,Avokádó,13,50,g,FŐ_MAKRO,NULL
+57,7,Tojás,183,2,db,FŐ_MAKRO,NULL
+58,7,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+59,7,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+60,7,Kovászos kenyér,106,60,g,FŐ_MAKRO,NULL
+61,8,Tonhalkonzerv,185,100,g,FŐ_MAKRO,NULL
+62,8,Avokádó,13,70,g,FŐ_MAKRO,NULL
+63,8,Spenótlevél,169,1,marék,KIEGÉSZÍTŐ,NULL
+64,8,Citromlé,31,1,teáskanál,ÍZESÍTŐ,NULL
+65,8,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+66,8,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+67,8,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+68,8,Kovászos kenyér,106,60,g,FŐ_MAKRO,NULL
+69,9,Tojás,183,2,db,FŐ_MAKRO,NULL
+70,9,Avokádó,13,25,g,FŐ_MAKRO,NULL
+71,9,Kovászos kenyér (teljes kiőrlésű),106,20,g,FŐ_MAKRO,NULL
+72,9,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,NULL
+73,9,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+74,9,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+75,9,Chili pehely,28,1,ízlés szerint,ÍZESÍTŐ,NULL
+76,10,Kovászos kenyér (teljes kiőrlésű),106,30,g,FŐ_MAKRO,NULL
+77,10,Pulykamell sonka (sovány),2,50,g,FŐ_MAKRO,NULL
+78,10,Avokádó,13,35,g,FŐ_MAKRO,NULL
+79,10,Bébispenót,20,25,g,KIEGÉSZÍTŐ,NULL
+80,10,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,NULL
+81,10,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+82,10,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+83,11,Kovászos kenyér (teljes kiőrlésű),106,30,g,FŐ_MAKRO,NULL
+84,11,Pulykamell sonka (sovány),2,50,g,FŐ_MAKRO,NULL
+85,11,Avokádó,13,35,g,FŐ_MAKRO,NULL
+86,11,Bébispenót,20,25,g,KIEGÉSZÍTŐ,NULL
+87,11,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,NULL
+88,11,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+89,11,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+90,12,Zabliszt,203,15,g,FŐ_MAKRO,R12-A
+91,12,Kakaópor (cukrozatlan),229,20,g,KÖTÖTT,R12-A
+92,12,Sütőpor,170,0.5,csomag,KÖTÖTT,R12-A
+93,12,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+94,12,Tojás,183,1,db,KÖTÖTT,R12-A
+95,12,Növényi tej,102,50,ml,KÖTÖTT,R12-A
+96,12,Kókuszzsír,103,0.5,evőkanál,KÖTÖTT,R12-A
+97,12,Áfonya,14,40,g,KIEGÉSZÍTŐ,NULL
+98,12,Mandula (apróra vágott),120,10,g,KIEGÉSZÍTŐ,NULL
+99,13,Alma,7,100,g,FŐ_MAKRO,R13-A
+100,13,Víz,197,250,ml,KÖTÖTT,R13-A
+101,13,Egész fahéj,55,1,ízlés szerint,ÍZESÍTŐ,NULL
+102,13,Szegfűszeg,173,1,ízlés szerint,ÍZESÍTŐ,NULL
+103,13,Só,165,1,csipet,ÍZESÍTŐ,NULL
+104,13,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+105,13,Vaníliás pudingpor,195,0.5,csomag,KÖTÖTT,R13-A
+106,13,Növényi tej,102,250,ml,KÖTÖTT,R13-A
+107,13,Citromlé,31,1,néhány csepp,ÍZESÍTŐ,NULL
+108,14,Alma,7,100,g,FŐ_MAKRO,NULL
+109,14,Citromlé,31,0.3,teáskanál,ÍZESÍTŐ,NULL
+110,14,Zabpehely,204,30,g,FŐ_MAKRO,R14-A
+111,14,Darált dió,45,30,g,FŐ_MAKRO,NULL
+112,14,Őrölt fahéj,63,0.5,teáskanál,ÍZESÍTŐ,NULL
+113,14,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+114,14,Kókuszzsír,103,0.5,teáskanál,KÖTÖTT,R14-A
+115,15,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+116,15,Quinoa,148,40,g,FŐ_MAKRO,NULL
+117,15,Vegyes zöldség,210,150,g,KIEGÉSZÍTŐ,NULL
+118,15,Szezámolaj,175,1,teáskanál,ÍZESÍTŐ,NULL
+119,15,Gyömbér (friss),79,5,g,ÍZESÍTŐ,NULL
+120,15,Light szójaszósz,236,1,ízlés szerint,ÍZESÍTŐ,NULL
+121,15,Fokhagyma,67,1,ízlés szerint,ÍZESÍTŐ,NULL
+122,15,Chili,27,1,ízlés szerint,ÍZESÍTŐ,NULL
+123,16,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+124,16,Burgonya,216,150,g,FŐ_MAKRO,NULL
+125,16,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+126,16,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+127,16,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+128,16,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+129,16,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+130,16,Majoranna,118,1,ízlés szerint,ÍZESÍTŐ,NULL
+131,16,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+132,17,Brokkoli,21,250,g,FŐ_MAKRO,R17-A
+133,17,Tojás,183,2,db,KÖTÖTT,R17-A
+134,17,Zabpehelyliszt,205,20,g,KÖTÖTT,R17-A
+135,17,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+136,17,Újhagyma,258,2,szál,ÍZESÍTŐ,NULL
+137,17,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+138,17,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+139,18,Brokkoli,21,250,g,FŐ_MAKRO,R18-A
+140,18,Víz / Zöldség alaplé,197 / 5,200,ml,KÖTÖTT,R18-A
+141,18,Fokhagyma,67,0.5,gerezd,ÍZESÍTŐ,NULL
+142,18,Kókusztejszín,270,50,g,KÖTÖTT,R18-A
+143,18,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+144,18,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+145,18,Szerecsendió,247,1,csipet,ÍZESÍTŐ,NULL
+146,18,Édeskömény,223,1,csipet,ÍZESÍTŐ,NULL
+147,19,Tojás,183,2,db,FŐ_MAKRO,R19-A
+148,19,Brokkoli (párolt),21,100,g,KÖTÖTT,R19-A
+149,19,Zabpehelyliszt,203,1,evőkanál,KÖTÖTT,R19-A
+150,19,Só,165,1,csipet,ÍZESÍTŐ,NULL
+151,19,Fekete bors,226,1,csipet,ÍZESÍTŐ,NULL
+152,19,Szerecsendió,247,1,csipet,ÍZESÍTŐ,NULL
+153,20,Brokkoli (párolt),21,200,g,KIEGÉSZÍTŐ,NULL
+154,20,Sonka,166,70,g,FŐ_MAKRO,NULL
+155,20,Tojás,183,2,db,FŐ_MAKRO,R20-A
+156,20,Növényi főzőtejszín,239,100,ml,KÖTÖTT,R20-A
+157,20,Vöröshagyma (dinsztelt),199,1,db,ÍZESÍTŐ,NULL
+158,20,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+159,20,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+160,20,Szerecsendió,247,1,csipet,ÍZESÍTŐ,NULL
+161,21,Quinoa,148,30,g,FŐ_MAKRO,NULL
+162,21,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+163,21,Vegyes zöldség,210,150,g,KIEGÉSZÍTŐ,NULL
+164,21,Tahini (szezámpaszta),177,1,teáskanál,ÍZESÍTŐ,R21-A
+165,21,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+166,21,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+167,21,Citromlé,31,1,kevés,ÍZESÍTŐ,NULL
+168,21,Víz,197,1,pici,KÖTÖTT,R21-A
+169,22,Tojás,183,1,db,FŐ_MAKRO,R22-A
+170,22,Teljes kiőrlésű kenyér / Kovászos kenyér,106,1,szelet (kb. 30g),KÖTÖTT,R22-A
+171,22,Kókuszzsír,103,0.5,teáskanál,ÍZESÍTŐ,NULL
+172,22,Só,165,1,csipet,ÍZESÍTŐ,NULL
+173,22,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+174,22,Petrezselyem / Snidling,142 / 126,1,ízlés szerint,ÍZESÍTŐ,NULL
+175,22,Őrölt pirospaprika,75,1,csipet,ÍZESÍTŐ,NULL
+176,23,Basmati rizs,18,20,g,FŐ_MAKRO,NULL
+177,23,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+178,23,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+179,23,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+180,23,Só,165,1,csipet,ÍZESÍTŐ,NULL
+181,23,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+182,23,Füstölt paprika,72,1,ízlés szerint,ÍZESÍTŐ,NULL
+183,23,Chili por,27,1,ízlés szerint,ÍZESÍTŐ,NULL
+184,23,Vörösbab konzerv,198,50,g,FŐ_MAKRO,NULL
+185,23,Csemegekukorica konzerv,108,50,g,KIEGÉSZÍTŐ,NULL
+186,23,Paradicsompüré (cukormentes),140,50,ml,KIEGÉSZÍTŐ,NULL
+187,23,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+188,23,Jalapeno paprika,85,10,g,ÍZESÍTŐ,NULL
+189,24,Teljes kiőrlésű tészta,182,25,g,FŐ_MAKRO,NULL
+190,24,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+191,24,Jégsaláta,86,3,marék,KIEGÉSZÍTŐ,NULL
+192,24,Paradicsom,139,2,db,KIEGÉSZÍTŐ,NULL
+193,24,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+194,24,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+195,24,Kókuszjoghurt,100,70,g,FŐ_MAKRO,NULL
+196,24,Cukormentes mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+197,24,Citromlé,31,1,pár csepp,ÍZESÍTŐ,NULL
+198,24,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+199,25,Chiamag,26,15,g,FŐ_MAKRO,R25-A
+200,25,Erdei gyümölcs,60,50,g,KIEGÉSZÍTŐ,NULL
+201,25,Víz,197,100,ml,KÖTÖTT,R25-A
+202,26,Chia mag,26,20,g,FŐ_MAKRO,R26-A
+203,26,Kókusztej (ital),102,200,ml,KÖTÖTT,R26-A
+204,26,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+205,26,Mogyoróvaj,127,10,g,FŐ_MAKRO,NULL
+206,26,Kókuszchips,99,15,g,KIEGÉSZÍTŐ,NULL
+207,27,Darált marhahús,46,150,g,FŐ_MAKRO,NULL
+208,27,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,NULL
+209,27,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+210,27,Kaliforniai paprika,89,0.5,db,KIEGÉSZÍTŐ,NULL
+211,27,Paradicsompüré,140,60,g,KIEGÉSZÍTŐ,NULL
+212,27,Vörösbab konzerv,198,50,g,FŐ_MAKRO,NULL
+213,27,Csemegekukorica konzerv,108,50,g,KIEGÉSZÍTŐ,NULL
+214,27,85%-os étcsokoládé,1,1,kocka,ÍZESÍTŐ,NULL
+215,27,Római kömény,154,1,teáskanál,ÍZESÍTŐ,NULL
+216,27,Édes pirospaprika,75,1,teáskanál,ÍZESÍTŐ,NULL
+217,27,Chilipor,27,1,teáskanál,ÍZESÍTŐ,NULL
+218,27,Koriander (őrölt),105,0.5,teáskanál,ÍZESÍTŐ,NULL
+219,27,Só,165,1,csipet,ÍZESÍTŐ,NULL
+220,27,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+221,27,Víz / Marhaalaplé,197 / 273,150,ml,KIEGÉSZÍTŐ,NULL
+222,27,Korianderlevél (friss),105,1,ízlés szerint,ÍZESÍTŐ,NULL
+223,28,Alaszkai tőkehalfilé,6,200,g,FŐ_MAKRO,NULL
+224,28,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+225,28,Fehérbors,219,1,ízlés szerint,ÍZESÍTŐ,NULL
+226,28,Citromlé,31,2,evőkanál,ÍZESÍTŐ,NULL
+227,28,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+228,28,Vegyes zöldség,210,150,g,KIEGÉSZÍTŐ,NULL
+229,29,Lazacfilé,112,120,g,FŐ_MAKRO,NULL
+230,29,Csicseriborsó (konzerv),40,100,g,FŐ_MAKRO,NULL
+231,29,Spárga,168,150,g,KIEGÉSZÍTŐ,NULL
+232,29,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+233,29,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+234,29,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+235,29,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+236,30,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+237,30,Quinoa,148,50,g,FŐ_MAKRO,R30-A
+238,30,Víz,197,150,ml,KÖTÖTT,R30-A
+239,30,Kelkáposztalevél,95,150,g,KIEGÉSZÍTŐ,NULL
+240,30,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+241,30,Kókuszolaj,103,5,g,ÍZESÍTŐ,NULL
+242,30,Gyömbér (friss reszelt),79,1,evőkanál,ÍZESÍTŐ,NULL
+243,30,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+244,30,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+245,30,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+246,31,Tojás,183,1,db,FŐ_MAKRO,R31-A
+247,31,Kókuszjoghurt,100,20,g,KÖTÖTT,R31-A
+248,31,Zabliszt,203,10,g,KÖTÖTT,R31-A
+249,31,Só,165,1,csipet,ÍZESÍTŐ,NULL
+250,32,Csicseriborsó (konzerv),40,150,g,FŐ_MAKRO,NULL
+251,32,Avokádó,13,50,g,FŐ_MAKRO,NULL
+252,32,Vegyes zöldsaláta,159,1,marék,KIEGÉSZÍTŐ,NULL
+253,32,Balzsamecet,16,1,teáskanál,ÍZESÍTŐ,NULL
+254,32,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+255,32,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+256,32,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+257,33,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+258,33,Quinoa,148,50,g,FŐ_MAKRO,R33-A
+259,33,Víz,197,150,ml,KÖTÖTT,R33-A
+260,33,Brokkoli,21,100,g,KIEGÉSZÍTŐ,NULL
+261,33,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+262,33,Kókuszolaj,103,5,g,ÍZESÍTŐ,NULL
+263,33,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+264,33,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+265,33,Fokhagyma granulátum/por,68,1,ízlés szerint,ÍZESÍTŐ,NULL
+266,33,Paprikapehely,138,1,ízlés szerint,ÍZESÍTŐ,NULL
+267,34,Csirkemellfilé,42,150,g,FŐ_MAKRO,R34-A
+268,34,Vöröshagyma,199,50,g,KIEGÉSZÍTŐ,NULL
+269,34,Paprika,137,40,g,KIEGÉSZÍTŐ,NULL
+270,34,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+271,34,Kókuszzsír,103,1,teáskanál,ÍZESÍTŐ,NULL
+272,34,Só,165,1,csipet,ÍZESÍTŐ,NULL
+273,34,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+274,34,Víz,197,100,ml,KÖTÖTT,R34-A
+275,34,Kókusztejszín,270,50,ml,KÖTÖTT,R34-A
+276,34,Zabliszt,203,2,g,KÖTÖTT,R34-A
+277,34,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+278,35,Gyorsfőzésű barna rizs,151,55,g,FŐ_MAKRO,R35-A
+279,35,Víz,197,150,ml,KÖTÖTT,R35-A
+280,35,Almaecet,8,2,evőkanál,KÖTÖTT,R35-A
+281,35,Só,165,1,csipet,KÖTÖTT,R35-A
+282,35,Csirkemellfilé,42,90,g,FŐ_MAKRO,NULL
+283,35,Avokádó,13,35,g,FŐ_MAKRO,NULL
+284,35,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+285,35,Kókuszolaj,103,1,teáskanál,ÍZESÍTŐ,NULL
+286,35,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+287,36,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R36-A
+288,36,Víz,197,150,ml,KÖTÖTT,R36-A
+289,36,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+290,36,Csirkemellfilé,42,90,g,FŐ_MAKRO,NULL
+291,36,Shiitake gomba,164,30,g,KIEGÉSZÍTŐ,NULL
+292,36,Zöldhagyma (Újhagyma),269,20,g,KIEGÉSZÍTŐ,NULL
+293,36,Kókuszolaj,103,5,g,ÍZESÍTŐ,NULL
+294,36,Almaecet,8,2,evőkanál,KÖTÖTT,R36-A
+295,36,Só,165,1,ízlés szerint,KÖTÖTT,R36-A
+296,36,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+297,37,Quinoa,148,50,g,FŐ_MAKRO,R37-A
+298,37,Víz,197,150,ml,KÖTÖTT,R37-A
+299,37,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+300,37,Csirkemellfilé,42,90,g,FŐ_MAKRO,NULL
+301,37,Paprika,137,30,g,KIEGÉSZÍTŐ,NULL
+302,37,Sárgarépa,160,20,g,KIEGÉSZÍTŐ,NULL
+303,37,Kókuszolaj,103,0.5,teáskanál,ÍZESÍTŐ,NULL
+304,37,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+305,37,Szezámolaj,175,0.5,teáskanál,ÍZESÍTŐ,NULL
+306,37,Gyömbér (friss reszelt),79,1,pici,ÍZESÍTŐ,NULL
+307,37,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+308,37,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+309,38,Csirkemellfilé,42,150,g,FŐ_MAKRO,R38-A
+310,38,Vöröshagyma,199,40,g,KIEGÉSZÍTŐ,NULL
+311,38,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+312,38,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+313,38,Édes nemes fűszerpaprika,52,1,teáskanál,ÍZESÍTŐ,NULL
+314,38,Őrölt kömény,56,1,csipet,ÍZESÍTŐ,NULL
+315,38,Só,165,1,csipet,ÍZESÍTŐ,NULL
+316,38,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+317,38,Paradicsompüré,140,20,g,KÖTÖTT,R38-A
+318,38,Víz / Csirkealaplé,197 / 41,150,ml,KÖTÖTT,R38-A
+319,38,Kókuszjoghurt,100,50,g,KÖTÖTT,R38-A
+320,38,Zabliszt,203,10,g,KÖTÖTT,R38-A
+321,38,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+322,39,Teljes kiőrlésű tortilla lap,187,1,db,FŐ_MAKRO,NULL
+323,39,Csirkemellfilé,42,120,g,FŐ_MAKRO,NULL
+324,39,Római kömény,154,1,ízlés szerint,ÍZESÍTŐ,NULL
+325,39,Füstölt pirospaprika,72,1,ízlés szerint,ÍZESÍTŐ,NULL
+326,39,Chilipor,27,1,ízlés szerint,ÍZESÍTŐ,NULL
+327,39,Fokhagymapor,68,1,ízlés szerint,ÍZESÍTŐ,NULL
+328,39,Oregánó,134,1,ízlés szerint,ÍZESÍTŐ,NULL
+329,39,Kókuszzsír,103,1,teáskanál,ÍZESÍTŐ,NULL
+330,39,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+331,39,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+332,39,Chili szósz,29,1,ízlés szerint,ÍZESÍTŐ,NULL
+333,39,Lilahagyma,115,1,db,KIEGÉSZÍTŐ,NULL
+334,39,Koktélparadicsom,104,50,g,KIEGÉSZÍTŐ,NULL
+335,39,Avokádó,13,100,g,FŐ_MAKRO,NULL
+336,39,Só,165,1,csipet,ÍZESÍTŐ,NULL
+337,39,Fekete bors,226,1,csipet,ÍZESÍTŐ,NULL
+338,40,Csirkemell,42,150,g,FŐ_MAKRO,NULL
+339,40,Édesburgonya,53,150,g,FŐ_MAKRO,NULL
+340,40,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+341,40,Feketebors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+342,40,Rozmaring,155,1,ízlés szerint,ÍZESÍTŐ,NULL
+343,41,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+344,41,Csicseriborsó konzerv,40,100,g,FŐ_MAKRO,NULL
+345,41,Sárgarépa,160,100,g,KIEGÉSZÍTŐ,NULL
+346,41,Vöröshagyma,199,1,db (kisebb),ÍZESÍTŐ,NULL
+347,41,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+348,41,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+349,41,Balzsamecet,16,1,teáskanál,ÍZESÍTŐ,NULL
+350,41,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+351,41,Kapor (friss),90,1,ízlés szerint,ÍZESÍTŐ,NULL
+352,41,Római kömény,154,1,ízlés szerint,ÍZESÍTŐ,NULL
+353,41,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+354,41,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+355,42,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+356,42,Lencse (konzerv),114,100,g,FŐ_MAKRO,NULL
+357,42,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+358,42,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+359,42,Citromlé,31,1,ízlés szerint,ÍZESÍTŐ,NULL
+360,42,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+361,42,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+362,43,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+363,43,Kaliforniai paprika,89,1,db,KIEGÉSZÍTŐ,NULL
+364,43,Quinoa,148,40,g,FŐ_MAKRO,NULL
+365,43,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+366,43,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+367,43,Oregánó,134,1,ízlés szerint,ÍZESÍTŐ,NULL
+368,43,Fokhagymapor,68,1,ízlés szerint,ÍZESÍTŐ,NULL
+369,43,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+370,44,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+371,44,Quinoa,148,50,g,FŐ_MAKRO,NULL
+372,44,Spenótlevél,169,1,marék,KIEGÉSZÍTŐ,NULL
+373,44,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+374,44,Citromlé,31,1,ízlés szerint,ÍZESÍTŐ,NULL
+375,45,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+376,45,Paprika,137,1,db,KIEGÉSZÍTŐ,NULL
+377,45,Sárgarépa,160,1,db,KIEGÉSZÍTŐ,NULL
+378,45,Kókuszolaj,103,1,evőkanál,ÍZESÍTŐ,NULL
+379,45,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+380,45,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+381,45,Teljes kiőrlésű tészta,182,30,g,FŐ_MAKRO,NULL
+382,45,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+383,45,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+384,46,Zabpehely,204,20,g,FŐ_MAKRO,R46-A
+385,46,Csokoládés növényi fehérjepor,43,30,g,KÖTÖTT,R46-A
+386,46,Chia mag,26,15,g,KÖTÖTT,R46-A
+387,46,Növényi tej,102,200,ml,KÖTÖTT,R46-A
+388,46,Málna,119,50,g,KIEGÉSZÍTŐ,NULL
+389,46,Vanília aroma,194,1,pár csepp,ÍZESÍTŐ,NULL
+390,46,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+391,47,Cukkini,44,75,g,KIEGÉSZÍTŐ,NULL
+392,47,Darált pulykamell,47,125,g,FŐ_MAKRO,R47-A
+393,47,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+394,47,Paradicsompüré,140,100,g,KÖTÖTT,R47-A
+395,47,Kókuszjoghurt,100,50,g,FŐ_MAKRO,NULL
+396,47,Szerecsendió,247,1,csipet,ÍZESÍTŐ,NULL
+397,47,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+398,47,Bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+399,48,Teljes kiőrlésű keksz (Gullon),78,20,g,FŐ_MAKRO,NULL
+400,48,Eper,59,70,g,KIEGÉSZÍTŐ,NULL
+401,48,Kókuszjoghurt,100,100,g,FŐ_MAKRO,R48-A
+402,48,Vaníliás vegán fehérjepor,196,20,g,KÖTÖTT,R48-A
+403,48,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+404,48,Vanília aroma,194,1,pár csepp,ÍZESÍTŐ,NULL
+405,48,Citromlé,31,1,pár csepp,ÍZESÍTŐ,NULL
+406,49,Virsli,264,1,db (60g),FŐ_MAKRO,NULL
+407,49,Kovászos kenyér (teljes kiőrlésű),106,0.5,szelet (20g),FŐ_MAKRO,NULL
+408,49,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+409,49,Olívaolaj,132,1,teáskanál,ÍZESÍTŐ,NULL
+410,49,Curry por,38,1,ízlés szerint,ÍZESÍTŐ,NULL
+411,49,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+412,49,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+413,49,Citromlé,31,1,pici,ÍZESÍTŐ,NULL
+414,50,Paprika,137,150,g,KIEGÉSZÍTŐ,NULL
+415,50,Darált marhahús,46,140,g,FŐ_MAKRO,NULL
+416,50,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+417,50,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+418,50,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+419,50,Paradicsompüré,140,70,ml,KIEGÉSZÍTŐ,NULL
+420,50,Víz,197,100,ml,KIEGÉSZÍTŐ,NULL
+421,50,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+422,50,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+423,51,Cukkini,44,1,db,KIEGÉSZÍTŐ,NULL
+424,51,Darált pulykamell,47,130,g,FŐ_MAKRO,NULL
+425,51,Paradicsompüré (passata),140,100,ml,KIEGÉSZÍTŐ,NULL
+426,51,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+427,51,Basmati rizs,18,25,g,FŐ_MAKRO,NULL
+428,51,Olaj,132,1,teáskanál,FŐ_MAKRO,NULL
+429,51,Só,165,1,csipet,ÍZESÍTŐ,NULL
+430,51,Bors,226,1,csipet,ÍZESÍTŐ,NULL
+431,52,Alma,7,1,db,FŐ_MAKRO,NULL
+432,52,Zabliszt,203,40,g,FŐ_MAKRO,R52-A
+433,52,Tojás,183,1,db,KÖTÖTT,R52-A
+434,52,Növényi tej,102,15,ml,KÖTÖTT,R52-A
+435,52,Só,165,1,csipet,ÍZESÍTŐ,NULL
+436,52,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+437,52,Őrölt fahéj,63,1,ízlés szerint,ÍZESÍTŐ,NULL
+438,52,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+439,53,Csirkemellfilé,42,150,g,FŐ_MAKRO,R53-A
+440,53,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+441,53,Paprika,137,0.5,db,KIEGÉSZÍTŐ,NULL
+442,53,Paradicsom,139,30,g,KIEGÉSZÍTŐ,NULL
+443,53,Kókuszzsír,103,0.5,teáskanál,FŐ_MAKRO,NULL
+444,53,Savanyúkáposzta,161,200,g,KIEGÉSZÍTŐ,NULL
+445,53,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+446,53,Vegán tejföl,180,30,g,KÖTÖTT,R53-A
+447,53,Zabliszt,203,1,teáskanál,KÖTÖTT,R53-A
+448,53,Víz / Csirkealaplé,197 / 41,100,ml,KÖTÖTT,R53-A
+449,53,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+450,53,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+451,53,Őrölt kömény,56,1,ízlés szerint,ÍZESÍTŐ,NULL
+452,53,Édesnemes pirospaprika,52,1,ízlés szerint,ÍZESÍTŐ,NULL
+453,53,Füstölt pirospaprika,72,1,ízlés szerint,ÍZESÍTŐ,NULL
+454,54,Tojás,183,1,db,FŐ_MAKRO,R54-A
+455,54,Cukrozatlan kakaópor,229,15,g,KÖTÖTT,R54-A
+456,54,Kukoricakeményítő,109,15,g,KÖTÖTT,R54-A
+457,54,Édesítőszer,54,2,evőkanál,ÍZESÍTŐ,NULL
+458,54,Só,165,1,csipet,ÍZESÍTŐ,NULL
+459,54,Vegán mascarpone,260,50,g,FŐ_MAKRO,R54-B
+460,54,Zselatin,268,5,g,KÖTÖTT,R54-B
+461,54,Víz,197,2,evőkanál,KÖTÖTT,R54-B
+462,54,Vanília aroma,194,1,ízlés szerint,ÍZESÍTŐ,NULL
+463,54,Rumaroma,156,1,ízlés szerint,ÍZESÍTŐ,NULL
+464,55,Sonka,166,100,g,FŐ_MAKRO,NULL
+465,55,Avokádó,13,50,g,FŐ_MAKRO,NULL
+466,55,Petrezselyem / Snidling,142 / 126,1,evőkanál,ÍZESÍTŐ,NULL
+467,55,Citromlé,31,1,teáskanál,ÍZESÍTŐ,NULL
+468,55,Só,165,1,csipet,ÍZESÍTŐ,NULL
+469,55,Feketebors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+470,56,Szardínia konzerv,271,1,doboz,FŐ_MAKRO,NULL
+471,56,Teljes kiőrlésű kenyér,211,50,g,FŐ_MAKRO,NULL
+472,56,Lilahagyma,115,0.25,db,KIEGÉSZÍTŐ,NULL
+473,56,Citromlé,31,2,teáskanál,ÍZESÍTŐ,NULL
+474,56,Kapor (vagy petrezselyem),90 / 142,1,evőkanál,ÍZESÍTŐ,NULL
+475,56,Só,165,1,csipet,ÍZESÍTŐ,NULL
+476,56,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+477,57,Eper,59,100,g,FŐ_MAKRO,R57-A
+478,57,Ribizli / Áfonya,150 / 14,50,g,KÖTÖTT,R57-A
+479,57,Víz,197,30,ml,KÖTÖTT,R57-A
+480,57,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+481,57,Menta,125,0.5,szál,ÍZESÍTŐ,NULL
+482,57,Citromlé,31,10,ml,ÍZESÍTŐ,NULL
+483,58,Zabliszt,203,30,g,FŐ_MAKRO,R58-A
+484,58,Vegán vaj,192,20,g,KÖTÖTT,R58-A
+485,58,Édesítőszer,54,1,kevés,ÍZESÍTŐ,NULL
+486,58,Tojás,183,1,db,KÖTÖTT,R58-A
+487,58,Hideg víz,197,0.5,evőkanál,KÖTÖTT,R58-A
+488,58,Bogyós gyümölcs,60,50,g,FŐ_MAKRO,R58-B
+489,58,Vegán habtejszín,252,30,ml,KÖTÖTT,R58-B
+490,58,Zabliszt (töltelék),203,0.5,evőkanál,KÖTÖTT,R58-B
+491,58,Vanília aroma,194,1,pár csepp,ÍZESÍTŐ,NULL
+492,59,Csirkemellfilé,42,150,g,FŐ_MAKRO,R59-A
+493,59,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,NULL
+494,59,Sárgarépa,160,40,g,KIEGÉSZÍTŐ,NULL
+495,59,Ananász,9,20,g,KIEGÉSZÍTŐ,NULL
+496,59,Paradicsompüré,140,100,g,KÖTÖTT,R59-A
+497,59,Ecet,50,0.5,evőkanál,KÖTÖTT,R59-A
+498,59,Light szójaszósz,236,0.5,evőkanál,KÖTÖTT,R59-A
+499,59,Zabliszt,203,10,g,KÖTÖTT,R59-A
+500,59,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+501,59,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+502,59,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+503,59,Őrölt édeskömény,57,1,csipet,ÍZESÍTŐ,NULL
+504,59,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+505,59,Víz,197,150,ml,KÖTÖTT,R59-A
+506,59,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+507,60,Édesburgonya,53,120,g,FŐ_MAKRO,NULL
+508,60,Vegán vaj,192,10,g,FŐ_MAKRO,NULL
+509,60,Sonka,166,50,g,FŐ_MAKRO,NULL
+510,60,Só,165,1,csipet,ÍZESÍTŐ,NULL
+511,60,Bors,226,1,csipet,ÍZESÍTŐ,NULL
+512,61,Zabliszt,203,60,g,FŐ_MAKRO,R61-A
+513,61,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+514,61,Kókuszzsír,103,20,g,KÖTÖTT,R61-A
+515,61,Cukkini,44,75,g,KÖTÖTT,R61-A
+516,61,Őrölt fahéj,63,0.5,kávéskanál,ÍZESÍTŐ,NULL
+517,61,Vanília,194,1,ízlés szerint,ÍZESÍTŐ,NULL
+518,61,Tojás,183,1,db,KÖTÖTT,R61-A
+519,61,Sütőpor,170,0.5,csomag,KÖTÖTT,R61-A
+520,61,Dió,45,20,g,FŐ_MAKRO,NULL
+521,61,Só,165,1,csipet,ÍZESÍTŐ,NULL
+522,62,Tojásfehérje,275,1,db,FŐ_MAKRO,R62-A
+523,62,Cukrozatlan kakaópor,229,0.5,evőkanál,KÖTÖTT,R62-A
+524,62,Sütőpor,170,0.3,csomag,KÖTÖTT,R62-A
+525,62,Vegán fehérjepor,196,10,g,KÖTÖTT,R62-A
+526,62,Só,165,1,csipet,ÍZESÍTŐ,NULL
+527,62,Vegán mascarpone,260,50,g,FŐ_MAKRO,NULL
+528,62,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+529,62,Vanília aroma,194,1,pár csepp,ÍZESÍTŐ,NULL
+530,63,Avokádó,13,70,g,FŐ_MAKRO,R63-A
+531,63,Cukrozatlan kakaópor,229,1,evőkanál,KÖTÖTT,R63-A
+532,63,Csokoládés növényi fehérjepor,43,30,g,KÖTÖTT,R63-A
+533,63,Növényi tej,102,4,evőkanál,KÖTÖTT,R63-A
+534,63,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+535,63,Vanília aroma,194,1,pár csepp,ÍZESÍTŐ,NULL
+536,63,Só,165,1,csipet,ÍZESÍTŐ,NULL
+537,64,Chia mag,26,20,g,FŐ_MAKRO,R64-A
+538,64,Kókusztej (ital),102,200,ml,KÖTÖTT,R64-A
+539,64,Fehérjepor,196,20,g,KÖTÖTT,R64-A
+540,64,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+541,64,Mogyoróvaj,127,10,g,FŐ_MAKRO,NULL
+542,64,Kókuszchips,99,15,g,KIEGÉSZÍTŐ,NULL
+543,65,Fekete bab (konzerv),64,30,g,FŐ_MAKRO,R65-A
+544,65,Keserű kakaópor,229,1,evőkanál,KÖTÖTT,R65-A
+545,65,Zabliszt,203,5,g,KÖTÖTT,R65-A
+546,65,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+547,65,Kókuszzsír,103,0.5,teáskanál,KÖTÖTT,R65-A
+548,65,Vanília aroma,194,1,evőkanál,ÍZESÍTŐ,NULL
+549,65,Sütőpor,170,0.5,teáskanál,KÖTÖTT,R65-A
+550,65,Étcsokoládé (min. 70%),34,10,g,KIEGÉSZÍTŐ,NULL
+551,66,Tojás,183,2,db,FŐ_MAKRO,NULL
+552,66,Csiperkegomba,77,100,g,KIEGÉSZÍTŐ,NULL
+553,66,Kovászos kenyér (teljes kiőrlésű),106,0.5,szelet (20g),FŐ_MAKRO,NULL
+554,66,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+555,66,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+556,66,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+557,66,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+558,66,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+559,67,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,R67-A
+560,67,Kovászos kenyér (teljes kiőrlésű),106,0.5,szelet (20g),FŐ_MAKRO,NULL
+561,67,Kókuszjoghurt,100,1,evőkanál,KÖTÖTT,R67-A
+562,67,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+563,67,Petrezselyem / Snidling,142 / 126,1,teáskanál,ÍZESÍTŐ,NULL
+564,67,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+565,67,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+566,68,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+567,68,Kovászos kenyér (teljes kiőrlésű),106,0.5,szelet (20g),FŐ_MAKRO,NULL
+568,68,Céklás humusz,25,50,g,FŐ_MAKRO,NULL
+569,68,Kapor (friss),90,1,ízlés szerint,ÍZESÍTŐ,NULL
+570,68,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+571,68,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+572,69,Tojás,183,2,db,FŐ_MAKRO,NULL
+573,69,Kovászos kenyér (teljes kiőrlésű),106,0.5,szelet (20g),FŐ_MAKRO,NULL
+574,69,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+575,69,Zellerszár,172,50,g,KIEGÉSZÍTŐ,NULL
+576,69,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+577,69,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+578,70,Tojás,183,2,db,FŐ_MAKRO,NULL
+579,70,Avokádó,13,50,g,FŐ_MAKRO,NULL
+580,70,Lime,116,1,teáskanál,ÍZESÍTŐ,NULL
+581,70,Lilahagyma,115,15,g,ÍZESÍTŐ,NULL
+582,70,Korianderlevél (friss),105,1,kis csokor,ÍZESÍTŐ,NULL
+583,70,Só,165,1,csipet,ÍZESÍTŐ,NULL
+584,70,Kovászos kenyér,106,40,g,FŐ_MAKRO,NULL
+585,71,Virsli,264,1,db (60g),FŐ_MAKRO,NULL
+586,71,Kovászos kenyér (teljes kiőrlésű),106,1,szelet (30g),FŐ_MAKRO,NULL
+587,71,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+588,71,Szárzeller,172,50,g,KIEGÉSZÍTŐ,NULL
+589,71,Dijoni mustár (cukormentes),49,1,teáskanál,ÍZESÍTŐ,NULL
+590,71,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+591,71,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+592,72,Burgonya,216,150,g,FŐ_MAKRO,R72-A
+593,72,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+594,72,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+595,72,Kókuszzsír,103,1,teáskanál,KÖTÖTT,R72-A
+596,72,Zabliszt,203,10,g,KÖTÖTT,R72-A
+597,72,Növényi tej,102,100,ml,KÖTÖTT,R72-A
+598,72,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+599,72,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+600,72,Szerecsendió,247,1,csipet,ÍZESÍTŐ,NULL
+601,72,Rozmaring,155,1,kevés,ÍZESÍTŐ,NULL
+602,73,Sárgarépa,160,100,g,KIEGÉSZÍTŐ,NULL
+603,73,Fehérrépa (petrezselyemgyökér),242,50,g,KIEGÉSZÍTŐ,NULL
+604,73,Zöldborsó konzerv,208,50,g,KIEGÉSZÍTŐ,NULL
+605,73,Alma,7,0.5,db,KIEGÉSZÍTŐ,NULL
+606,73,Csemegeuborka,33,3,db,KIEGÉSZÍTŐ,NULL
+607,73,Cukormentes majonéz,36,30,g,FŐ_MAKRO,NULL
+608,73,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+609,74,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+610,74,Kókuszzsír,132 / 103,1,teáskanál,FŐ_MAKRO,NULL
+611,74,Pirospaprika,75,1,ízlés szerint,ÍZESÍTŐ,NULL
+612,74,Burgonya,216,70,g,FŐ_MAKRO,R74-A
+613,74,Kelkáposzta,95,20,g,KIEGÉSZÍTŐ,NULL
+614,74,Őrölt kömény,56,1,ízlés szerint,ÍZESÍTŐ,NULL
+615,74,Só,165,1,csipet,ÍZESÍTŐ,NULL
+616,74,Víz / Zöldségalaplé,197 / 5,400,ml,KÖTÖTT,R74-A
+617,74,Virsli,264,50,g,FŐ_MAKRO,NULL
+618,74,Vegán tejföl,180,25,g,KÖTÖTT,R74-A
+619,74,Zabliszt,203,1,evőkanál,KÖTÖTT,R74-A
+620,75,Tojásfehérje,275,60,ml,FŐ_MAKRO,R75-A
+621,75,Vegán fehérjepor,196,10,g,KÖTÖTT,R75-A
+622,75,Növényi tej,102,30,ml,KÖTÖTT,R75-A
+623,75,Teljes kiőrlésű kenyér,106,2,szelet (60g),FŐ_MAKRO,NULL
+624,75,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+625,75,Vanília aroma,194,1,ízlés szerint,ÍZESÍTŐ,NULL
+626,75,Őrölt fahéj,63,1,csipet,ÍZESÍTŐ,NULL
+627,75,Kókuszzsír,103,10,g,FŐ_MAKRO,NULL
+628,75,Áfonya (fagyasztott),14,100,g,KIEGÉSZÍTŐ,NULL
+629,75,Mogyoróvaj,127,15,g,FŐ_MAKRO,NULL
+630,76,Tojás,183,2,db,FŐ_MAKRO,NULL
+631,76,Vegyes salátalevél,159,1,marék,KIEGÉSZÍTŐ,NULL
+632,76,Avokádó,13,50,g,FŐ_MAKRO,NULL
+633,76,Koktélparadicsom,104,60,g,KIEGÉSZÍTŐ,NULL
+634,76,Paprika,137,40,g,KIEGÉSZÍTŐ,NULL
+635,76,Kígyóuborka,98,40,g,KIEGÉSZÍTŐ,NULL
+636,76,Újhagyma / Vöröshagyma,258 / 199,1,szál / 0.5 db,ÍZESÍTŐ,NULL
+637,76,Mandula (pirított),120,10,g,FŐ_MAKRO,NULL
+638,76,Citromlé,31,0.5,db,ÍZESÍTŐ,NULL
+639,76,Só,165,1,csipet,ÍZESÍTŐ,NULL
+640,76,Fekete bors,226,1,csipet,ÍZESÍTŐ,NULL
+641,76,Fehérborecet,50,0.5,evőkanál,ÍZESÍTŐ,NULL
+642,76,Cukormentes mustár,37,0.5,evőkanál,ÍZESÍTŐ,NULL
+643,76,Olívaolaj,132,0.5,evőkanál,FŐ_MAKRO,NULL
+644,77,Quinoa,148,50,g,FŐ_MAKRO,R77-A
+645,77,Víz,197,150,ml,KÖTÖTT,R77-A
+646,77,Füstölt lazac,71,90,g,FŐ_MAKRO,NULL
+647,77,Bébispenót,20,100,g,KIEGÉSZÍTŐ,NULL
+648,77,Retek,149,50,g,KIEGÉSZÍTŐ,NULL
+649,77,Avokádó,13,30,g,FŐ_MAKRO,NULL
+650,77,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+651,77,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+652,77,Kapor (friss),90,1,ízlés szerint,ÍZESÍTŐ,NULL
+653,77,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+654,77,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+728,78,Tojás,183,2,db,FŐ_MAKRO,R78-A
+729,78,Füstölt lazac,71,70,g,KÖTÖTT,R78-A
+730,78,Kapor (friss),90,1,evőkanál,ÍZESÍTŐ,NULL
+731,78,Újhagyma / Snidling,258 / 126,1,szál,ÍZESÍTŐ,NULL
+732,78,Mandulaliszt,121,1,evőkanál,KÖTÖTT,R78-A
+733,78,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+734,78,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+735,79,Kovászos kenyér (teljes kiőrlésű),106,1,szelet (30g),FŐ_MAKRO,NULL
+736,79,Füstölt lazac,71,50,g,FŐ_MAKRO,NULL
+737,79,Kígyóuborka,98,30,g,KIEGÉSZÍTŐ,NULL
+738,79,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,NULL
+739,79,Kapor / Snidling,90 / 126,1,ízlés szerint,ÍZESÍTŐ,NULL
+740,80,Tojás,183,2,db,FŐ_MAKRO,NULL
+741,80,Füstölt lazac,71,70,g,FŐ_MAKRO,NULL
+742,80,Spárga,168,5,szál (85g),KIEGÉSZÍTŐ,NULL
+743,80,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+744,80,Kapor / Snidling,90 / 126,1,ízlés szerint,ÍZESÍTŐ,NULL
+745,80,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+746,80,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+747,80,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+748,81,Tojás,183,2,db,FŐ_MAKRO,NULL
+749,81,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+750,81,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+751,81,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+752,81,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+753,81,Füstölt paprika,72,1,csipet,ÍZESÍTŐ,NULL
+754,81,Petrezselyem (friss),142,1,kevés,ÍZESÍTŐ,NULL
+755,82,Füstölt pulykamell sonka,73,50,g,FŐ_MAKRO,NULL
+756,82,Kovászos kenyér (teljes kiőrlésű),106,1,szelet (30g),FŐ_MAKRO,NULL
+757,82,Vegyes zöldsaláta,159,100,g,KIEGÉSZÍTŐ,NULL
+758,82,Fekete olívabogyó,65,5,db (20g),KIEGÉSZÍTŐ,NULL
+759,82,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+760,82,Balzsamecet,16,0.5,teáskanál,ÍZESÍTŐ,NULL
+761,82,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+762,82,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+763,83,Kovászos kenyér (teljes kiőrlésű),106,1,szelet (30g),FŐ_MAKRO,NULL
+764,83,Füstölt pulykamell sonka,73,50,g,FŐ_MAKRO,NULL
+765,83,Kígyóuborka,98,30,g,KIEGÉSZÍTŐ,NULL
+766,83,Retek,149,30,g,KIEGÉSZÍTŐ,NULL
+767,83,Snidling (Metélőhagyma),126,1,ízlés szerint,ÍZESÍTŐ,NULL
+768,83,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+769,83,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+770,84,Csirkemellfilé,42,140,g,FŐ_MAKRO,NULL
+771,84,Quinoa,148,50,g,FŐ_MAKRO,R84-A
+772,84,Víz / Alaplé,197 / 5,150,ml,KÖTÖTT,R84-A
+773,84,Lilahagyma,115,1,db,KIEGÉSZÍTŐ,NULL
+774,84,Kaliforniai paprika,89,1,db,KIEGÉSZÍTŐ,NULL
+775,84,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+776,84,Oregánó,134,1,teáskanál,ÍZESÍTŐ,NULL
+777,84,Kakukkfű,88,1,teáskanál,ÍZESÍTŐ,NULL
+778,84,Fokhagyma granulátum,68,0.5,teáskanál,ÍZESÍTŐ,NULL
+779,84,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+780,84,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+781,85,Lazacfilé,112,150,g,FŐ_MAKRO,NULL
+782,85,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+783,85,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+784,85,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+785,85,Chili pehely / Friss chili,28,1,ízlés szerint,ÍZESÍTŐ,NULL
+786,85,Só,165,1,csipet,ÍZESÍTŐ,NULL
+787,85,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+788,86,Marhafelsál,123,150,g,FŐ_MAKRO,NULL
+789,86,Hajdina,80,50,g,FŐ_MAKRO,R86-A
+790,86,Víz,197,150,ml,KÖTÖTT,R86-A
+791,86,Csiperkegomba,77,200,g,KIEGÉSZÍTŐ,NULL
+792,86,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+793,86,Kakukkfű,88,1,teáskanál,ÍZESÍTŐ,NULL
+794,86,Fokhagyma granulátum,68,1,teáskanál,ÍZESÍTŐ,NULL
+795,86,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+796,86,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+797,87,Marhafelsál,123,150,g,FŐ_MAKRO,NULL
+798,87,Kuszkusz (teljes kiőrlésű),111,50,g,FŐ_MAKRO,R87-A
+799,87,Forró víz,197,100,ml,KÖTÖTT,R87-A
+800,87,Paprika,137,200,g,KIEGÉSZÍTŐ,NULL
+801,87,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+802,87,Füstölt paprika,72,1,teáskanál,ÍZESÍTŐ,NULL
+803,87,Koriander (őrölt),105,1,teáskanál,ÍZESÍTŐ,NULL
+804,87,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+805,87,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+806,88,Marhahús felsál,123,150,g,FŐ_MAKRO,NULL
+807,88,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+808,88,Brokkoli,21,1,db,KIEGÉSZÍTŐ,NULL
+809,88,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+810,88,Rozmaring,155,1,teáskanál,ÍZESÍTŐ,NULL
+811,88,Fokhagyma granulátum,68,1,teáskanál,ÍZESÍTŐ,NULL
+812,88,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+813,88,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+814,89,Marhafelsál,123,150,g,FŐ_MAKRO,NULL
+815,89,Vöröslencse,200,50,g,FŐ_MAKRO,NULL
+816,89,Karfiol,92,0.5,db,KIEGÉSZÍTŐ,NULL
+817,89,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+818,89,Római kömény,154,1,teáskanál,ÍZESÍTŐ,NULL
+819,89,Koriander (őrölt),105,0.5,teáskanál,ÍZESÍTŐ,NULL
+820,89,Chili pehely,28,1,csipet,ÍZESÍTŐ,NULL
+821,89,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+822,89,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+823,90,Marhahús felsál,123,150,g,FŐ_MAKRO,NULL
+824,90,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+825,90,Brokkoli,21,1,db,KIEGÉSZÍTŐ,NULL
+826,90,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+827,90,Rozmaring,155,1,teáskanál,ÍZESÍTŐ,NULL
+828,90,Fokhagyma granulátum,68,0.5,teáskanál,ÍZESÍTŐ,NULL
+829,90,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+830,90,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+831,91,Tojás,183,2,db,FŐ_MAKRO,NULL
+832,91,Kovászos kenyér (teljes kiőrlésű),106,20,g,FŐ_MAKRO,NULL
+833,91,Paprika,137,30,g,KIEGÉSZÍTŐ,NULL
+834,91,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+835,91,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+836,91,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+837,91,Füstölt paprika,72,1,csipet,ÍZESÍTŐ,NULL
+838,92,Pulykamellfilé,147,130,g,FŐ_MAKRO,NULL
+839,92,Hajdina,80,40,g,FŐ_MAKRO,R92-A
+840,92,Víz,197,100,ml,KÖTÖTT,R92-A
+841,92,Lilahagyma,115,1,db,KIEGÉSZÍTŐ,NULL
+842,92,Cukkini,44,1,db,KIEGÉSZÍTŐ,NULL
+843,92,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+844,92,Majoránna,118,1,teáskanál,ÍZESÍTŐ,NULL
+845,92,Paprikapehely,138,1,teáskanál,ÍZESÍTŐ,NULL
+846,92,Fokhagyma granulátum,68,0.5,teáskanál,ÍZESÍTŐ,NULL
+847,92,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+848,92,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+849,93,Darált pulykamell,47,150,g,FŐ_MAKRO,R93-A
+850,93,Tojás,183,1,db,KÖTÖTT,R93-A
+851,93,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R93-B
+852,93,Víz,197,150,ml,KÖTÖTT,R93-B
+853,93,Fagyasztott zöldbab,62,150,g,KIEGÉSZÍTŐ,NULL
+854,93,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+855,93,Fűszerpaprika,75,1,teáskanál,ÍZESÍTŐ,NULL
+856,93,Majoránna,118,0.5,teáskanál,ÍZESÍTŐ,NULL
+857,93,Fokhagyma granulátum,68,0.5,teáskanál,ÍZESÍTŐ,NULL
+858,93,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+859,93,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+860,94,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+861,94,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R94-A
+862,94,Víz,197,150,ml,KÖTÖTT,R94-A
+863,94,Kelkáposztalevél,95,100,g,KIEGÉSZÍTŐ,NULL
+864,94,Lilahagyma,115,1,db,ÍZESÍTŐ,NULL
+865,94,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+866,94,Majoránna,118,1,teáskanál,ÍZESÍTŐ,NULL
+867,94,Paprikapehely,138,1,teáskanál,ÍZESÍTŐ,NULL
+868,94,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+869,94,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+870,95,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,R95-A
+871,95,Víz,197,100,ml,KÖTÖTT,R95-A
+872,95,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+873,95,Garnélarák (nyers),76,90,g,FŐ_MAKRO,NULL
+874,95,Avokádó,13,35,g,FŐ_MAKRO,NULL
+875,95,Kaliforniai paprika,89,70,g,KIEGÉSZÍTŐ,NULL
+876,95,Almaecet,8,1,evőkanál,KÖTÖTT,R95-A
+877,95,Só,165,1,csipet,KÖTÖTT,R95-A
+878,96,Gyorsfőzésű barna rizs,151,55,g,FŐ_MAKRO,R96-A
+879,96,Víz,197,150,ml,KÖTÖTT,R96-A
+880,96,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+881,96,Garnélarák (nyers),76,90,g,FŐ_MAKRO,NULL
+882,96,Retek,149,50,g,KIEGÉSZÍTŐ,NULL
+883,96,Almaecet,8,2,evőkanál,KÖTÖTT,R96-A
+884,96,Só,165,1,csipet,KÖTÖTT,R96-A
+885,97,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R97-A
+886,97,Víz,197,150,ml,KÖTÖTT,R97-A
+887,97,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+888,97,Garnélarák (nyers),76,90,g,FŐ_MAKRO,NULL
+889,97,Rukkola,157,1,marék (20g),KIEGÉSZÍTŐ,NULL
+890,97,Édesburgonya,53,20,g,KIEGÉSZÍTŐ,NULL
+891,97,Almaecet,8,1,evőkanál,KÖTÖTT,R97-A
+892,97,Só,165,1,csipet,KÖTÖTT,R97-A
+893,98,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R98-A
+894,98,Víz,197,150,ml,KÖTÖTT,R98-A
+895,98,Almaecet,8,2,evőkanál,KÖTÖTT,R98-A
+896,98,Só,165,1,csipet,KÖTÖTT,R98-A
+897,98,Garnélarák (nyers),76,90,g,FŐ_MAKRO,NULL
+898,98,Sárgarépa,160,30,g,KIEGÉSZÍTŐ,NULL
+899,98,Koriander (friss),105,1,marék (5g),ÍZESÍTŐ,NULL
+900,98,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+901,98,Lime,116,1,pici,ÍZESÍTŐ,NULL
+902,99,Csiperkegomba,77,150,g,FŐ_MAKRO,R99-A
+903,99,Vöröshagyma,199,1,db,KÖTÖTT,R99-A
+904,99,Sárgarépa,160,50,g,KÖTÖTT,R99-A
+905,99,Paprika,137,50,g,KÖTÖTT,R99-A
+906,99,Paradicsom,139,50,g,KÖTÖTT,R99-A
+907,99,Leveskocka,234,1,db,ÍZESÍTŐ,NULL
+908,99,Víz,197,400,ml,KÖTÖTT,R99-A
+909,99,Kókusztejszín,270,100,g,KÖTÖTT,R99-A
+910,100,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+911,100,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+912,100,Édesnemes pirospaprika,52,2,teáskanál,ÍZESÍTŐ,NULL
+913,100,Csiperkegomba,77,150,g,FŐ_MAKRO,R100-A
+914,100,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+915,100,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+916,100,Majoranna,118,0.5,teáskanál,ÍZESÍTŐ,NULL
+917,100,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+918,100,Zabliszt,203,15,g,KÖTÖTT,R100-A
+919,100,Vegán tejföl,180,15,g,KÖTÖTT,R100-A
+920,100,Petrezselyem (friss),142,1,ízlés szerint,ÍZESÍTŐ,NULL
+921,100,Tészta,182,40,g,FŐ_MAKRO,NULL
+922,101,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+923,101,Csiperkegomba,77,150,g,KÖTÖTT,R101-A
+924,101,Basmati rizs,18,40,g,FŐ_MAKRO,R101-A
+925,101,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+926,101,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+927,101,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+928,101,Víz / Alaplé,197 / 5,200,ml,KÖTÖTT,R101-A
+929,101,Só,165,1,ízlés szerint,ÍZESÍTŐ,NULL
+930,101,Fekete bors,226,1,ízlés szerint,ÍZESÍTŐ,NULL
+931,101,Kakukkfű,88,1,ízlés szerint,ÍZESÍTŐ,NULL
+932,101,Petrezselyem,142,1,ízlés szerint,ÍZESÍTŐ,NULL
+933,102,Tojás,183,2,db,FŐ_MAKRO,NULL
+934,102,Csiperkegomba,77,100,g,KIEGÉSZÍTŐ,NULL
+935,102,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+936,102,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+937,102,Friss rozmaring,155,1,ízlés szerint,ÍZESÍTŐ,NULL
+938,103,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+939,103,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+940,103,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+941,103,Gomba,77,150,g,KIEGÉSZÍTŐ,NULL
+942,103,Cukkini,44,150,g,KIEGÉSZÍTŐ,NULL
+943,104,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+944,104,Csirkemellfilé,42,80,g,FŐ_MAKRO,NULL
+945,104,Pesto,143,5,g,FŐ_MAKRO,NULL
+946,104,Rukkola,157,15,g,KIEGÉSZÍTŐ,NULL
+947,105,Pulykamellfilé,147,140,g,FŐ_MAKRO,NULL
+948,105,Quinoa,148,50,g,FŐ_MAKRO,NULL
+949,105,Kelbimbó,94,150,g,KIEGÉSZÍTŐ,NULL
+950,105,Lilahagyma,115,30,g,KIEGÉSZÍTŐ,NULL
+951,105,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+952,105,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+953,105,Majoránna,118,0.5,teáskanál,ÍZESÍTŐ,NULL
+954,106,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+955,106,Pulykamell sonka (sovány),2,50,g,FŐ_MAKRO,NULL
+956,106,Zöldpaprika,267,50,g,KIEGÉSZÍTŐ,NULL
+957,106,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+958,106,Füstölt paprika,72,1,ízlés szerint,ÍZESÍTŐ,NULL
+959,107,Avokádó,13,100,g,FŐ_MAKRO,NULL
+960,107,Kókuszjoghurt,100,1,evőkanál,KIEGÉSZÍTŐ,NULL
+961,107,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+962,107,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+963,107,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+964,107,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+965,108,Csirkemellfilé,42,80,g,FŐ_MAKRO,NULL
+966,108,Vöröshagyma,199,1,db (kicsi),ÍZESÍTŐ,NULL
+967,108,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+968,108,Sárgarépa,160,0.5,db,KIEGÉSZÍTŐ,NULL
+969,108,Fehérrépa,225,0.5,db,KIEGÉSZÍTŐ,NULL
+970,108,Zellergumó,171,50,g,KIEGÉSZÍTŐ,NULL
+971,108,Burgonya,216,50,g,FŐ_MAKRO,NULL
+972,108,Paradicsom,139,1,db (kicsi),KIEGÉSZÍTŐ,NULL
+973,108,Lecsópaprika,113,1,db (kicsi),KIEGÉSZÍTŐ,NULL
+974,108,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+975,108,Édes fűszerpaprika,52,0.5,teáskanál,ÍZESÍTŐ,NULL
+976,108,Babérlevél,15,1,db,ÍZESÍTŐ,NULL
+977,109,Kókuszjoghurt,100,100,g,FŐ_MAKRO,R109-A
+978,109,Növényi fehérjepor,196,15,g,KÖTÖTT,R109-A
+979,109,Chiamag,26,10,g,KÖTÖTT,R109-A
+980,109,Áfonya,14,30,g,KIEGÉSZÍTŐ,NULL
+981,109,Mandula,120,10,g,FŐ_MAKRO,NULL
+982,110,Zabpehely,204,20,g,FŐ_MAKRO,R110-A
+983,110,Vegán fehérjepor,196,30,g,KÖTÖTT,R110-A
+984,110,Mogyoróvaj,127,15,g,KÖTÖTT,R110-A
+985,110,Víz / Növényi tej,197 / 102,2,teáskanál,KÖTÖTT,R110-A
+986,111,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+987,111,Gyros fűszerkeverék,228,2,teáskanál,ÍZESÍTŐ,NULL
+988,111,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+989,111,Paprika,137,0.5,db,KIEGÉSZÍTŐ,NULL
+990,111,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+991,111,Kígyóuborka,98,0.5,db,KIEGÉSZÍTŐ,NULL
+992,111,Kókuszjoghurt,100,50,g,FŐ_MAKRO,NULL
+993,111,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+994,111,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+995,111,Burgonya,216,150,g,FŐ_MAKRO,NULL
+996,111,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+997,112,Csirkemáj (nyers),221,200,g,FŐ_MAKRO,NULL
+998,112,Vöröshagyma,199,1,db (kicsi),KIEGÉSZÍTŐ,NULL
+999,112,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1000,112,Burgonya,216,150,g,FŐ_MAKRO,NULL
+1001,112,Kókuszzsír,103,5,g,FŐ_MAKRO,NULL
+1002,113,Burgonya,216,150,g,FŐ_MAKRO,R113-A
+1003,113,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,NULL
+1004,113,Víz,197,200,ml,KÖTÖTT,R113-A
+1005,113,Ecet (20%),50,0.5,ek,KÖTÖTT,R113-A
+1006,113,Édesítőszer,54,1,ízlés szerint,ÍZESÍTŐ,NULL
+1007,114,Harcsafilé,82,150,g,FŐ_MAKRO,R114-A
+1008,114,Vöröshagyma,199,1,db (kisebb),KÖTÖTT,R114-A
+1009,114,Paprika,137,0.5,db,KÖTÖTT,R114-A
+1010,114,Paradicsom,139,1,db,KÖTÖTT,R114-A
+1011,114,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1012,114,Víz,197,600,ml,KÖTÖTT,R114-A
+1013,115,Teljes kiőrlésű hamburger zsemle,250,1,db (60g),FŐ_MAKRO,NULL
+1014,115,Sovány marha hamburgerhús,245,1,db (100g),FŐ_MAKRO,NULL
+1015,115,Cukormentes ketchup,35,30,g,KIEGÉSZÍTŐ,NULL
+1016,115,Savanyú uborka,273,50,g,KIEGÉSZÍTŐ,NULL
+1017,115,Paradicsom,139,3,karika,KIEGÉSZÍTŐ,NULL
+1018,115,Vöröshagyma,199,1,ízlés szerint,KIEGÉSZÍTŐ,NULL
+1019,116,Harcsafilé,82,200,g,FŐ_MAKRO,NULL
+1020,116,Basmati rizs,18,50,g,FŐ_MAKRO,NULL
+1021,116,Bébispenót,20,200,g,KIEGÉSZÍTŐ,NULL
+1022,116,Koktélparadicsom,104,100,g,KIEGÉSZÍTŐ,NULL
+1023,116,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1024,116,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1025,117,Lencse (konzerv),114,150,g,FŐ_MAKRO,NULL
+1026,117,Füstölt tofu,74,150,g,FŐ_MAKRO,NULL
+1027,117,Lilahagyma,115,0.5,db,KIEGÉSZÍTŐ,NULL
+1028,117,Kaliforniai paprika,89,0.5,db,KIEGÉSZÍTŐ,NULL
+1029,117,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1030,118,Teljes kiőrlésű kifli,251,1,db (60g),FŐ_MAKRO,NULL
+1031,118,Virsli,264,150,g,FŐ_MAKRO,NULL
+1032,118,Uborka,98,40,g,KIEGÉSZÍTŐ,NULL
+1033,118,Paradicsom,139,40,g,KIEGÉSZÍTŐ,NULL
+1034,118,Cukormentes mustár,37,30,g,KIEGÉSZÍTŐ,NULL
+1035,118,Cukormentes ketchup,35,30,g,KIEGÉSZÍTŐ,NULL
+1036,119,Kaliforniai paprika,89,50,g,KIEGÉSZÍTŐ,NULL
+1037,119,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+1038,119,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1039,119,Humusz,83,35,g,FŐ_MAKRO,NULL
+1040,120,Teljes kiőrlésű tortilla lap,187,1,db (55g),FŐ_MAKRO,NULL
+1041,120,Humusz,83,15,g,FŐ_MAKRO,NULL
+1042,120,Vegyes zöldség,210,150,g,KIEGÉSZÍTŐ,NULL
+1043,120,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+1044,121,Csirkemellfilé,42,150,g,FŐ_MAKRO,R121-A
+1045,121,Sárgarépa,160,0.5,db,KÖTÖTT,R121-A
+1046,121,Fehérrépa,225,0.5,db,KÖTÖTT,R121-A
+1047,121,Karalábé,91,0.5,db,KÖTÖTT,R121-A
+1048,121,Zellergumó,171,50,g,KÖTÖTT,R121-A
+1049,121,Vöröshagyma,199,1,db (kicsi),KÖTÖTT,R121-A
+1050,121,Paprika,137,0.5,db,KÖTÖTT,R121-A
+1051,121,Víz,197,400,ml,KÖTÖTT,R121-A
+1052,122,Zabpehely,204,20,g,FŐ_MAKRO,R122-A
+1053,122,szezámmag,263,10,g,KÖTÖTT,R122-A
+1054,122,Mogyoróvaj,127,15,g,KÖTÖTT,R122-A
+1055,122,Folyékony édesítőszer,54,0.5,teáskanál,KÖTÖTT,R122-A
+1056,122,Aszalt szilva,12,5,g,KIEGÉSZÍTŐ,NULL
+1057,123,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1058,123,Bulgur,22,40,g,FŐ_MAKRO,NULL
+1059,123,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+1060,123,Kurkuma,110,1,teáskanál,ÍZESÍTŐ,NULL
+1061,123,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1062,124,Gyorsfőzésű barna rizs,151,20,g,FŐ_MAKRO,NULL
+1063,124,Csicseriborsó (konzerv),40,75,g,FŐ_MAKRO,NULL
+1064,124,Koktélparadicsom,104,100,g,KIEGÉSZÍTŐ,NULL
+1065,124,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1066,124,Lilahagyma,115,20,g,KIEGÉSZÍTŐ,NULL
+1067,124,Olívaolaj,132,5,g,FŐ_MAKRO,NULL
+1068,124,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1069,124,Curry por,38,0.5,teáskanál,ÍZESÍTŐ,NULL
+1070,124,Római kömény,154,0.5,teáskanál,ÍZESÍTŐ,NULL
+1071,124,Koriander (friss),105,2,evőkanál,ÍZESÍTŐ,NULL
+1072,125,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1073,125,Vörös lencse (konzerv),114,100,g,FŐ_MAKRO,NULL
+1074,125,Brokkoli,21,100,g,KIEGÉSZÍTŐ,NULL
+1075,125,Kurkuma,110,0.5,teáskanál,ÍZESÍTŐ,NULL
+1076,125,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1077,126,Kókuszjoghurt,100,120,g,FŐ_MAKRO,R126-A
+1078,126,Vegán fehérjepor,196,15,g,KÖTÖTT,R126-A
+1079,126,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+1080,126,Vegán tejszínhab,262,50,g,FŐ_MAKRO,NULL
+1081,126,Zabpehely,204,15,g,FŐ_MAKRO,NULL
+1082,127,Sertéskaraj,163,180,g,FŐ_MAKRO,NULL
+1083,127,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+1084,127,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1085,127,Vegán vaj,192,2.5,g,FŐ_MAKRO,R127-A
+1086,127,Zabliszt,203,1,teáskanál,KÖTÖTT,R127-A
+1087,127,Növényi tej,102,15,ml,KÖTÖTT,R127-A
+1088,127,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1089,128,Karalábé,91,200,g,FŐ_MAKRO,R128-A
+1090,128,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+1091,128,Növényi tejszín (szója alapú),240,100,ml,KÖTÖTT,R128-A
+1092,128,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1093,128,Víz,197,500,ml,KÖTÖTT,R128-A
+1094,129,Karfiol,92,150,g,FŐ_MAKRO,R129-A
+1095,129,Burgonya,216,50,g,KÖTÖTT,R129-A
+1096,129,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1097,129,Víz,197,400,ml,KÖTÖTT,R129-A
+1098,129,Kókusztejszín,270,50,ml,KÖTÖTT,R129-A
+1099,130,Tojás,183,2,db,FŐ_MAKRO,R130-A
+1100,130,Vegán majonéz,235,15,g,KÖTÖTT,R130-A
+1101,130,Cukormentes mustár,37,2,teáskanál,ÍZESÍTŐ,NULL
+1102,130,Vegán tejföl,180,10,g,KÖTÖTT,R130-A
+1103,131,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+1104,131,Avokádó,13,45,g,FŐ_MAKRO,NULL
+1105,131,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1106,131,Chili pehely,28,1,ízlés szerint,ÍZESÍTŐ,NULL
+1107,132,Tojás (keményre főtt),183,1,db,FŐ_MAKRO,NULL
+1108,132,Pulykamell sonka (sovány),2,50,g,FŐ_MAKRO,NULL
+1109,132,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1110,132,Retek,149,50,g,KIEGÉSZÍTŐ,NULL
+1111,133,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1112,133,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+1113,133,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+1114,133,Salátalevél,159,20,g,KIEGÉSZÍTŐ,NULL
+1115,134,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1116,134,Tojás (keményre főtt),183,1,db,FŐ_MAKRO,NULL
+1117,134,Retek,149,50,g,KIEGÉSZÍTŐ,R134-A
+1118,134,Almaecet,8,1,evőkanál,KÖTÖTT,R134-A
+1119,134,Víz,197,1,evőkanál,KÖTÖTT,R134-A
+1120,135,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1121,135,Virsli,264,60,g,FŐ_MAKRO,NULL
+1122,135,Retek,149,50,g,KIEGÉSZÍTŐ,NULL
+1123,135,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+1124,136,Kókuszjoghurt,100,120,g,FŐ_MAKRO,R136-A
+1125,136,Növényi fehérjepor,196,25,g,FŐ_MAKRO,R136-A
+1126,136,Alma,7,100,g,KIEGÉSZÍTŐ,NULL
+1127,136,Őrölt fahéj,63,0.5,teáskanál,ÍZESÍTŐ,NULL
+1128,136,Vegyes bogyós gyümölcs,60,100,g,KIEGÉSZÍTŐ,NULL
+1129,136,Mandula,120,10,g,KIEGÉSZÍTŐ,NULL
+1130,137,Kókuszjoghurt,100,150,g,FŐ_MAKRO,R137-A
+1131,137,Mogyoróvaj,127,15,g,FŐ_MAKRO,R137-A
+1132,137,Vegán fehérjepor,196,10,g,FŐ_MAKRO,R137-A
+1133,137,Fagyasztott áfonya,14,40,g,KIEGÉSZÍTŐ,NULL
+1134,137,Cukormentes granola,218,15,g,FŐ_MAKRO,NULL
+1135,138,Hajdina,80,40,g,FŐ_MAKRO,R138-A
+1136,138,Növényi fehérjepor,196,20,g,FŐ_MAKRO,R138-A
+1137,138,Kókuszreszelék,104,10,g,FŐ_MAKRO,R138-A
+1138,138,Mandula,120,20,g,FŐ_MAKRO,NULL
+1139,138,Bogyós gyümölcs,60,70,g,KIEGÉSZÍTŐ,NULL
+1140,138,Növényi tej,102,250,ml,KÖTÖTT,R138-A
+1141,139,Kókuszreszelék,104,10,g,FŐ_MAKRO,R139-A
+1142,139,Vaníliás vegán fehérjepor,196,20,g,FŐ_MAKRO,R139-A
+1143,139,Kókuszjoghurt,100,100,g,FŐ_MAKRO,R139-A
+1144,139,Vanília kivonat,194,1,pár csepp,ÍZESÍTŐ,NULL
+1145,140,Köles,107,30,g,FŐ_MAKRO,R140-A
+1146,140,Növényi tej,102,150,ml,KÖTÖTT,R140-A
+1147,140,Tojás,183,1,db,KÖTÖTT,R140-A
+1148,141,Köles,107,30,g,FŐ_MAKRO,R141-A
+1149,141,Víz,197,70,ml,KÖTÖTT,R141-A
+1150,141,Növényi tej,102,50,ml,KÖTÖTT,R141-A
+1151,141,Citromhéj,217,0.5,db,ÍZESÍTŐ,NULL
+1152,141,Rizsdara,152,10,g,KÖTÖTT,R141-A
+1153,141,Teljes kiőrlésű panírmorzsa,232,5,g,KIEGÉSZÍTŐ,NULL
+1154,142,Kuszkusz,111,40,g,FŐ_MAKRO,R142-A
+1155,142,Víz,197,100,ml,KÖTÖTT,R142-A
+1156,142,Vöröshagyma,199,1,db (kisebb),KIEGÉSZÍTŐ,NULL
+1157,142,Kápia paprika,230,80,g,KIEGÉSZÍTŐ,NULL
+1158,142,Kecskesajt,93,40,g,FŐ_MAKRO,NULL
+1159,143,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1160,143,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+1161,143,Lazacfilé,112,90,g,FŐ_MAKRO,NULL
+1162,143,Avokádó,13,35,g,FŐ_MAKRO,NULL
+1163,143,Kígyóuborka,98,20,g,KIEGÉSZÍTŐ,NULL
+1164,144,Nyers karfiol,92,90,g,FŐ_MAKRO,R144-A
+1165,144,Rizsecet,153,1,teáskanál,KÖTÖTT,R144-A
+1166,144,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,NULL
+1167,144,Avokádó,13,35,g,FŐ_MAKRO,NULL
+1168,144,Kígyóuborka,98,20,g,KIEGÉSZÍTŐ,NULL
+1169,144,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+1170,145,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1171,145,Lazacfilé,112,100,g,FŐ_MAKRO,NULL
+1172,145,Cukkini,44,150,g,KIEGÉSZÍTŐ,NULL
+1173,145,Kókuszolaj,103,2.5,g,FŐ_MAKRO,NULL
+1174,145,Olívaolaj,132,2.5,g,FŐ_MAKRO,NULL
+1175,145,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1176,145,Kapor (friss),90,10,g,ÍZESÍTŐ,NULL
+1177,146,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,R146-A
+1178,146,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+1179,146,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,NULL
+1180,146,Cukkini,44,50,g,KIEGÉSZÍTŐ,NULL
+1181,146,Kapor (friss),90,5,g,ÍZESÍTŐ,NULL
+1182,146,Almaecet,8,2,evőkanál,KÖTÖTT,R146-A
+1183,147,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1184,147,Édesburgonya,53,200,g,FŐ_MAKRO,NULL
+1185,147,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1186,147,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+1187,147,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1188,147,Rozmaring,155,1,ízlés szerint,ÍZESÍTŐ,NULL
+1189,148,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,R148-A
+1190,148,Víz,197,150,ml,KÖTÖTT,R148-A
+1191,148,Almaecet,8,1,evőkanál,KÖTÖTT,R148-A
+1192,148,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,NULL
+1193,148,Mangó,122,80,g,FŐ_MAKRO,NULL
+1194,148,Menta,125,1,pár levél,ÍZESÍTŐ,NULL
+1195,148,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+1196,149,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R149-A
+1197,149,Víz,197,150,ml,KÖTÖTT,R149-A
+1198,149,Nori lap,131,1,db,KIEGÉSZÍTŐ,NULL
+1199,149,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,NULL
+1200,149,Spárga,168,50,g,KIEGÉSZÍTŐ,NULL
+1201,149,Almaecet,8,2,evőkanál,KÖTÖTT,R149-A
+1202,150,Quinoa,148,50,g,FŐ_MAKRO,NULL
+1203,150,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1204,150,Spárga,168,150,g,KIEGÉSZÍTŐ,NULL
+1205,150,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1206,150,Kapor (friss),90,5,g,ÍZESÍTŐ,NULL
+1207,151,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R151-A
+1208,151,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+1209,151,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,NULL
+1210,151,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1211,151,Almaecet,8,2,evőkanál,KÖTÖTT,R151-A
+1212,152,Lazac konzerv,112,90,g,FŐ_MAKRO,R152-A
+1213,152,Kókuszjoghurt,100,20,g,KÖTÖTT,R152-A
+1214,152,Cukormentes mustár,37,0.5,teáskanál,ÍZESÍTŐ,NULL
+1215,152,Citromlé,31,1,pár csepp,ÍZESÍTŐ,NULL
+1216,153,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1217,153,Édesburgonya,53,100,g,FŐ_MAKRO,NULL
+1218,153,Rukkola,157,1,marék,KIEGÉSZÍTŐ,NULL
+1219,153,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1220,153,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1221,153,Citromlé,31,2,teáskanál,ÍZESÍTŐ,NULL
+1222,154,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1223,154,Spenót,169,1,marék,KIEGÉSZÍTŐ,NULL
+1224,154,Citromlé,31,1,ízlés szerint,ÍZESÍTŐ,NULL
+1225,154,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+1226,154,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1227,155,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+1228,155,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1229,155,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+1230,155,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+1231,155,Lazacfilé,112,200,g,FŐ_MAKRO,R155-A
+1232,155,Kókusztejszín,270,100,ml,KÖTÖTT,R155-A
+1233,156,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,NULL
+1234,156,Füstölt lazac,71,50,g,FŐ_MAKRO,NULL
+1235,156,Avokádó,13,50,g,FŐ_MAKRO,NULL
+1236,156,Citromlé,31,1,teáskanál,ÍZESÍTŐ,NULL
+1237,157,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1238,157,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+1239,157,Paprika,137,150,g,FŐ_MAKRO,R157-A
+1240,157,Paradicsom,139,150,g,KÖTÖTT,R157-A
+1241,157,Cukkini,44,200,g,KIEGÉSZÍTŐ,NULL
+1242,158,Vöröslencse konzerv,114,100,g,FŐ_MAKRO,R158-A
+1243,158,Tojás,183,2,db,KÖTÖTT,R158-A
+1244,158,Zabpehely,204,15,g,KÖTÖTT,R158-A
+1245,158,Vegyes zöldsaláta,159,200,g,KIEGÉSZÍTŐ,NULL
+1246,159,Lencsekonzerv,114,200,g,FŐ_MAKRO,NULL
+1247,159,Vöröshagyma,199,1,db (kisebb),KIEGÉSZÍTŐ,NULL
+1248,159,Sárgarépa,160,1,db,KIEGÉSZÍTŐ,NULL
+1249,159,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1250,159,Cukormentes mustár,37,1,ek,ÍZESÍTŐ,NULL
+1251,159,Ecet,50,0.5,tk,ÍZESÍTŐ,NULL
+1252,160,Quinoa,148,50,g,FŐ_MAKRO,R160-A
+1253,160,Víz,197,150,ml,KÖTÖTT,R160-A
+1254,160,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,NULL
+1255,160,Almaecet,8,1,evőkanál,KÖTÖTT,R160-A
+1256,161,Csirkemáj,221,80,g,FŐ_MAKRO,R161-A
+1257,161,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1258,161,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1259,161,Tojás,183,1,db,KÖTÖTT,R161-A
+1260,161,Zabliszt,203,20,g,KÖTÖTT,R161-A
+1261,161,Zöldség alaplé,5,400,ml,KÖTÖTT,R161-A
+1262,162,Csirkemáj,221,100,g,FŐ_MAKRO,R162-A
+1263,162,Vöröshagyma,199,1,db,KÖTÖTT,R162-A
+1264,162,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1265,162,Kókuszzsír,103,1,teáskanál,KÖTÖTT,R162-A
+1266,163,Málna,119,100,g,KIEGÉSZÍTŐ,NULL
+1267,163,Vegán mascarpone,260,50,g,FŐ_MAKRO,R163-A
+1268,163,Vegán fehérjepor,196,30,g,FŐ_MAKRO,R163-A
+1269,163,Növényi tej,102,30,ml,KÖTÖTT,R163-A
+1270,163,Gullon keksz,78,1,db,FŐ_MAKRO,NULL
+1271,163,Pisztácia,144,20,g,FŐ_MAKRO,NULL
+1272,164,Tojásfehérje,275,1,db,FŐ_MAKRO,R164-A
+1273,164,Szeletelt mandula,120,50,g,KÖTÖTT,R164-A
+1274,165,Sovány marhahús felsál,123,150,g,FŐ_MAKRO,NULL
+1275,165,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1276,165,Fagyasztott zöldbab,62,150,g,KIEGÉSZÍTŐ,NULL
+1277,165,Paprika,137,100,g,KIEGÉSZÍTŐ,NULL
+1278,165,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1279,166,Hajdina,80,50,g,FŐ_MAKRO,NULL
+1280,166,Sovány marhahús felsál,123,140,g,FŐ_MAKRO,NULL
+1281,166,Bébispenót,20,150,g,KIEGÉSZÍTŐ,NULL
+1282,166,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1283,166,Kókuszolaj,103,0.5,teáskanál,FŐ_MAKRO,NULL
+1284,166,Olívaolaj,132,0.5,teáskanál,FŐ_MAKRO,NULL
+1285,166,Balzsamecet,16,1,evőkanál,ÍZESÍTŐ,NULL
+1286,166,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1287,167,Quinoa,148,50,g,FŐ_MAKRO,NULL
+1288,167,Sovány marhahús felsál,123,140,g,FŐ_MAKRO,NULL
+1289,167,Spárga,168,150,g,KIEGÉSZÍTŐ,NULL
+1290,167,Kókuszolaj,103,0.5,teáskanál,FŐ_MAKRO,NULL
+1291,167,Olívaolaj,132,0.5,teáskanál,FŐ_MAKRO,NULL
+1292,167,Almaecet,8,1,evőkanál,ÍZESÍTŐ,NULL
+1293,167,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1294,168,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1295,168,Csicseriborsó (konzerv),40,150,g,FŐ_MAKRO,NULL
+1296,168,Koktélparadicsom,104,100,g,KIEGÉSZÍTŐ,NULL
+1297,168,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1298,168,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1299,168,Fekete olívabogyó,65,5,db,FŐ_MAKRO,NULL
+1300,168,Lilahagyma,115,50,g,KIEGÉSZÍTŐ,NULL
+1301,168,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1302,169,Vöröslencse,200,50,g,FŐ_MAKRO,NULL
+1303,169,Pulykamell sonka,2,90,g,FŐ_MAKRO,NULL
+1304,169,Koktélparadicsom,104,100,g,KIEGÉSZÍTŐ,NULL
+1305,169,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1306,169,Fekete olívabogyó,65,20,g,FŐ_MAKRO,NULL
+1307,169,Lilahagyma,115,40,g,KIEGÉSZÍTŐ,NULL
+1308,169,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1309,169,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1310,169,Oregánó,134,1,teáskanál,ÍZESÍTŐ,NULL
+1311,170,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1312,170,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1313,170,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+1314,170,Bazsalikom,19,5,levél,ÍZESÍTŐ,NULL
+1315,170,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1316,171,Csirkemell,42,150,g,FŐ_MAKRO,NULL
+1317,171,Fekete bab (konzerv),64,50,g,FŐ_MAKRO,NULL
+1318,171,Csemegekukorica,108,50,g,KIEGÉSZÍTŐ,NULL
+1319,171,Avokádó,13,50,g,FŐ_MAKRO,NULL
+1320,171,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+1321,172,Quinoa,148,30,g,FŐ_MAKRO,NULL
+1322,172,Fekete bab (konzerv),64,100,g,FŐ_MAKRO,NULL
+1323,172,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1324,172,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1325,172,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1326,173,Tojás,183,2,db,FŐ_MAKRO,NULL
+1327,173,Vegyes salátalevél,159,2,marék,KIEGÉSZÍTŐ,NULL
+1328,173,Csicseriborsó,40,50,g,FŐ_MAKRO,NULL
+1329,173,Kukorica,108,50,g,KIEGÉSZÍTŐ,NULL
+1330,173,Vöröshagyma,199,1,db (kisebb),KIEGÉSZÍTŐ,NULL
+1331,173,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+1332,173,Avokádó,13,50,g,FŐ_MAKRO,NULL
+1333,173,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,NULL
+1334,173,Olívaolaj,132,1,tk,FŐ_MAKRO,NULL
+1335,173,Citromlé,31,1,ek,ÍZESÍTŐ,NULL
+1336,174,Tojás,183,3,db,FŐ_MAKRO,R174-A
+1337,174,Bébispenót,20,30,g,KÖTÖTT,R174-A
+1338,174,"Növényi ""feta""",238,50,g,KÖTÖTT,R174-A
+1339,174,Újhagyma,258,1,szál,ÍZESÍTŐ,NULL
+1340,174,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1341,174,Kókuszolaj,103,0.5,teáskanál,FŐ_MAKRO,NULL
+1342,175,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+1343,175,Csirkemellfilé,42,150,g,FŐ_MAKRO,R175-A
+1344,175,Mogyoróvaj,127,20,g,FŐ_MAKRO,R175-A
+1345,175,Gyömbér (friss),79,5,g,ÍZESÍTŐ,NULL
+1346,175,Lime,116,0.5,db,ÍZESÍTŐ,NULL
+1347,175,Koriander (friss),105,1,ízlés szerint,ÍZESÍTŐ,NULL
+1348,175,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1349,176,Csirkemellfilé,42,150,g,FŐ_MAKRO,R176-A
+1350,176,Vöröshagyma,199,1,db (kicsi),ÍZESÍTŐ,NULL
+1351,176,Cukormentes mustár,37,30,g,KÖTÖTT,R176-A
+1352,176,Vegán tejföl,180,50,g,KÖTÖTT,R176-A
+1353,176,Kakukkfű,88,0.5,teáskanál,ÍZESÍTŐ,NULL
+1354,176,Olaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1355,176,Bulgur,22,40,g,FŐ_MAKRO,NULL
+1356,177,Tojás,183,2,db,FŐ_MAKRO,NULL
+1357,177,Vegyes salátalevél,159,2,marék,KIEGÉSZÍTŐ,NULL
+1358,177,Vöröshagyma,199,1,db (kisebb),KIEGÉSZÍTŐ,NULL
+1359,177,Koktélparadicsom,104,50,g,KIEGÉSZÍTŐ,NULL
+1360,177,Tonhal konzerv (sós lében),185,50,g,FŐ_MAKRO,NULL
+1361,177,Olívabogyó,65,30,g,FŐ_MAKRO,NULL
+1362,177,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,NULL
+1363,178,Csirkemellfilé,42,150,g,FŐ_MAKRO,R178-A
+1364,178,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+1365,178,Paradicsom,139,80,g,KIEGÉSZÍTŐ,NULL
+1366,178,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1367,178,Kápia paprika,230,50,g,KIEGÉSZÍTŐ,NULL
+1368,178,Olívabogyó,65,30,g,FŐ_MAKRO,NULL
+1369,178,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+1370,178,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1371,178,Paradicsompüré,140,15,g,KÖTÖTT,R178-A
+1372,178,Víz,197,80,ml,KÖTÖTT,R178-A
+1373,179,Csirkemellfilé,42,120,g,FŐ_MAKRO,NULL
+1374,179,Tojás,183,1,db,FŐ_MAKRO,NULL
+1375,179,Csemege uborka,33,30,g,KIEGÉSZÍTŐ,NULL
+1376,179,Alma,7,30,g,KIEGÉSZÍTŐ,NULL
+1377,179,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1378,179,Vegán tejföl,180,40,g,FŐ_MAKRO,NULL
+1379,179,Vegán majonéz,235,10,g,FŐ_MAKRO,NULL
+1380,179,Fehérborecet,50,0.5,teáskanál,ÍZESÍTŐ,NULL
+1381,180,Chia mag,26,35,g,FŐ_MAKRO,R180-A
+1382,180,Útifűmaghéj,191,3,g,KÖTÖTT,R180-A
+1383,180,Víz,197,170,ml,KÖTÖTT,R180-A
+1384,180,Kókuszjoghurt,100,70,g,FŐ_MAKRO,R180-A
+1385,180,Vegán fehérjepor,196,20,g,FŐ_MAKRO,R180-A
+1386,180,Fagyasztott bogyós gyümölcs,60,50,g,KIEGÉSZÍTŐ,NULL
+1387,180,Mogyoróvaj,127,15,g,FŐ_MAKRO,NULL
+1388,181,Padlizsán,136,1,db,FŐ_MAKRO,R181-A
+1389,181,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1390,181,Vegán majonéz,235,1,evőkanál,FŐ_MAKRO,R181-A
+1391,181,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1392,182,Csirkemellfilé,42,150,g,KÖTÖTT,R182-A
+1393,182,Basmati rizs,18,40,g,FŐ_MAKRO,R182-A
+1394,182,Vöröshagyma,199,0.5,db,KÖTÖTT,R182-A
+1395,182,Paradicsom,139,60,g,KÖTÖTT,R182-A
+1396,182,Sárgarépa,160,50,g,KÖTÖTT,R182-A
+1397,182,Víz / Alaplé,197 / 5,100,ml,KÖTÖTT,R182-A
+1398,183,Csirkemellfilé,42,80,g,FŐ_MAKRO,NULL
+1399,183,Kókuszzsír,103,0.5,ek,FŐ_MAKRO,NULL
+1400,183,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1401,183,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1402,183,Burgonya,216,100,g,FŐ_MAKRO,NULL
+1403,183,Zöldbab,62,70,g,KIEGÉSZÍTŐ,NULL
+1404,183,Sárgarépa,160,1,db,KIEGÉSZÍTŐ,NULL
+1405,183,Fehérrépa,225,0.5,db,KIEGÉSZÍTŐ,NULL
+1406,183,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1407,183,Paprika,137,0.5,db,KIEGÉSZÍTŐ,NULL
+1408,183,Babérlevél,15,1,db,ÍZESÍTŐ,NULL
+1409,183,Kókuszjoghurt,100,40,g,KIEGÉSZÍTŐ,NULL
+1410,183,Víz,197,500,ml,KIEGÉSZÍTŐ,NULL
+1411,183,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+1412,183,Kapor (friss),90,2,ek,ÍZESÍTŐ,NULL
+1413,184,Darált pulykamell,47,125,g,FŐ_MAKRO,R184-A
+1414,184,Basmati rizs,18,25,g,KÖTÖTT,R184-A
+1415,184,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1416,184,Paradicsompüré,140,250,ml,KÖTÖTT,R184-A
+1417,184,Víz,197,100,ml,KÖTÖTT,R184-A
+1418,184,Zabliszt,203,5,g,KÖTÖTT,R184-A
+1419,185,Fejes káposzta,215,230,g,FŐ_MAKRO,R185-A
+1420,185,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+1421,185,Paradicsompüré,140,100,ml,KÖTÖTT,R185-A
+1422,185,Zabliszt,203,1,teáskanál,KÖTÖTT,R185-A
+1423,185,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1424,185,Víz,197,100,ml,KÖTÖTT,R185-A
+1425,186,Tojás,183,2,db,FŐ_MAKRO,R186-A
+1426,186,Passzírozott paradicsom,140,100,g,KÖTÖTT,R186-A
+1427,186,Vöröshagyma,199,0.25,db,ÍZESÍTŐ,NULL
+1428,186,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1429,186,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1430,186,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1431,187,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1432,187,Füstölt lazac,71,50,g,FŐ_MAKRO,NULL
+1433,187,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+1434,187,Bazsalikom,19,2,g,ÍZESÍTŐ,NULL
+1435,188,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,NULL
+1436,188,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1437,188,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1438,188,Pesto,143,25,g,FŐ_MAKRO,R188-A
+1439,188,Kókusztejszín,270,45,g,KÖTÖTT,R188-A
+1440,188,Olaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1441,189,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1442,189,Tofu (kemény),255,100,g,FŐ_MAKRO,R189-A
+1443,189,Paprika,137,30,g,KÖTÖTT,R189-A
+1444,189,Kókuszolaj,103,5,g,FŐ_MAKRO,R189-A
+1445,190,Tofu (kemény),255,200,g,FŐ_MAKRO,R190-A
+1446,190,Tojás,183,1,db,KÖTÖTT,R190-A
+1447,190,Quinoa,148,50,g,FŐ_MAKRO,NULL
+1448,190,Kaliforniai paprika,89,1,db,KIEGÉSZÍTŐ,NULL
+1449,190,Lilahagyma,115,0.5,db,KIEGÉSZÍTŐ,NULL
+1450,190,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1451,191,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1452,191,Lencsekonzerv,114,150,g,FŐ_MAKRO,NULL
+1453,191,Cukkini,44,1,db (nagy),KIEGÉSZÍTŐ,NULL
+1454,191,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1455,192,Hajdina,80,50,g,FŐ_MAKRO,NULL
+1456,192,Tofu (kemény),255,150,g,FŐ_MAKRO,NULL
+1457,192,Kelkáposzta,95,100,g,KIEGÉSZÍTŐ,NULL
+1458,192,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1459,192,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1460,192,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1461,192,Chili pehely,28,0.5,teáskanál,ÍZESÍTŐ,NULL
+1462,192,Fokhagyma granulátum,68,0.5,teáskanál,ÍZESÍTŐ,NULL
+1463,193,Hajdina,80,50,g,FŐ_MAKRO,NULL
+1464,193,Tofu (kemény),255,150,g,FŐ_MAKRO,NULL
+1465,193,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1466,193,Lilahagyma,115,30,g,KIEGÉSZÍTŐ,NULL
+1467,193,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1468,193,Lime lé,116,1,evőkanál,ÍZESÍTŐ,NULL
+1469,193,Chili pehely,28,0.5,teáskanál,ÍZESÍTŐ,NULL
+1470,193,Római kömény,154,0.5,teáskanál,ÍZESÍTŐ,NULL
+1471,193,Koriander (friss),105,5,g,ÍZESÍTŐ,NULL
+1472,194,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1473,194,Vöröslencse,200,50,g,FŐ_MAKRO,NULL
+1474,194,Brokkoli,21,300,g,KIEGÉSZÍTŐ,NULL
+1475,194,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1476,194,"Fűszerek (római kömény, koriander, chili)",154,1,ízlés szerint,ÍZESÍTŐ,NULL
+1477,195,Tofu (kemény),255,150,g,FŐ_MAKRO,NULL
+1478,195,Fekete bab (konzerv),64,100,g,FŐ_MAKRO,NULL
+1479,195,Avokádó,13,35,g,FŐ_MAKRO,NULL
+1480,195,Kukorica (konzerv),108,50,g,KIEGÉSZÍTŐ,NULL
+1481,195,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1482,195,Lilahagyma,115,30,g,KIEGÉSZÍTŐ,NULL
+1483,195,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1484,196,Quinoa,148,50,g,FŐ_MAKRO,R196-A
+1485,196,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+1486,196,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+1487,196,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+1488,196,Olívabogyó,65,20,g,FŐ_MAKRO,NULL
+1489,196,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1490,196,Almaecet,8,1,evőkanál,KÖTÖTT,R196-A
+1491,197,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R197-A
+1492,197,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+1493,197,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+1494,197,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1495,197,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1496,197,Almaecet,8,1,evőkanál,KÖTÖTT,R197-A
+1497,198,Quinoa,148,50,g,FŐ_MAKRO,R198-A
+1498,198,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+1499,198,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+1500,198,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1501,198,Vöröshagyma,199,20,g,KIEGÉSZÍTŐ,NULL
+1502,198,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1503,198,Almaecet,8,1,evőkanál,KÖTÖTT,R198-A
+1504,199,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1505,199,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+1506,199,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+1507,199,Retek,149,30,g,KIEGÉSZÍTŐ,NULL
+1508,199,Kígyóuborka,98,30,g,KIEGÉSZÍTŐ,NULL
+1509,199,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1510,200,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1511,200,Tonhal sós lében,185,50,g,FŐ_MAKRO,R200-A
+1512,200,Kókuszjoghurt,100,15,g,KÖTÖTT,R200-A
+1513,200,Paprika,137,20,g,KIEGÉSZÍTŐ,NULL
+1514,201,Virsli,264,60,g,FŐ_MAKRO,NULL
+1515,201,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1516,201,Cukkini,44,50,g,KIEGÉSZÍTŐ,NULL
+1517,201,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1518,202,Zeller,172,100,g,KIEGÉSZÍTŐ,NULL
+1519,202,Alma,7,100,g,KIEGÉSZÍTŐ,NULL
+1520,202,Citromlé,31,15,ml,ÍZESÍTŐ,NULL
+1521,202,Sonka,166,50,g,FŐ_MAKRO,NULL
+1522,202,Földimogyoró,69,25,g,FŐ_MAKRO,NULL
+1523,202,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1524,202,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1525,202,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,NULL
+1526,203,Tojás,183,2,db,FŐ_MAKRO,NULL
+1527,203,Zöldpaprika,267,50,g,KIEGÉSZÍTŐ,NULL
+1528,203,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1529,203,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1530,204,Teljes kiőrlésű kenyér,106,50,g,FŐ_MAKRO,NULL
+1531,204,Paradicsom,139,100,g,KIEGÉSZÍTŐ,NULL
+1532,204,Uborka,98,100,g,KIEGÉSZÍTŐ,NULL
+1533,204,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1534,204,Sonka,166,50,g,FŐ_MAKRO,NULL
+1535,204,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1536,205,Virsli,264,60,g,FŐ_MAKRO,NULL
+1537,205,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1538,205,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+1539,205,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+1540,205,Almaecet,8,1,teáskanál,ÍZESÍTŐ,NULL
+1541,205,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1542,205,Víz,197,1,evőkanál,ÍZESÍTŐ,NULL
+1543,206,Pisztráng,145,250,g,FŐ_MAKRO,NULL
+1544,206,Szeletelt mandula,120,10,g,KIEGÉSZÍTŐ,NULL
+1545,206,Citrom,30,1,db,ÍZESÍTŐ,NULL
+1546,206,Olívaolaj,132,10,ml,FŐ_MAKRO,NULL
+1547,206,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1548,206,Vegyes zöldsaláta,159,50,g,KIEGÉSZÍTŐ,NULL
+1549,207,Sovány marhahús,123,100,g,FŐ_MAKRO,NULL
+1550,207,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1551,207,Paradicsompüré,140,20,g,ÍZESÍTŐ,NULL
+1552,207,Mogyoró (sótlan),69,10,g,FŐ_MAKRO,NULL
+1553,207,Basmati rizs,18,20,g,FŐ_MAKRO,NULL
+1554,207,Vajbab,193,40,g,KIEGÉSZÍTŐ,NULL
+1555,207,Kukorica,108,40,g,KIEGÉSZÍTŐ,NULL
+1556,207,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+1557,207,Avokádó,13,50,g,FŐ_MAKRO,NULL
+1558,207,Csíra,220,30,g,KIEGÉSZÍTŐ,NULL
+1559,207,Szezámmag,174,5,g,KIEGÉSZÍTŐ,NULL
+1560,208,Quinoa,148,20,g,FŐ_MAKRO,NULL
+1561,208,Füstölt lazac,71,100,g,FŐ_MAKRO,NULL
+1562,208,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+1563,208,Edamame bab,51,50,g,KIEGÉSZÍTŐ,NULL
+1564,208,Uborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1565,208,Gyömbér (friss),79,2,g,ÍZESÍTŐ,NULL
+1566,208,Lime lé,116,1,teáskanál,ÍZESÍTŐ,NULL
+1567,208,Szezámmag,174,10,g,FŐ_MAKRO,NULL
+1568,209,Csirkemellfilé,42,150,g,FŐ_MAKRO,R209-A
+1569,209,Kókuszzsír,103,1,evőkanál,FŐ_MAKRO,NULL
+1570,209,Cukormentes mustár,37,1,teáskanál,KÖTÖTT,R209-A
+1571,209,Póréhagyma,146,1,db,KIEGÉSZÍTŐ,NULL
+1572,209,Kókusztejszín,270,40,ml,KÖTÖTT,R209-A
+1573,209,Quinoa,148,40,g,FŐ_MAKRO,NULL
+1574,210,Tojás,183,1,db,FŐ_MAKRO,R210-A
+1575,210,Vegán fehérjepor,196,20,g,FŐ_MAKRO,R210-A
+1576,210,Keserű kakaópor,229,15,g,KÖTÖTT,R210-A
+1577,210,Mogyoróvaj,127,15,g,FŐ_MAKRO,R210-A
+1578,210,Növényi tej,102,30,ml,KÖTÖTT,R210-A
+1579,210,Étcsokoládé (min. 70%),34,15,g,FŐ_MAKRO,R210-A
+1580,211,Tojás,183,2,db,FŐ_MAKRO,R211-A
+1581,211,Vegán fehérjepor,196,20,g,FŐ_MAKRO,R211-A
+1582,211,Víz,197,50,ml,KÖTÖTT,R211-A
+1583,211,Zero vaníliás cukor,265,0.5,csomag,ÍZESÍTŐ,NULL
+1584,211,Kókuszzsír,103,10,g,FŐ_MAKRO,NULL
+1585,212,Növényi tej,102,250,ml,KÖTÖTT,R212-A
+1586,212,Csokis vegán fehérjepor,43,30,g,FŐ_MAKRO,R212-A
+1587,212,Csokis pudingpor,222,20,g,FŐ_MAKRO,R212-A
+1588,213,Növényi tej,102,250,ml,KÖTÖTT,R213-A
+1589,213,Vaníliás vegán fehérjepor,196,30,g,FŐ_MAKRO,R213-A
+1590,213,Vaníliás pudingpor,195,20,g,FŐ_MAKRO,R213-A
+1591,213,Zero vaníliás cukor,265,1,csomag,ÍZESÍTŐ,NULL
+1592,214,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1593,214,Vörösbab (konverv),198,150,g,FŐ_MAKRO,NULL
+1594,214,Paprika,137,100,g,KIEGÉSZÍTŐ,NULL
+1595,214,Lilahagyma,115,20,g,KIEGÉSZÍTŐ,NULL
+1596,214,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1597,214,Lime lé,116,1,evőkanál,ÍZESÍTŐ,NULL
+1598,215,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,R215-A
+1599,215,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1600,215,Cukormentes dijoni mustár,37,5,g,ÍZESÍTŐ,NULL
+1601,215,Olívaolaj,132,5,g,FŐ_MAKRO,R215-A
+1602,216,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1603,216,Kókuszzsír,103,5,g,FŐ_MAKRO,NULL
+1604,216,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1605,216,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1606,216,Gyömbér (friss),79,5,g,ÍZESÍTŐ,NULL
+1607,216,Kaliforniai paprika,89,70,g,KIEGÉSZÍTŐ,NULL
+1608,216,Brokkoli,21,70,g,KIEGÉSZÍTŐ,NULL
+1609,216,Currypor,38,1,teáskanál,ÍZESÍTŐ,NULL
+1610,216,Kurkuma,110,0.25,teáskanál,ÍZESÍTŐ,NULL
+1611,216,Zsírszegény kókusztej,102,150,ml,KIEGÉSZÍTŐ,NULL
+1612,216,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1613,216,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1614,217,pulykamell,147,130,g,FŐ_MAKRO,R217-A
+1615,217,Avokádó,13,50,g,FŐ_MAKRO,R217-A
+1616,217,Teljes kiőrlésű tortilla lap,187,1,db,FŐ_MAKRO,R217-A
+1617,217,Spenót,169,30,g,KIEGÉSZÍTŐ,R217-A
+1618,218,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1619,218,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1620,218,Paprika,137,1,db,KIEGÉSZÍTŐ,NULL
+1621,218,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+1622,218,Kókuszolaj,103,5,ml,FŐ_MAKRO,NULL
+1623,219,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1624,219,Quinoa,148,40,g,FŐ_MAKRO,NULL
+1625,219,Brokkoli,21,100,g,KIEGÉSZÍTŐ,NULL
+1626,219,Saláta,159,40,g,KIEGÉSZÍTŐ,NULL
+1627,220,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1628,220,Spenótlevél,169,30,g,KIEGÉSZÍTŐ,NULL
+1629,220,Vegyes salátalevél,159,30,g,KIEGÉSZÍTŐ,NULL
+1630,220,Tojás,183,1,db,FŐ_MAKRO,NULL
+1631,220,Avokádó,13,50,g,FŐ_MAKRO,NULL
+1632,220,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1633,220,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1634,221,Quinoa,148,40,g,FŐ_MAKRO,NULL
+1635,221,Lazacfilé,112,150,g,FŐ_MAKRO,NULL
+1636,221,Padlizsán,136,150,g,KIEGÉSZÍTŐ,NULL
+1637,222,Quinoa,148,40,g,FŐ_MAKRO,NULL
+1638,222,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1639,222,Zöldborsó,208,20,g,KIEGÉSZÍTŐ,NULL
+1640,222,Kaliforniai paprika,89,20,g,KIEGÉSZÍTŐ,NULL
+1641,222,Cukkini,44,30,g,KIEGÉSZÍTŐ,NULL
+1642,222,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1643,222,Tojásfehérje,275,1,db,FŐ_MAKRO,NULL
+1644,223,Csirkemellfilé,42,125,g,FŐ_MAKRO,R223-A
+1645,223,Basmati rizs,18,20,g,FŐ_MAKRO,R223-A
+1646,223,"Vegyes zöldség (brokkoli, karfiol...)",210,250,g,KIEGÉSZÍTŐ,R223-A
+1647,223,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,R223-A
+1648,223,Kókuszjoghurt,100,75,g,KIEGÉSZÍTŐ,R223-A
+1649,224,Csirkemellfilé,42,150,g,FŐ_MAKRO,R224-A
+1650,224,Cukkini,44,100,g,KIEGÉSZÍTŐ,R224-A
+1651,224,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,R224-A
+1652,224,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,R224-A
+1653,224,Basmati rizs,18,20,g,FŐ_MAKRO,R224-A
+1654,224,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,R224-A
+1655,225,Burgonya,216,150,g,FŐ_MAKRO,R225-A
+1656,225,Tojás,183,3,db,FŐ_MAKRO,R225-A
+1657,225,Csirkemell sonka,166,60,g,FŐ_MAKRO,R225-A
+1658,225,Vegán tejföl,180,50,g,KIEGÉSZÍTŐ,R225-A
+1659,226,Csirkemellfilé,42,130,g,FŐ_MAKRO,R226-A
+1660,226,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,R226-A
+1661,226,Basmati rizs,18,30,g,FŐ_MAKRO,R226-A
+1662,226,Savanyúkáposzta,161,150,g,KIEGÉSZÍTŐ,R226-A
+1663,226,Paradicsomszósz,241,100,g,KIEGÉSZÍTŐ,R226-A
+1664,226,Vegán tejföl,180,50,g,KIEGÉSZÍTŐ,R226-A
+1665,226,Olaj,132,1,teáskanál,FŐ_MAKRO,R226-A
+1666,227,Brokkoli,21,200,g,KIEGÉSZÍTŐ,R227-A
+1667,227,Zabliszt,203,15,g,FŐ_MAKRO,R227-A
+1668,227,Tojás,183,1,db,FŐ_MAKRO,R227-A
+1669,227,Teljes kiőrlésű zsemlemorzsa,211,35,g,FŐ_MAKRO,R227-A
+1670,228,Cukkini,44,200,g,KIEGÉSZÍTŐ,R228-A
+1671,228,Zabliszt,203,20,g,FŐ_MAKRO,R228-A
+1672,228,Tojás,183,1,db,FŐ_MAKRO,R228-A
+1673,228,Teljes kiőrlésű zsemlemorzsa,211,35,g,FŐ_MAKRO,R228-A
+1674,229,Gomba/Cukkini/Brokkoli,77/44/21,200,g,KIEGÉSZÍTŐ,R229-A
+1675,229,Zabliszt,203,35,g,FŐ_MAKRO,R229-A
+1676,229,Tojás,183,1,db,FŐ_MAKRO,R229-A
+1677,229,Teljes kiőrlésű zsemlemorzsa,211,35,g,FŐ_MAKRO,R229-A
+1678,230,Csirkemellfilé,42,150,g,FŐ_MAKRO,R230-A
+1679,230,Zabliszt,203,10,g,FŐ_MAKRO,R230-A
+1680,230,Tojás,183,1,db,FŐ_MAKRO,R230-A
+1681,230,Teljes kiőrlésű zsemlemorzsa,211,10,g,FŐ_MAKRO,R230-A
+1682,230,Szezámmag,176,5,g,FŐ_MAKRO,R230-A
+1683,231,Tojás,183,2,db,FŐ_MAKRO,NULL
+1684,231,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1685,231,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1686,231,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1687,232,Tojás,183,1,db,FŐ_MAKRO,R232-A
+1688,232,Növényi tej,102,320,ml,KIEGÉSZÍTŐ,R232-A
+1689,232,Zero vaníliás cukor,265,1,csomag,ÍZESÍTŐ,R232-A
+1690,233,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+1691,233,Sonka,166,50,g,FŐ_MAKRO,NULL
+1692,233,Avokádó,13,40,g,FŐ_MAKRO,NULL
+1693,233,Koktélparadicsom,104,5,db,KIEGÉSZÍTŐ,NULL
+1694,233,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1695,234,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1696,234,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1697,234,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,NULL
+1698,234,Sűrített paradicsompüré,140,15,g,KIEGÉSZÍTŐ,NULL
+1699,234,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1700,235,Basmati rizs,18,50,g,FŐ_MAKRO,R235-A
+1701,235,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,R235-A
+1702,235,Csiperkegomba,77,50,g,KIEGÉSZÍTŐ,R235-A
+1703,235,Tojás,183,1,db,FŐ_MAKRO,R235-A
+1704,236,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,R236-A
+1705,236,Salátalevél,159,1,marék,KIEGÉSZÍTŐ,R236-A
+1706,236,Vegán tejföl,180,25,g,KIEGÉSZÍTŐ,R236-A
+1707,236,Sonka,166,50,g,FŐ_MAKRO,R236-A
+1708,236,Tojás (keményre főtt),183,1,db,FŐ_MAKRO,R236-A
+1709,236,Paradicsom,139,1,db,KIEGÉSZÍTŐ,R236-A
+1710,236,Avokádó,13,25,g,FŐ_MAKRO,R236-A
+1711,237,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R237-A
+1712,237,Víz,197,150,ml,KÖTÖTT,R237-A
+1713,237,Nori lap,131,2,db,KÖTÖTT,R237-A
+1714,237,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,R237-A
+1715,237,Almaecet,8,1.5,evőkanál,ÍZESÍTŐ,R237-A
+1716,238,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R238-A
+1717,238,Víz,197,150,ml,KÖTÖTT,R238-A
+1718,238,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,R238-A
+1719,238,Almaecet,8,1,evőkanál,ÍZESÍTŐ,R238-A
+1720,239,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R239-A
+1721,239,Víz,197,150,ml,KÖTÖTT,R239-A
+1722,239,Lazacfilé (sushi minőségű),112,90,g,FŐ_MAKRO,R239-A
+1723,239,Citromlé,31,1,teáskanál,ÍZESÍTŐ,R239-A
+1724,239,Almaecet,8,1,evőkanál,ÍZESÍTŐ,R239-A
+1725,240,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+1726,240,Cukkini,44,110,g,KIEGÉSZÍTŐ,NULL
+1727,240,Kaliforniai paprika,89,75,g,KIEGÉSZÍTŐ,NULL
+1728,240,Lilahagyma,115,30,g,KIEGÉSZÍTŐ,NULL
+1729,240,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+1730,240,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1731,240,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1732,240,Szezámmag,174,1,teáskanál,ÍZESÍTŐ,NULL
+1733,241,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1734,241,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+1735,241,Kapor (friss),90,1,evőkanál,ÍZESÍTŐ,NULL
+1736,241,Cukkini,44,150,g,KIEGÉSZÍTŐ,NULL
+1737,241,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1738,241,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1739,242,Tojás,183,2,db,FŐ_MAKRO,R242-A
+1740,242,Kaliforniai paprika,89,100,g,KIEGÉSZÍTŐ,R242-A
+1741,242,Cukkini,44,100,g,KIEGÉSZÍTŐ,R242-A
+1742,242,Paradicsom,139,100,g,KIEGÉSZÍTŐ,R242-A
+1743,242,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,R242-A
+1744,242,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,R242-A
+1745,242,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,R242-A
+1746,243,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1747,243,Fekete erdei sonka,257,25,g,FŐ_MAKRO,NULL
+1748,243,Juhtúró,87,25,g,FŐ_MAKRO,NULL
+1749,243,Snidling / Újhagyma zöldje,126 / 258,2,teáskanál,ÍZESÍTŐ,NULL
+1750,243,Quinoa,148,40,g,FŐ_MAKRO,NULL
+1751,244,Pulykamell sonka,2,90,g,FŐ_MAKRO,R244-A
+1752,244,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,R244-A
+1753,244,Salátalevél,159,40,g,KIEGÉSZÍTŐ,R244-A
+1754,244,Paradicsom,139,50,g,KIEGÉSZÍTŐ,R244-A
+1755,244,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,R244-A
+1756,245,Tojás,183,2,db,FŐ_MAKRO,NULL
+1757,245,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1758,245,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+1759,245,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1760,245,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1761,246,Darált csirkemell,47,150,g,FŐ_MAKRO,R246-A
+1762,246,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,R246-A
+1763,246,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,R246-A
+1764,246,Tojás,183,1,db,FŐ_MAKRO,R246-A
+1765,246,Teljes kiőrlésű kenyér,106,20,g,KÖTÖTT,R246-A
+1766,246,Sovány sonka,166,40,g,FŐ_MAKRO,R246-A
+1767,247,Tojás,183,2,db,FŐ_MAKRO,NULL
+1768,247,Sonka,166,100,g,FŐ_MAKRO,NULL
+1769,247,Vegyes salátalevél,159,2,marék,KIEGÉSZÍTŐ,NULL
+1770,247,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+1771,247,Kígyóuborka,98,0.5,db,KIEGÉSZÍTŐ,NULL
+1772,247,Kaliforniai paprika,89,0.5,db,KIEGÉSZÍTŐ,NULL
+1773,247,Olívaolaj,132,1,evőkanál,FŐ_MAKRO,NULL
+1774,247,Fehérborecet,50,1,evőkanál,ÍZESÍTŐ,NULL
+1775,248,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,R248-A
+1776,248,Pulykamell sonka,2,50,g,FŐ_MAKRO,R248-A
+1777,248,Avokádó,13,35,g,FŐ_MAKRO,R248-A
+1778,248,Bébispenót,20,25,g,KIEGÉSZÍTŐ,R248-A
+1779,248,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,R248-A
+1780,248,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,R248-A
+1781,248,Zöldhagyma,269,5,g,KIEGÉSZÍTŐ,R248-A
+1782,249,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,R249-A
+1783,249,Pulykamell sonka,2,50,g,FŐ_MAKRO,R249-A
+1784,249,Avokádó,13,35,g,FŐ_MAKRO,R249-A
+1785,249,Citromlé,31,0.5,teáskanál,ÍZESÍTŐ,R249-A
+1786,250,Tojás,183,2,db,FŐ_MAKRO,NULL
+1787,250,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1788,250,Brokkoli,21,50,g,KIEGÉSZÍTŐ,NULL
+1789,250,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1790,250,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1791,251,Pulykamell sonka,2,50,g,FŐ_MAKRO,R251-A
+1792,251,Paprika,137,50,g,KIEGÉSZÍTŐ,R251-A
+1793,251,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,R251-A
+1794,251,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,R251-A
+1795,252,Tojás,183,2,db,FŐ_MAKRO,NULL
+1796,252,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1797,252,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+1798,252,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1799,252,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1800,252,Bazsalikom (friss),19,1,ízlés szerint,ÍZESÍTŐ,NULL
+1801,253,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1802,253,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1803,253,Retek,149,100,g,KIEGÉSZÍTŐ,NULL
+1804,253,Vegyes salátalevél,159,25,g,KIEGÉSZÍTŐ,NULL
+1805,253,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,R253-A
+1806,253,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,R253-A
+1807,253,Víz,197,1,evőkanál,KÖTÖTT,R253-A
+1808,254,Pulykamell sonka,2,60,g,FŐ_MAKRO,NULL
+1809,254,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+1810,254,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1811,254,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+1812,254,Kapor (friss),90,1,teáskanál,ÍZESÍTŐ,NULL
+1813,255,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1814,255,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1815,255,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+1816,255,Retek,149,50,g,KIEGÉSZÍTŐ,NULL
+1817,255,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,R255-A
+1818,255,Almaecet,8,0.5,teáskanál,ÍZESÍTŐ,R255-A
+1819,256,Zabliszt,203,20,g,FŐ_MAKRO,R256-A
+1820,256,Sütőpor,170,1,késhegynyi,ÍZESÍTŐ,R256-A
+1821,256,Tojás,183,1,db,FŐ_MAKRO,R256-A
+1822,256,Sonka,166,50,g,FŐ_MAKRO,R256-A
+1823,256,Újhagyma,258,1,szál,KIEGÉSZÍTŐ,R256-A
+1824,257,Tojás,183,2,db,FŐ_MAKRO,NULL
+1825,257,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1826,257,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1827,257,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1828,257,Petrezselyem / Snidling,142 / 126,0.5,evőkanál,ÍZESÍTŐ,NULL
+1829,258,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1830,258,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1831,258,Fekete olívabogyó,65,20,g,FŐ_MAKRO,NULL
+1832,258,Olívaolaj,132,2.5,g,FŐ_MAKRO,NULL
+1833,258,Oregánó / Bazsalikom,134 / 19,1,ízlés szerint,ÍZESÍTŐ,NULL
+1834,259,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1835,259,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+1836,259,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1837,259,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1838,259,Petrezselyem / Snidling,142 / 126,0.5,evőkanál,ÍZESÍTŐ,NULL
+1839,260,Tojás,183,2,db,FŐ_MAKRO,NULL
+1840,260,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1841,260,Zöldhagyma,269,30,g,KIEGÉSZÍTŐ,NULL
+1842,260,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1843,260,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1844,261,Tojás,183,2,db,FŐ_MAKRO,NULL
+1845,261,Pulykamell sonka,2,30,g,FŐ_MAKRO,NULL
+1846,261,Zöldpaprika,267,50,g,KIEGÉSZÍTŐ,NULL
+1847,261,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1848,261,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1849,262,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1850,262,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+1851,262,Gomba,77,50,g,KIEGÉSZÍTŐ,NULL
+1852,262,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1853,262,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1854,263,Darált marhahús (sovány),46,150,g,FŐ_MAKRO,NULL
+1855,263,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1856,263,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1857,263,Sárgarépa,160,70,g,KIEGÉSZÍTŐ,NULL
+1858,263,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+1859,263,Passzírozott paradicsom,140,200,g,KIEGÉSZÍTŐ,NULL
+1860,263,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1861,263,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+1862,264,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+1863,264,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+1864,264,Fehérborecet,50,1,evőkanál,ÍZESÍTŐ,NULL
+1865,264,Petrezselyem (friss),142,1,evőkanál,ÍZESÍTŐ,NULL
+1866,264,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1867,264,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1868,265,Teljes kiőrlésű spagetti,182,50,g,FŐ_MAKRO,R265-A
+1869,265,Tojás,183,1,db,FŐ_MAKRO,R265-A
+1870,265,Spenót (friss),169,40,g,KIEGÉSZÍTŐ,R265-A
+1871,266,Csicseriborsó,40,100,g,FŐ_MAKRO,NULL
+1872,266,Spenót (friss),169,50,g,KIEGÉSZÍTŐ,NULL
+1873,266,Quinoa,148,20,g,FŐ_MAKRO,NULL
+1874,266,Humusz,83,25,g,FŐ_MAKRO,NULL
+1875,266,Paradicsom,139,100,g,KIEGÉSZÍTŐ,NULL
+1876,267,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+1877,267,Pulykamell sonka,2,50,g,FŐ_MAKRO,NULL
+1878,267,Bébispenót,20,25,g,KIEGÉSZÍTŐ,NULL
+1879,267,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+1880,268,Teljes kiőrlésű tortilla,187,1,db,FŐ_MAKRO,NULL
+1881,268,Bébispenót,20,100,g,KIEGÉSZÍTŐ,NULL
+1882,268,Sonka,166,50,g,FŐ_MAKRO,NULL
+1883,268,Vegán sajt,261,35,g,FŐ_MAKRO,NULL
+1884,268,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1885,268,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1886,268,Olaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1887,269,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,NULL
+1888,269,Spenót,169,50,g,KIEGÉSZÍTŐ,NULL
+1889,269,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+1890,269,Sonka,166,40,g,FŐ_MAKRO,NULL
+1891,269,Kókusztejszín,270,100,ml,FŐ_MAKRO,NULL
+1892,270,Tojás,183,2,db,FŐ_MAKRO,R270-A
+1893,270,Spenót (friss),169,30,g,KIEGÉSZÍTŐ,R270-A
+1894,271,Tojás,183,2,db,FŐ_MAKRO,NULL
+1895,271,Bébispenót,20,50,g,KIEGÉSZÍTŐ,NULL
+1896,271,Szeletelt gomba,77,50,g,KIEGÉSZÍTŐ,NULL
+1897,271,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1898,271,Kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+1899,272,Tojás,183,2,db,FŐ_MAKRO,R272-A
+1900,272,Spenót (friss),169,100,g,KIEGÉSZÍTŐ,R272-A
+1901,272,Csiperkegomba,77,50,g,KIEGÉSZÍTŐ,R272-A
+1902,272,Zabliszt,203,15,g,KÖTÖTT,R272-A
+1903,272,Kókuszzsír,103,0.5,teáskanál,FŐ_MAKRO,R272-A
+1904,273,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1905,273,Quinoa,148,50,g,FŐ_MAKRO,NULL
+1906,273,Kelbimbó,94,200,g,KIEGÉSZÍTŐ,NULL
+1907,273,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1908,274,Csirkemellfilé,42,130,g,FŐ_MAKRO,NULL
+1909,274,Hajdina,80,40,g,FŐ_MAKRO,NULL
+1910,274,Fagyasztott zöldborsó,208,150,g,KIEGÉSZÍTŐ,NULL
+1911,274,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1912,275,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+1913,275,Quinoa,148,30,g,FŐ_MAKRO,NULL
+1914,275,Fagyasztott zöldbab,62,200,g,KIEGÉSZÍTŐ,NULL
+1915,275,Mandula lapka,120,15,g,KIEGÉSZÍTŐ,NULL
+1916,275,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1917,276,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1918,276,Teljes kiőrlésű kuszkusz,111,50,g,FŐ_MAKRO,NULL
+1919,276,Brokkoli,21,300,g,KIEGÉSZÍTŐ,NULL
+1920,276,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+921,277,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1922,277,Quinoa,148,30,g,FŐ_MAKRO,NULL
+1923,277,Spárga,168,125,g,KIEGÉSZÍTŐ,NULL
+1924,277,Citrom,30,0.5,db,ÍZESÍTŐ,NULL
+1925,278,Lazacfilé,112,200,g,FŐ_MAKRO,NULL
+1926,278,Quinoa,148,50,g,FŐ_MAKRO,NULL
+1927,278,Fagyasztott zöldbab,62,200,g,KIEGÉSZÍTŐ,NULL
+1928,278,Kókuszolaj,103,5,g,FŐ_MAKRO,NUL
+1929,279,Pulykamell filé,147,150,g,FŐ_MAKRO,NULL
+1930,279,Hajdina,80,50,g,FŐ_MAKRO,NULL
+1931,279,Kelbimbó,94,200,g,KIEGÉSZÍTŐ,NULL
+1932,279,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1933,279,Dió,45,15,g,FŐ_MAKRO,NULL
+1934,280,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1935,280,Pulykamellfilé,147,140,g,FŐ_MAKRO,NULL
+1936,280,Spárga,168,150,g,KIEGÉSZÍTŐ,NULL
+1937,280,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+1938,280,Kapor (friss),90,5,g,ÍZESÍTŐ,NULL
+1939,281,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+1940,281,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1941,281,Fagyasztott zöldborsó,208,150,g,KIEGÉSZÍTŐ,NULL
+1942,281,Mandula lapka,120,15,g,FŐ_MAKRO,NULL
+1943,281,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1944,282,Avokádó,13,1,db,FŐ_MAKRO,R282-A
+1945,282,Tojás,183,2,db,FŐ_MAKRO,R282-A
+1946,282,Sonka,166,40,g,KIEGÉSZÍTŐ,R282-A
+1947,283,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1948,283,Zabliszt,203,15,g,KÖTÖTT,R283-A
+1949,283,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1950,284,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1951,284,Édesburgonya,53,150,g,FŐ_MAKRO,NULL
+1952,284,Bébispenót,20,100,g,KIEGÉSZÍTŐ,NULL
+1953,284,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1954,285,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1955,285,Basmati rizs,18,50,g,FŐ_MAKRO,NULL
+1956,285,Spárga,168,150,g,KIEGÉSZÍTŐ,NULL
+1957,285,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+1958,285,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+1959,285,Szezámmag,174,1,teáskanál,ÍZESÍTŐ,NULL
+1960,286,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+1961,286,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+1962,286,Fagyasztott zöldborsó,208,150,g,KIEGÉSZÍTŐ,NULL
+1963,286,Szezámolaj,175,1,teáskanál,FŐ_MAKRO,NULL
+1964,286,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+1965,286,Szezámmag,174,1,teáskanál,ÍZESÍTŐ,NULL
+1966,287,Cukkini,44,1,db (250g),KIEGÉSZÍTŐ,R287-A
+1967,287,Kókuszolaj,103,1,evőkanál,FŐ_MAKRO,R287-A
+1968,288,Édesburgonya,53,100,g,FŐ_MAKRO,NULL
+1969,288,Cékla,24,25,g,KIEGÉSZÍTŐ,NULL
+1970,288,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1971,288,Kelbimbó,94,25,g,KIEGÉSZÍTŐ,NULL
+1972,288,Brokkoli,21,40,g,KIEGÉSZÍTŐ,NULL
+1973,288,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+1974,288,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1975,289,Padlizsán,136,1,db (250g),KIEGÉSZÍTŐ,NULL
+1976,289,Darált pulykamell,47,100,g,FŐ_MAKRO,NULL
+1977,289,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+1978,289,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+1979,289,Darabolt konzervparadicsom,140,200,g,KIEGÉSZÍTŐ,NULL
+1980,290,Pisztráng,145,200,g,FŐ_MAKRO,NULL
+1981,290,Citrom,30,1,pár karika,ÍZESÍTŐ,NULL
+1982,290,Petrezselyem / Kapor,142 / 90,1,pár szál,ÍZESÍTŐ,NULL
+1983,290,Brokkoli,21,125,g,KIEGÉSZÍTŐ,NULL
+1984,290,Mandula,120,10,g,FŐ_MAKRO,NULL
+1985,290,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+1986,291,Fagyasztott karfiol,92,200,g,FŐ_MAKRO,R291-A
+1987,291,Sertéscomb,162,100,g,FŐ_MAKRO,R291-A
+1988,291,Vegán tejföl,180,40,g,FŐ_MAKRO,R291-A
+1989,291,Növényi tej,102,15,ml,KÖTÖTT,R291-A
+1990,292,Tőkehalfilé,6,200,g,FŐ_MAKRO,NULL
+1991,292,Vegyes zöldség,210,200,g,KIEGÉSZÍTŐ,NULL
+1992,292,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+1993,292,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+1994,293,Sütőtök,171,150,g,FŐ_MAKRO,R293-A
+1995,293,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+1996,293,Fokhagyma,67,0.5,gerezd,ÍZESÍTŐ,NULL
+1997,293,Növényi tej,102,100,ml,KÖTÖTT,R293-A
+1998,294,Sütőtök,171,200,g,FŐ_MAKRO,NULL
+1999,294,Mogyoróvaj,127,20,g,FŐ_MAKRO,NULL
+2000,294,Fekete áfonya,14,40,g,KIEGÉSZÍTŐ,NULL
+2001,295,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+2002,295,Karfiol,92,175,g,FŐ_MAKRO,R295-A
+2003,295,Rizsecet,153,1,teáskanál,KÖTÖTT,R295-A
+2004,295,Füstölt lazac,71,100,g,FŐ_MAKRO,NULL
+2005,295,Avokádó,13,50,g,FŐ_MAKRO,NULL
+2006,295,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+2007,296,Csirkemell filé,42,90,g,FŐ_MAKRO,R296-A
+2008,296,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2009,296,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2010,296,Fehérrépa,225,60,g,KIEGÉSZÍTŐ,NULL
+2011,296,Zellergumó,171,40,g,KIEGÉSZÍTŐ,NULL
+2012,296,Sárgarépa,160,90,g,KIEGÉSZÍTŐ,NULL
+2013,296,Zöldborsó,208,40,g,KIEGÉSZÍTŐ,NULL
+2014,296,Kókusztejszín,270,50,ml,KÖTÖTT,R296-A
+2015,296,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2016,297,Basmati rizs,18,15,g,FŐ_MAKRO,R297-A
+2017,297,Növényi tej,102,250,ml,KÖTÖTT,R297-A
+2018,297,Víz,197,75,ml,KÖTÖTT,R297-A
+2019,297,Vegán fehérjepor (kókuszos/vaníliás),196,20,g,FŐ_MAKRO,R297-A
+2020,297,Kókuszreszelék,104,20,g,FŐ_MAKRO,R297-A
+2021,297,Bogyós gyümölcs,60,100,g,KIEGÉSZÍTŐ,NULL
+2022,298,Cukkini,44,100,g,FŐ_MAKRO,R298-A
+2023,298,Kókusztejszín,270,30,g,FŐ_MAKRO,R298-A
+2024,298,Juhtúró,87,40,g,FŐ_MAKRO,R298-A
+2025,298,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2026,298,Bulgur,22,40,g,FŐ_MAKRO,NULL
+2027,299,Csirkemellfilé,42,150,g,FŐ_MAKRO,R299-A
+2028,299,Csiperkegomba,77,140,g,KIEGÉSZÍTŐ,NULL
+2029,299,Kókusztejszín,270,70,g,FŐ_MAKRO,R299-A
+2030,299,Spenótlevél,169,30,g,KIEGÉSZÍTŐ,NULL
+2031,299,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+2032,300,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,NULL
+2033,300,Garnéla (főtt),76,150,g,FŐ_MAKRO,NULL
+2034,300,Pesto,143,35,g,FŐ_MAKRO,R300-A
+2035,300,Kókusztejszín,270,60,g,FŐ_MAKRO,R300-A
+2036,300,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2037,301,Kelbimbó,94,120,g,FŐ_MAKRO,R301-A
+2038,301,Zöldbab,62,120,g,FŐ_MAKRO,R301-A
+2039,301,Spárga,168,75,g,KIEGÉSZÍTŐ,R301-A
+2040,301,Kókusztejszín,270,17,g,FŐ_MAKRO,R301-A
+2041,301,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+2042,302,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+2043,302,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+2044,302,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,NULL
+2045,300,Almaecet,8,1.5,evőkanál,ÍZESÍTŐ,NULL
+2046,303,Csirkemell filé,42,150,g,FŐ_MAKRO,R303-A
+2047,303,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2048,303,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2049,303,Paprika,137,30,g,KIEGÉSZÍTŐ,NULL
+2050,303,Paradicsom,139,30,g,KIEGÉSZÍTŐ,NULL
+2051,303,Zöldbab,62,60,g,KIEGÉSZÍTŐ,NULL
+2052,303,Kókusztejszín,270,50,g,FŐ_MAKRO,R303-A
+2053,303,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2054,304,Tempeh,181,100,g,FŐ_MAKRO,NULL
+2055,304,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2056,304,Savanyú káposzta,161,50,g,KIEGÉSZÍTŐ,NULL
+2057,304,Mustár,128,1,teáskanál,ÍZESÍTŐ,NULL
+2058,304,Savanyú uborka,273,25,g,KIEGÉSZÍTŐ,NULL
+2059,305,Tenger gyümölcsei keverék,253,150,g,FŐ_MAKRO,R305-A
+2060,305,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,NULL
+2061,305,Paradicsom,139,50,g,KÖTÖTT,R305-A
+2062,305,Light kókusztejszín,270,50,g,FŐ_MAKRO,R305-A
+2063,306,Csirkemellfilé,42,170,g,FŐ_MAKRO,NULL
+2064,306,Burgonya,216,200,g,FŐ_MAKRO,NULL
+2065,306,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2066,306,Cukormentes ketchup,35,20,g,KIEGÉSZÍTŐ,NULL
+2067,306,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2068,307,Quinoa,148,50,g,FŐ_MAKRO,NULL
+2069,307,Nori lap,131,2,db,KIEGÉSZÍTŐ,NULL
+2070,307,Tofu (kemény),255,150,g,FŐ_MAKRO,R307-A
+2071,307,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+2072,307,Light szójaszósz,236,1,evőkanál,KÖTÖTT,R307-A
+2073,307,Rizsbor ecet,243,1,teáskanál,KÖTÖTT,R307-A
+2074,307,Gyömbér (friss),79,0.5,teáskanál,ÍZESÍTŐ,NULL
+2075,307,Szezámolaj,175,0.5,teáskanál,FŐ_MAKRO,R307-A
+2076,307,Kókuszolaj,103,0.5,teáskanál,FŐ_MAKRO,NULL
+2068,308,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+2069,308,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2070,308,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,NULL
+2071,308,Bébispenót,20,30,g,KIEGÉSZÍTŐ,NULL
+2072,308,Paradicsom,139,80,g,KIEGÉSZÍTŐ,NULL
+2073,308,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+2074,308,Zöld pesto,266,15,g,FŐ_MAKRO,R308-A
+2075,308,Vegán tejföl,180,50,g,FŐ_MAKRO,R308-A
+2076,308,Balzsamecet,16,10,ml,ÍZESÍTŐ,NULL
+2086,309,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+2087,309,Főtt csirkemell,42,90,g,FŐ_MAKRO,NULL
+2088,309,Fekete bab (konzerv),64,50,g,FŐ_MAKRO,NULL
+2089,309,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+2090,309,Koktélparadicsom,104,50,g,KIEGÉSZÍTŐ,NULL
+2091,309,Lilahagyma,115,20,g,KIEGÉSZÍTŐ,NULL
+2092,309,Olívaolaj,132,1,evőkanál,FŐ_MAKRO,NULL
+2093,309,Lime lé,116,1,evőkanál,ÍZESÍTŐ,NULL
+2094,310,Csirkemellfilé,42,150,g,FŐ_MAKRO,R310-A
+2095,310,Brokkoli,21,100,g,KIEGÉSZÍTŐ,NULL
+2096,310,Cukormentes kókusztej,102,100,ml,FŐ_MAKRO,R310-A
+2097,310,Thai currypaszta,254,1,teáskanál,ÍZESÍTŐ,NULL
+2098,310,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2099,310,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+2100,311,Teljes kiőrlésű kenyér,106,30,g,FŐ_MAKRO,NULL
+2101,311,Tojás,183,1,db,FŐ_MAKRO,NULL
+2102,311,Humusz,83,15,g,FŐ_MAKRO,NULL
+2103,311,Kókuszjoghurt,100,50,g,FŐ_MAKRO,NULL
+2104,311,Sonka,166,50,g,FŐ_MAKRO,NULL
+2105,312,"Tofu (light, kemény)",255,180,g,FŐ_MAKRO,NULL
+2106,312,Sörélesztőpehely,167,1.5,ek,ÍZESÍTŐ,NULL
+2107,312,Kurkuma,110,0.5,tk,ÍZESÍTŐ,NULL
+2108,312,Füstölt paprika,72,0.5,tk,ÍZESÍTŐ,NULL
+2109,312,Fekete só (kala namak),227,1,tk,ÍZESÍTŐ,NULL
+2110,313,Tofu (kemény),255,200,g,FŐ_MAKRO,NULL
+2111,313,Édesburgonya,53,150,g,FŐ_MAKRO,NULL
+2112,313,Cukkini,44,100,g,KIEGÉSZÍTŐ,NULL
+2113,313,Kaliforniai paprika,89,1,db (130g),KIEGÉSZÍTŐ,NULL
+2114,314,Tojás,183,3,db,FŐ_MAKRO,R314-A
+2115,314,Kókuszjoghurt,100,50,g,FŐ_MAKRO,R314-A
+2116,314,Vegán majonéz,235,15,g,FŐ_MAKRO,R314-A
+2117,314,Cukormentes mustár,37,15,g,ÍZESÍTŐ,NULL
+2118,314,Vöröshagyma,199,40,g,KIEGÉSZÍTŐ,NULL
+2119,315,Zabliszt,203,20,g,FŐ_MAKRO,R315-A
+2120,315,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2121,315,Víz,197,270,ml,KÖTÖTT,R315-A
+2122,315,Tojás,183,2,db,FŐ_MAKRO,R315-A
+2123,315,Kókuszzsír,103,0.5,tk,FŐ_MAKRO,NULL
+2124,315,Babérlevél,15,1,db,ÍZESÍTŐ,NULL
+2125,316,Tojás,183,1,db,FŐ_MAKRO,NULL
+2126,316,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2127,316,Passzírozott paradicsom,140,30,g,KIEGÉSZÍTŐ,NULL
+2128,316,Vegán sajt,261,10,g,FŐ_MAKRO,NULL
+2129,316,Gomba,77,5,g,ÍZESÍTŐ,NULL
+2130,317,Tojás,183,1,db,FŐ_MAKRO,NULL
+2131,317,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2132,317,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+2133,317,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2134,317,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2135,318,Tojás,183,2,db,FŐ_MAKRO,NULL
+2136,318,Quinoa,148,40,g,FŐ_MAKRO,NULL
+2137,318,Spenót (friss),169,50,g,KIEGÉSZÍTŐ,NULL
+2138,318,Kókuszzolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2139,318,Lenmag,233,1,teáskanál,FŐ_MAKRO,NULL
+2140,319,Tojás,183,2,db,FŐ_MAKRO,NULL
+2141,319,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2142,319,Salátalevél,159,1,db (nagy),KIEGÉSZÍTŐ,NULL
+2143,319,Uborka,98,30,g,KIEGÉSZÍTŐ,NULL
+2144,319,Paprika,137,20,g,KIEGÉSZÍTŐ,NULL
+2145,319,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2146,320,Tojás (keményre főtt),183,2,db,FŐ_MAKRO,NULL
+2147,320,Vegyes zöldsaláta,159,100,g,KIEGÉSZÍTŐ,NULL
+2148,320,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2149,320,Uborka,98,50,g,KIEGÉSZÍTŐ,NULL
+2150,320,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2151,320,Citromlé,31,1,teáskanál,ÍZESÍTŐ,NULL
+2152,321,Tojás,183,3,db,FŐ_MAKRO,NULL
+2153,321,Kókuszzsír,103,1,tk,FŐ_MAKRO,NULL
+2154,321,Vöröshagyma,199,20,g,KIEGÉSZÍTŐ,NULL
+2155,321,Paprika,137,30,g,KIEGÉSZÍTŐ,NULL
+2156,321,Paradicsom,139,20,g,KIEGÉSZÍTŐ,NULL
+2157,322,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,R322-A
+2158,322,Nori lap,131,1,db,ÍZESÍTŐ,NULL
+2159,322,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,R322-A
+2160,322,Ananász (friss),9,50,g,KIEGÉSZÍTŐ,NULL
+2161,322,Chili paprika,27,0.5,db,ÍZESÍTŐ,NULL
+2162,323,Quinoa,148,50,g,FŐ_MAKRO,R323-A
+2163,323,Nori lap,131,2,db,ÍZESÍTŐ,NULL
+2164,323,Tonhal (sós lében),185,80,g,FŐ_MAKRO,R323-A
+2165,323,Avokádó,13,35,g,FŐ_MAKRO,R323-A
+2166,323,Kígyóuborka,98,30,g,KIEGÉSZÍTŐ,NULL
+2167,324,Basmati rizs,18,40,g,FŐ_MAKRO,R324-A
+2168,324,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,R324-A
+2169,324,Avokádó,13,35,g,FŐ_MAKRO,R324-A
+2170,324,Sárgarépa,160,20,g,KIEGÉSZÍTŐ,NULL
+2171,324,Nori lap,131,2,db,ÍZESÍTŐ,NULL
+2172,325,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,R325-A
+2173,325,Nori lap,131,1,db,ÍZESÍTŐ,NULL
+2174,325,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,R325-A
+2175,325,Sárgarépa,160,35,g,KIEGÉSZÍTŐ,NULL
+2176,325,Jalapeno paprika,85,10,g,ÍZESÍTŐ,NULL
+2177,326,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,R326-A
+2178,326,Nori lap,131,2,db,ÍZESÍTŐ,NULL
+2179,326,Tonhalfilé (sushi minőségű),256,90,g,FŐ_MAKRO,R326-A
+2180,326,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+2181,327,Gyorsfőzésű barna rizs,151,40,g,FŐ_MAKRO,NULL
+2182,327,Tonhal (sós lében),185,80,g,FŐ_MAKRO,NULL
+2183,327,Kelkáposzta,95,100,g,KIEGÉSZÍTŐ,NULL
+2184,327,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2185,327,Olívaolaj,132,5,g,FŐ_MAKRO,NULL
+2186,327,Almaecet,8,1,evőkanál,ÍZESÍTŐ,NULL
+2187,327,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2188,328,Quinoa,148,50,g,FŐ_MAKRO,NULL
+2189,328,Tonhal (olajban),185,120,g,FŐ_MAKRO,NULL
+2190,328,Koktélparadicsom,104,150,g,KIEGÉSZÍTŐ,NULL
+2191,328,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+2192,328,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2193,328,Citromlé,31,1,evőkanál,ÍZESÍTŐ,NULL
+2194,329,Quinoa,148,50,g,FŐ_MAKRO,NULL
+2195,329,Tonhal (sós lében),185,80,g,FŐ_MAKRO,NULL
+2196,329,Fagyasztott zöldbab,62,150,g,KIEGÉSZÍTŐ,NULL
+2197,329,Lilahagyma,115,20,g,ÍZESÍTŐ,NULL
+2198,329,Olívaolaj,132,5,g,FŐ_MAKRO,NULL
+2199,329,Almaecet,8,1,evőkanál,ÍZESÍTŐ,NULL
+2200,329,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2201,329,Kapor (friss),90,3,g,ÍZESÍTŐ,NULL
+2202,330,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2203,330,Tonhal (sós lében),185,50,g,FŐ_MAKRO,NULL
+2204,330,Kígyóuborka,98,20,g,KIEGÉSZÍTŐ,NULL
+2205,330,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2206,331,Avokádó,13,70,g,FŐ_MAKRO,NULL
+2207,331,Tonhalkonzerv,185,90,g,FŐ_MAKRO,NULL
+2208,331,Lilahagyma,115,30,g,ÍZESÍTŐ,NULL
+2209,331,Citromlé,31,2,teáskanál,ÍZESÍTŐ,NULL
+2210,331,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2211,332,Tonhal (konzerv),185,150,g,FŐ_MAKRO,NULL
+2212,332,Basmati rizs,18,30,g,FŐ_MAKRO,NULL
+2213,332,Kígyóuborka,98,1,db,KIEGÉSZÍTŐ,NULL
+2214,332,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2215,333,Tonhal (konzerv),185,100,g,FŐ_MAKRO,NULL
+2216,333,Quinoa,148,40,g,FŐ_MAKRO,NULL
+2217,333,Paradicsom,139,1,db,KIEGÉSZÍTŐ,NULL
+2218,333,Olívaolaj,132,1,evőkanál,FŐ_MAKRO,NULL
+2219,334,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+2220,334,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2221,334,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2222,334,Tonhal konzerv,185,100,g,FŐ_MAKRO,NULL
+2223,334,Light kókusztej,102,100,g,FŐ_MAKRO,NULL
+2224,335,Teljes kiőrlésű tortilla lap,187,1,db,FŐ_MAKRO,NULL
+2225,335,Tonhalkonzerv,185,80,g,FŐ_MAKRO,NULL
+2226,335,Madársaláta,117,1,marék,KIEGÉSZÍTŐ,NULL
+2227,335,Lilahagyma,115,0.5,db,KIEGÉSZÍTŐ,NULL
+2228,335,Kígyóuborka,98,150,g,KIEGÉSZÍTŐ,NULL
+2229,335,Csemegeuborka,33,30,g,KIEGÉSZÍTŐ,NULL
+2230,335,Cukormentes majonéz,36,15,g,FŐ_MAKRO,NULL
+2231,335,Cukormentes mustár,37,1,tk,ÍZESÍTŐ,NULL
+2232,336,Teljes kiőrlésű wrap,187,1,db,FŐ_MAKRO,NULL
+2233,336,Tonhal konzerv,185,80,g,FŐ_MAKRO,NULL
+2234,336,Csicseriborsó konzerv,40,50,g,FŐ_MAKRO,NULL
+2235,336,Fehérbab konzerv,224,50,g,FŐ_MAKRO,NULL
+2236,336,Kukorica konzerv,108,50,g,FŐ_MAKRO,NULL
+2237,336,Vegyes salátalevél,159,1,marék,KIEGÉSZÍTŐ,NULL
+2238,337,Tonhalkonzerv (sós lében),185,150,g,FŐ_MAKRO,NULL
+2239,337,Tojás,183,2,db,FŐ_MAKRO,NULL
+2240,337,Vegyes zöldsaláta,159,100,g,KIEGÉSZÍTŐ,NULL
+2241,337,Koktélparadicsom,104,50,g,KIEGÉSZÍTŐ,NULL
+2242,337,Uborka,98,30,g,KIEGÉSZÍTŐ,NULL
+2243,338,Tonhal konzerv (sós lében),185,55,g,FŐ_MAKRO,R338-A
+2244,338,Vegán vaj,192,10,g,FŐ_MAKRO,R338-A
+2245,338,Cukormentes mustár,37,1,tk,ÍZESÍTŐ,NULL
+2246,339,Tonhal konzerv (sós lében),185,80,g,FŐ_MAKRO,NULL
+2247,339,Kukorica (konzerv),108,50,g,FŐ_MAKRO,NULL
+2248,339,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+2249,339,Paradicsom,139,100,g,KIEGÉSZÍTŐ,NULL
+2250,339,Vörösbab (konzerv),198,50,g,FŐ_MAKRO,NULL
+2251,339,Vegyes salátalevél,159,1,marék,KIEGÉSZÍTŐ,NULL
+2252,340,Sertéskaraj,163,150,g,FŐ_MAKRO,NULL
+2253,340,Savanyúkáposzta,161,250,g,KIEGÉSZÍTŐ,NULL
+2254,340,Kókuszolaj,103,1,ek,FŐ_MAKRO,NULL
+2255,340,Babérlevél,15,1,db,ÍZESÍTŐ,NULL
+2256,341,Teljes kiőrlésű tortilla lap,187,1,db,FŐ_MAKRO,NULL
+2257,341,Cukormentes ketchup,35,20,g,ÍZESÍTŐ,NULL
+2258,341,Vöröshagyma,199,0.5,db,KIEGÉSZÍTŐ,NULL
+2259,341,Sonka,166,70,g,FŐ_MAKRO,NULL
+2260,341,Vegyes zöldség,210,100,g,KIEGÉSZÍTŐ,NULL
+2261,341,Oregánó,134,0.5,tk,ÍZESÍTŐ,NULL
+2262,342,Darált csirkemell,47,150,g,FŐ_MAKRO,R342-A
+2263,342,Burgonya,216,150,g,FŐ_MAKRO,R342-A
+2264,342,Sárgarépa,160,100,g,KIEGÉSZÍTŐ,NULL
+2265,342,Tojás,183,1,db,KÖTÖTT,R342-A
+2266,342,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2267,342,Olaj,132,5,g,FŐ_MAKRO,R342-A
+2268,343,Tőkehalfilé,6,200,g,FŐ_MAKRO,NULL
+2269,343,Gyorsfőzésű barna rizs,151,50,g,FŐ_MAKRO,NULL
+2270,343,Fagyasztott zöldbab,62,200,g,KIEGÉSZÍTŐ,NULL
+2271,343,Szezámolaj,175,5,g,FŐ_MAKRO,NULL
+2272,343,Szezámmag,174,3,g,ÍZESÍTŐ,NULL
+2273,343,Light szójaszósz,236,1,evőkanál,ÍZESÍTŐ,NULL
+2274,344,Banán,17,40,g,FŐ_MAKRO,R344-A
+2275,344,Sárgarépa,160,40,g,KIEGÉSZÍTŐ,NULL
+2276,344,Mogyoróvaj,127,10,g,FŐ_MAKRO,R344-A
+2277,344,Chia mag,26,7.5,g,KÖTÖTT,R344-A
+2278,344,Kókuszreszelék,104,25,g,KIEGÉSZÍTŐ,NULL
+2279,344,Vegán fehérjepor,196,10,g,FŐ_MAKRO,R344-A
+2280,345,Tojás,183,2,db,FŐ_MAKRO,NULL
+2281,345,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2282,345,Aszalt paradicsom,11,10,g,KIEGÉSZÍTŐ,NULL
+2283,345,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2284,346,Édesburgonya,53,180,g,FŐ_MAKRO,NULL
+2285,346,Darált marha,46,150,g,FŐ_MAKRO,NULL
+2286,346,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2287,346,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2288,346,Paradicsomszósz,241,40,g,KIEGÉSZÍTŐ,NULL
+2289,347,Csiperkegombafej,77,2,db,KIEGÉSZÍTŐ,NULL
+2290,347,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2291,347,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2292,347,Darált csirkemell,47,50,g,FŐ_MAKRO,NULL
+2293,347,Paradicsompüré,140,100,g,KIEGÉSZÍTŐ,NULL
+294,348,Padlizsán,136,1,db (200g),KIEGÉSZÍTŐ,NULL
+2295,348,Darált pulykamell,47,150,g,FŐ_MAKRO,NULL
+2296,348,Vöröshagyma,199,1,db (kicsi),ÍZESÍTŐ,NULL
+2297,348,Paradicsompüré,140,30,g,KIEGÉSZÍTŐ,NULL
+2298,348,Basmati rizs,18,20,g,FŐ_MAKRO,NULL
+2299,348,Kókuszjoghurt,100,70,g,FŐ_MAKRO,NULL
+2300,348,Menta,125,2,teáskanál,ÍZESÍTŐ,NULL
+2301,349,Alma,7,1,db,FŐ_MAKRO,R349-A
+2302,349,Dió,45,15,g,FŐ_MAKRO,R349-A
+2303,349,Tojásfehérje,275,1,db,KÖTÖTT,R349-A
+2304,350,Teljes kiőrlésű tészta,182,50,g,FŐ_MAKRO,R350-A
+2305,350,Sovány sonka,166,80,g,FŐ_MAKRO,R350-A
+2306,350,Juhtúró,87,70,g,FŐ_MAKRO,R350-A
+2307,351,Csirkemellfilé,42,150,g,FŐ_MAKRO,NULL
+2308,351,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2309,351,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+2310,351,Petrezselyemgyökér,242,50,g,KIEGÉSZÍTŐ,NULL
+2311,351,Zellergumó,171,30,g,KIEGÉSZÍTŐ,NULL
+2312,351,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2313,351,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2314,351,Cukormentes mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2315,351,Kókusztejszín,270,50,g,KÖTÖTT,NULL
+2316,351,Teljes kiőrlésű tészta,182,40,g,FŐ_MAKRO,NULL
+2317,352,Chia mag,26,15,g,KÖTÖTT,R352-A
+2318,352,Mandulatej (cukormentes),274,200,ml,KÖTÖTT,R352-A
+2319,352,Vaníliás növényi fehérjepor,196,30,g,FŐ_MAKRO,R352-A
+2320,352,Pirított mandula,120,15,g,FŐ_MAKRO,NULL
+2321,353,Szafi Reform rostkeverék,246,45,g,KÖTÖTT,R353-A
+2322,353,Tojás,183,1,db,KÖTÖTT,R353-A
+2323,353,Szódabikarbóna,176,0.5,teáskanál,ÍZESÍTŐ,NULL
+2324,353,Kókusztejszín,270,20,ml,KÖTÖTT,R353-A
+2325,353,Kókuszzsír,103,1,ek,FŐ_MAKRO,R353-A
+2326,353,Víz,197,50,ml,KÖTÖTT,R353-A
+2327,353,Növényi tej (töltelék),102,100,ml,KÖTÖTT,R353-A
+2328,353,Vaníliás vegán fehérjepor (töltelék),196,15,g,FŐ_MAKRO,R353-A
+2329,353,Zabliszt (töltelék),203,10,g,KÖTÖTT,R353-A
+2330,354,Cukormentes étcsokoládé,34,50,g,FŐ_MAKRO,R354-A
+2331,354,Növényi tej,102,50,ml,KÖTÖTT,R354-A
+2332,355,Csicseriborsó,40,200,g,FŐ_MAKRO,R355-A
+2333,355,Vöröshagyma,199,40,g,ÍZESÍTŐ,NULL
+2334,355,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2335,355,Zabliszt,203,12,g,KÖTÖTT,R355-A
+2336,355,Teljes kiőrlésű zsemlemorzsa,211,12,g,KÖTÖTT,R355-A
+2337,355,Kókuszzsír,103,6,g,FŐ_MAKRO,R355-A
+2338,356,Növényi tej,102,80,ml,KÖTÖTT,R356-A
+2339,356,Almaecet,8,1,tk,ÍZESÍTŐ,NULL
+2340,356,Zabliszt,203,60,g,FŐ_MAKRO,R356-A
+2341,356,Sütőpor,170,0.5,csomag,ÍZESÍTŐ,NULL
+2342,356,Kókuszzsír,103,2,ek,FŐ_MAKRO,R356-A
+2343,357,Aszalt datolya,214,30,g,FŐ_MAKRO,R357-A
+2344,357,Narancs,130,25,g,KIEGÉSZÍTŐ,NULL
+2345,357,Narancslé,237,10,ml,KÖTÖTT,R357-A
+2346,357,Zabpehely,204,5,g,FŐ_MAKRO,R357-A
+2347,357,Cukrozatlan kakaópor,229,5,g,ÍZESÍTŐ,NULL
+2348,357,Rumaroma,156,2.5,ml,ÍZESÍTŐ,NULL
+2349,357,Kókuszreszelék,104,10,g,FŐ_MAKRO,R357-A
+2350,358,Basmati rizs,18,40,g,FŐ_MAKRO,R358-A
+2351,358,Csiperkegomba,77,200,g,KIEGÉSZÍTŐ,NULL
+2352,358,Paprika,137,40,g,KIEGÉSZÍTŐ,NULL
+2353,358,Zöldborsó,208,20,g,FŐ_MAKRO,NULL
+2354,358,Articsóka (konzerv),10,40,g,KIEGÉSZÍTŐ,NULL
+2355,358,Fokhagyma,67,0.5,gerezd,ÍZESÍTŐ,NULL
+2356,358,Zöldség alaplé,5,100,ml,KÖTÖTT,R358-A
+2357,359,Totu,184,100,g,FŐ_MAKRO,R359-A
+2358,359,Vegán fehérjepor,196,15,g,FŐ_MAKRO,R359-A
+2359,359,Kókuszreszelék,104,20,g,FŐ_MAKRO,R359-A
+2360,359,Kókuszjoghurt,100,30,g,KÖTÖTT,R359-A
+2361,360,Vöröshagyma,199,1,db,KIEGÉSZÍTŐ,NULL
+2362,360,Karfiol,92,150,g,KIEGÉSZÍTŐ,NULL
+2363,360,Növényi tej,102,125,ml,KÖTÖTT,R360-A
+2364,360,Sörélesztőpehely,167,15,g,FŐ_MAKRO,R360-A
+2365,360,Chili,27,5,g,ÍZESÍTŐ,NULL
+2366,360,Zöldség alaplé,5,200,ml,KÖTÖTT,R360-A
+2367,361,Cukkini,44,100,g,KIEGÉSZÍTŐ,R361-A
+2368,361,Sárgarépa,160,100,g,KIEGÉSZÍTŐ,R361-A
+2369,361,Zellergumó,171,30,g,KIEGÉSZÍTŐ,R361-A
+2370,361,Zabliszt,203,40,g,FŐ_MAKRO,R361-A
+2371,361,Útifűmaghéj,191,1,ek,KÖTÖTT,R361-A
+2372,361,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+2373,361,Light kókuszjoghurt,100,70,g,KÖTÖTT,R361-B
+2374,361,Cukormentes mustár,37,1,tk,ÍZESÍTŐ,NULL
+2375,362,Portobello gombafej,77,2,db,KIEGÉSZÍTŐ,R362-A
+2376,362,Vöröshagyma,199,40,g,KIEGÉSZÍTŐ,R362-A
+2377,362,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2378,362,Lágy kecskesajt,93,50,g,FŐ_MAKRO,R362-
+2379,363,Teljes kiőrlésű tortilla,187,1,db,FŐ_MAKRO,R363-A
+2380,363,Tojás,183,2,db,FŐ_MAKRO,R363-A
+2381,363,Avokádó,13,50,g,FŐ_MAKRO,R363-A
+2382,363,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+2383,363,Paprika,137,30,g,KIEGÉSZÍTŐ,NULL
+2384,364,Virsli,264,60,g,FŐ_MAKRO,NULL
+2385,364,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2386,364,Vegyes zöldsaláta,159,100,g,KIEGÉSZÍTŐ,NULL
+2387,364,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+2388,364,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2389,364,Balzsamecet,16,1,teáskanál,ÍZESÍTŐ,NULL
+2390,364,Olívaolaj,132,1,evőkanál,FŐ_MAKRO,NULL
+2391,365,Virsli,264,60,g,FŐ_MAKRO,NULL
+2392,365,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2393,365,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2394,365,Salátalevél,159,50,g,KIEGÉSZÍTŐ,NULL
+2395,365,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2396,365,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2397,365,Víz,197,1,evőkanál,KÖTÖTT,NULL
+2398,366,Virsli,264,60,g,FŐ_MAKRO,NULL
+2399,366,Tojás (keményre főtt),183,1,db,FŐ_MAKRO,NULL
+2400,366,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2401,366,Kígyóuborka,98,50,g,KIEGÉSZÍTŐ,NULL
+2402,367,Virsli,264,60,g,FŐ_MAKRO,NULL
+2403,367,Vöröshagyma,199,30,g,KIEGÉSZÍTŐ,NULL
+2404,367,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2405,368,Virsli,264,60,g,FŐ_MAKRO,NULL
+2406,368,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2407,368,Avokádó,13,35,g,FŐ_MAKRO,NULL
+2408,368,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2409,368,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2410,369,Virsli,264,60,g,FŐ_MAKRO,NULL
+2411,369,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2412,369,Paradicsom,139,150,g,KIEGÉSZÍTŐ,NULL
+2413,369,Lilahagyma,115,20,g,KIEGÉSZÍTŐ,NULL
+2414,369,Cukormentes dijoni mustár,37,1,teáskanál,ÍZESÍTŐ,NULL
+2415,369,Olívaolaj,132,1,evőkanál,FŐ_MAKRO,NULL
+2416,369,Víz,197,1,evőkanál,KÖTÖTT,NULL
+2417,370,Virsli,264,60,g,FŐ_MAKRO,NULL
+2418,370,Passzírozott paradicsom,140,150,g,KIEGÉSZÍTŐ,NULL
+2419,370,Vöröshagyma,199,30,g,KIEGÉSZÍTŐ,NULL
+2420,370,Fokhagyma,67,5,g,KIEGÉSZÍTŐ,NULL
+2421,370,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2422,370,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2423,371,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2424,371,Virsli,264,60,g,FŐ_MAKRO,NULL
+2425,371,Bébispenót,20,25,g,KIEGÉSZÍTŐ,NULL
+2426,371,Kókuszzsír,103,1,teáskanál,FŐ_MAKRO,NULL
+2427,372,Virsli,264,60,g,FŐ_MAKRO,NULL
+2428,372,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2429,372,Kígyóuborka,98,100,g,KIEGÉSZÍTŐ,NULL
+2430,372,Kókuszolaj,103,2.5,g,FŐ_MAKRO,NULL
+2431,373,Tojás,183,2,db,FŐ_MAKRO,R373-A
+2432,373,Virsli,264,60,g,FŐ_MAKRO,R373-A
+2433,373,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2434,374,Tojás,183,2,db,FŐ_MAKRO,R374-A
+2435,374,Virsli,264,60,g,FŐ_MAKRO,R374-A
+2436,374,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2437,375,Tojás,183,2,db,FŐ_MAKRO,NULL
+2438,375,Virsli,264,60,g,FŐ_MAKRO,NULL
+2439,375,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2440,376,Virsli,264,60,g,FŐ_MAKRO,NULL
+2441,376,Paprika,137,150,g,KIEGÉSZÍTŐ,NULL
+2442,376,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2443,377,Virsli,264,60,g,FŐ_MAKRO,NULL
+2444,377,Cukkini,44,50,g,KIEGÉSZÍTŐ,NULL
+2445,377,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+2446,377,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2447,377,Kókuszolaj,103,5,g,FŐ_MAKRO,NULL
+2448,378,Vörösbab (főtt),198,30,g,FŐ_MAKRO,R378-A
+2449,378,Tojás,183,1,db,FŐ_MAKRO,R378-A
+2450,378,Kakaópor,229,5,g,ÍZESÍTŐ,NULL
+2451,378,Csokoládés növényi fehérjepor,43,20,g,FŐ_MAKRO,R378-A
+2452,378,Kókuszzsír,103,13,g,FŐ_MAKRO,R378-A
+2453,378,Sütőpor,170,0.5,csomag,KÖTÖTT,R378-A
+2454,378,Cukormentes étcsokoládé,34,10,g,KIEGÉSZÍTŐ,NULL
+2455,379,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2456,379,Sárgarépa,160,50,g,KIEGÉSZÍTŐ,NULL
+2457,379,Szárzeller,172,50,g,KIEGÉSZÍTŐ,NULL
+2458,379,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2459,379,Paradicsompüré,140,100,g,KÖTÖTT,R379-A
+2460,379,Vöröslencse konzerv,114,200,g,FŐ_MAKRO,R379-A
+2461,379,Víz,197,50,ml,KÖTÖTT,R379-A
+2462,380,Vöröshagyma,199,50,g,ÍZESÍTŐ,NULL
+2463,380,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2464,380,Kókuszzsír,103,5,g,FŐ_MAKRO,NULL
+2465,380,Curry por,38,0.5,teáskanál,ÍZESÍTŐ,NULL
+2466,380,Vöröslencse,200,50,g,FŐ_MAKRO,R380-A
+2467,380,Paradicsompüré,140,100,g,KÖTÖTT,R380-A
+2468,380,Zöldségalaplé,5,200,ml,KÖTÖTT,R380-A
+2469,380,Light kókusztej,102,50,ml,KÖTÖTT,R380-A
+2470,380,Tojás,183,2,db,FŐ_MAKRO,NULL
+2471,381,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2472,381,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2473,381,Kókuszzsír,103,1,tk,FŐ_MAKRO,R381-A
+2474,381,Curry por,38,1,ek,ÍZESÍTŐ,NULL
+2475,381,Vöröslencse,200,40,g,FŐ_MAKRO,R381-A
+2476,381,Brokkoli,21,125,g,KIEGÉSZÍTŐ,NULL
+2477,381,Víz / Zöldség alaplé,197 / 5,450,ml,KÖTÖTT,R381-A
+2478,382,Alma,7,75,g,FŐ_MAKRO,NULL
+2479,382,Szárzeller,172,50,g,KIEGÉSZÍTŐ,NULL
+2480,382,Szőlő,249,50,g,FŐ_MAKRO,NULL
+2481,382,Dió,45,25,g,FŐ_MAKRO,NULL
+2482,382,Jégsaláta,86,40,g,KIEGÉSZÍTŐ,NULL
+2483,382,Citromlé,31,15,ml,ÍZESÍTŐ,NULL
+2484,382,Cukormentes majonéz,36,25,g,FŐ_MAKRO,NULL
+2485,382,Kókuszjoghurt,100,25,g,KIEGÉSZÍTŐ,NULL
+2486,382,Balzsamecet,16,1,tk,ÍZESÍTŐ,NULL
+2487,383,Darált marhahús (90/10),46,100,g,FŐ_MAKRO,R383-A
+2488,383,Zabpehely,204,20,g,FŐ_MAKRO,R383-A
+2489,383,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2490,383,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2491,383,Tojás,183,1,db,KÖTÖTT,R383-A
+2492,384,Zeller (szár),172,120,g,FŐ_MAKRO,R384-A
+2493,384,Burgonya,216,60,g,FŐ_MAKRO,R384-A
+2494,384,Fokhagyma,67,0.5,gerezd,ÍZESÍTŐ,NULL
+2495,384,Light kókusztej,102,50,ml,FŐ_MAKRO,R384-A
+2496,384,Víz,197,300,ml,KÖTÖTT,R384-A
+2497,385,Zöldbab,62,250,g,KIEGÉSZÍTŐ,NULL
+2498,385,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2499,385,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+2500,385,Kókuszzsír,103,2,ek,FŐ_MAKRO,NULL
+2501,385,Zabliszt,203,2,ek,FŐ_MAKRO,R385-A
+2502,385,Víz / Zöldség alaplé,197 / 5,500,ml,KÖTÖTT,R385-A
+2503,385,Vegán tejföl,180,1,ek,KIEGÉSZÍTŐ,NULL
+2504,386,Kókuszolaj,103,0.5,ek,FŐ_MAKRO,NULL
+2505,386,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2506,386,Zöldborsó,208,50,g,FŐ_MAKRO,R386-A
+2507,386,Sárgarépa,160,25,g,KIEGÉSZÍTŐ,NULL
+2508,386,Petrezselyemgyökér,242,20,g,KIEGÉSZÍTŐ,NULL
+2509,386,Zöldségalaplé,5,250,ml,KÖTÖTT,R386-A
+2510,387,Pulykamellfilé,147,150,g,FŐ_MAKRO,NULL
+2511,387,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2512,387,Zöldborsó,208,70,g,FŐ_MAKRO,NULL
+2513,387,Kókusztejszín,270,60,ml,FŐ_MAKRO,R387-A
+2514,387,Zabliszt,203,10,g,KÖTÖTT,R387-A
+2515,387,Olaj,132,1,tk,FŐ_MAKRO,NULL
+2516,387,Basmati rizs,18,40,g,FŐ_MAKRO,NULL
+2517,388,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2518,388,Tofu (kemény),255,100,g,FŐ_MAKRO,NULL
+2519,388,Paprika,137,50,g,KIEGÉSZÍTŐ,NULL
+2520,388,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2521,389,Tojás,183,2,db,FŐ_MAKRO,NULL
+2522,389,Teljes kiőrlésű kovászos kenyér,106,20,g,FŐ_MAKRO,NULL
+2523,389,Paradicsom,139,50,g,KIEGÉSZÍTŐ,NULL
+2524,389,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2525,390,Tojás,183,2,db,FŐ_MAKRO,NULL
+2526,390,Zöldhagyma,269,30,g,ÍZESÍTŐ,NULL
+2527,390,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2528,390,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2529,391,Vegyes zöldség,210,125,g,FŐ_MAKRO,R391-A
+2530,391,Tojásfehérje,275,1,db,KÖTÖTT,R391-A
+2531,391,Zabpehely,204,25,g,FŐ_MAKRO,R391-A
+2532,391,Mandulatej,274,15,ml,KÖTÖTT,R391-A
+2533,391,Vöröshagyma,199,0.5,db,ÍZESÍTŐ,NULL
+2534,391,Fokhagyma,67,0.5,gerezd,ÍZESÍTŐ,NULL
+2535,392,Brokkoli,21,100,g,FŐ_MAKRO,R392-A
+2536,392,Tojás,183,1,db,KÖTÖTT,R392-A
+2537,392,Kókuszjoghurt,100,35,g,FŐ_MAKRO,R392-A
+2538,392,Vegán vaj,192,10,g,FŐ_MAKRO,R392-A
+2 539,393,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2 540,393,Csiperkegomba,77,60,g,KIEGÉSZÍTŐ,NULL
+2 541,393,Cukkini,44,60,g,KIEGÉSZÍTŐ,NULL
+2 542,393,Sárgarépa,160,40,g,KIEGÉSZÍTŐ,NULL
+2 543,393,Kaliforniai paprika,89,65,g,KIEGÉSZÍTŐ,NULL
+2 544,393,Kókuszzsír,103,7,g,FŐ_MAKRO,NULL
+2 545,393,Light kókusztej,102,100,ml,FŐ_MAKRO,NULL
+2546,394,Kókuszzsír,103,1,ek,FŐ_MAKRO,NULL
+2547,394,Vöröshagyma,199,1,db,ÍZESÍTŐ,NULL
+2548,394,Fokhagyma,67,1,gerezd,ÍZESÍTŐ,NULL
+2549,394,Gyömbér (friss),79,0.5,tk,ÍZESÍTŐ,NULL
+2550,394,Light kókusztej,102,100,ml,FŐ_MAKRO,NULL
+2551,394,Vegyes zöldség,210,150,g,FŐ_MAKRO,NULL
+2552,395,Csirkemellfilé,42,150,g,FŐ_MAKRO,R395-A
+2553,395,Sárgarépa,160,30,g,KÖTÖTT,R395-A
+2554,395,Burgonya,216,30,g,KÖTÖTT,R395-A
+2555,395,Zöldborsó,208,20,g,KÖTÖTT,R395-A
+2556,395,Köles,107,40,g,FŐ_MAKRO,NULL
+2557,396,Teljes kiőrlésű kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2558,396,Tofu (kemény),255,80,g,FŐ_MAKRO,NULL
+2559,396,Sárgarépa,160,20,g,KIEGÉSZÍTŐ,NULL
+2560,396,Zellerszár,172,20,g,KIEGÉSZÍTŐ,NULL
+2561,396,Olívaolaj,132,1,teáskanál,FŐ_MAKRO,NULL
+2562,397,Tojás,183,3,db,KÖTÖTT,R397-A
+2563,397,Zöldség (muffinba),210,100,g,FŐ_MAKRO,R397-A
+2564,397,Zabliszt,203,15,g,FŐ_MAKRO,R397-A
+2565,397,Kókuszzsír,103,0.5,teáskanál,KÖTÖTT,R397-A
+2566,397,Zöldség (salátának),210,100,g,KIEGÉSZÍTŐ,NULL
+2567,398,Tojás,183,2,db,FŐ_MAKRO,NULL
+2568,398,Spenót (friss),169,35,g,KIEGÉSZÍTŐ,NULL
+2569,398,Paprika,137,100,g,KIEGÉSZÍTŐ,NULL
+2570,398,Kókuszolaj,103,1,teáskanál,FŐ_MAKRO,NULL
+2571,398,Kovászos kenyér,106,30,g,FŐ_MAKRO,NULL
+2572,399,Cukkini,44,100,g,KÖTÖTT,R399-A
+2573,399,Sárgarépa,160,100,g,KÖTÖTT,R399-A
+2574,399,Zellergumó,171,30,g,KÖTÖTT,R399-A
+2575,399,Tojás,183,1,db,KÖTÖTT,R399-A
+2576,399,Zabliszt,203,40,g,KÖTÖTT,R399-A
+2577,399,Fokhagyma,67,2,gerezd,ÍZESÍTŐ,NULL
+2578,399,Kókuszjoghurt,100,70,g,KIEGÉSZÍTŐ,NULL
+2579,399,Cukormentes mustár,37,1,tk,ÍZESÍTŐ,NULL

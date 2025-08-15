@@ -8,10 +8,37 @@ interface RecipeContentProps {
 }
 
 export function RecipeContent({ recipe, compact = false, isFullScreen = false }: RecipeContentProps) {
-  const formatIngredients = (ingredients: string[]) => {
+  // Töröld a convertGoogleDriveUrl függvényt
+
+  const formatIngredients = (ingredients: any[]) => {
+    if (!ingredients || !Array.isArray(ingredients)) {
+      console.warn('RecipeContent: ingredients is not an array:', ingredients);
+      return [];
+    }
+    
     return ingredients
-      .filter(ingredient => ingredient && ingredient.trim() !== '')
-      .map(ingredient => ingredient.trim());
+      .filter(ingredient => {
+        if (typeof ingredient === 'string') {
+          return ingredient && ingredient.trim() !== '';
+        } else if (ingredient && typeof ingredient === 'object') {
+          // Ha objektum, próbáljuk meg a 'Élelmiszerek' mezőt használni
+          return ingredient['Élelmiszerek'] && ingredient['Élelmiszerek'].trim() !== '';
+        }
+        return false;
+      })
+      .map(ingredient => {
+        if (typeof ingredient === 'string') {
+          return ingredient.trim();
+        } else if (ingredient && typeof ingredient === 'object') {
+          // Ha objektum, formázzuk a megjelenítést
+          const name = ingredient['Élelmiszerek'] || '';
+          const quantity = ingredient['Mennyiség'] || '';
+          const unit = ingredient['Mértékegység'] || '';
+          return `${name} ${quantity} ${unit}`.trim();
+        }
+        return '';
+      })
+      .filter(item => item !== '');
   };
 
   const formatInstructions = (instructions: string) => {
@@ -128,15 +155,18 @@ export function RecipeContent({ recipe, compact = false, isFullScreen = false }:
         </h2>
         
         {/* Recept kép - kisebb méret */}
-        {recipe.képUrl && (
+        {(recipe.képUrl || recipe.kép) && (
           <div className="w-full max-w-xs sm:max-w-sm mx-auto px-2">
+            {console.log('🖼️ Recept kép betöltés:', recipe.név, 'URL:', recipe.képUrl || recipe.kép)}
             <img
-              src={recipe.képUrl}
+              src={recipe.képUrl || recipe.kép || ''}
               alt={recipe.név}
-              className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg sm:rounded-xl shadow-lg"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
               onError={(e) => {
-                // Fallback kép ha a fő kép nem töltődik be
-                e.currentTarget.src = 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80';
+                e.currentTarget.style.display = 'none';
+              }}
+              onLoad={() => {
+                console.log('Image loaded successfully:', recipe.képUrl || recipe.kép || '');
               }}
             />
           </div>

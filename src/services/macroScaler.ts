@@ -1,6 +1,7 @@
 import { TestRecipe } from '@/lib/testData/testRecipes';
 import { TestRecipeIngredient, ScalingCategory } from '@/lib/testData/testRecipeIngredients';
 import { Alapanyag } from './database/types';
+import { log, warn } from '@/lib/debug';
 
 export interface Macros {
   protein: number;
@@ -71,9 +72,19 @@ const DB_UNIT_GRAMS: Record<string, number> = {
   // ... bővíthető ...
 };
 
-const getQuantityInGrams = (ingredient: TestRecipeIngredient): number => {
+// Kiegészítő mértékegységek kezelése (gyakori rövidítések)
+const EXTRA_UNIT_MULTIPLIERS: Record<string, number> = {
+  dkg: 10,
+  dl: 100,
+  cl: 10,
+  l: 1000,
+};
+
+export const getQuantityInGrams = (ingredient: TestRecipeIngredient): number => {
   const { Mennyiség, Mértékegység } = ingredient;
   const unit = Mértékegység?.toLowerCase().trim() || '';
+  const name = (ingredient.Élelmiszerek || '').toLowerCase();
+  const isOil = /olaj|olíva|oliva|kókuszzsír|kokuszszsir|kókusz zsír|kokusz zsir/.test(name);
   const quantity = parseFloat(Mennyiség?.toString().replace(',', '.') || '0');
 
   // DB_UNIT_GRAMS lookup table használata
@@ -89,14 +100,18 @@ const getQuantityInGrams = (ingredient: TestRecipeIngredient): number => {
   if (unit.includes('kg')) {
     return quantity * 1000;
   }
+  if (EXTRA_UNIT_MULTIPLIERS[unit] !== undefined) {
+    return quantity * EXTRA_UNIT_MULTIPLIERS[unit];
+  }
   if (unit.includes('ml') || unit.includes('liter')) {
     return quantity; // 1ml ≈ 1g vízhez
   }
   if (unit.includes('tk') || unit.includes('teáskanál')) {
-    return quantity * 5; // 1 tk ≈ 5g
+    // Olajoknál pontosabb konverzió
+    return quantity * (isOil ? 4.5 : 5);
   }
   if (unit.includes('ek') || unit.includes('evőkanál')) {
-    return quantity * 15; // 1 ek ≈ 15g
+    return quantity * (isOil ? 14 : 15);
   }
   if (unit.includes('csomag') || unit.includes('cs')) {
     return quantity * 100; // 1 csomag ≈ 100g
@@ -108,28 +123,64 @@ const getQuantityInGrams = (ingredient: TestRecipeIngredient): number => {
     return quantity * 30; // 1 marék ≈ 30g
   }
 
+  warn('[UNIT] unknown unit, using raw quantity', { unit, quantity });
   return quantity; // Fallback: ha nem ismerjük, akkor quantity
 };
+
+const removeAccents = (str: string): string =>
+  str
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .trim();
 
 const getMacrosForIngredient = (
   ingredient: TestRecipeIngredient,
   allNutritionData: Alapanyag[]
 ) => {
-  const nutritionData = allNutritionData.find(n => 
-    n.ID.toString().trim() === ingredient['Élelmiszer ID'].toString().trim()
+  // 1) ID alapú egyezés
+  let nutritionData = allNutritionData.find(n => 
+    n.ID?.toString().trim() === ingredient['Élelmiszer ID']?.toString().trim()
   );
+  // 2) Ha nincs ID egyezés, próbáljuk név alapján (ékezetek nélkül, kisbetűvel)
+  if (!nutritionData) {
+    const ingName = removeAccents(((ingredient as any).Élelmiszerek || '').toString());
+    if (ingName) {
+      nutritionData = allNutritionData.find(n => removeAccents(n.Elelmiszer || '') === ingName);
+      if (nutritionData) {
+        log('[NUTRITION] matched by name', { name: (ingredient as any).Élelmiszerek });
+      }
+    }
+  }
   const quantityInGrams = getQuantityInGrams(ingredient);
   if (!nutritionData) {
+    // 3) Végső fallback: ha van beágyazott nutrition mező az összetevőn
+    warn('[NUTRITION] NOT FOUND in DB', { id: ingredient['Élelmiszer ID'], name: ingredient['Élelmiszerek'] });
+    const fallback = (ingredient as any).nutrition;
+    if (fallback) {
+      log('[NUTRITION] using embedded fallback');
+      const p = parseFloat(String(fallback['Fehérje/100g'] ?? '0').replace(',', '.')) || 0;
+      const c = parseFloat(String(fallback['Szénhidrát/100g'] ?? '0').replace(',', '.')) || 0;
+      const f = parseFloat(String(fallback['Zsir/100g'] ?? '0').replace(',', '.')) || 0;
+      const k = p * 4 + c * 4 + f * 9;
+      return {
+        protein: (p * quantityInGrams) / 100,
+        carbs: (c * quantityInGrams) / 100,
+        fat: (f * quantityInGrams) / 100,
+        calories: (k * quantityInGrams) / 100,
+      };
+    }
     return { protein: 0, carbs: 0, fat: 0, calories: 0 };
   }
+  const p = parseFloat(String(nutritionData['Fehérje/100g'] ?? '0').replace(',', '.')) || 0;
+  const c = parseFloat(String(nutritionData['Szénhidrát/100g'] ?? '0').replace(',', '.')) || 0;
+  const f = parseFloat(String(nutritionData['Zsir/100g'] ?? '0').replace(',', '.')) || 0;
+  const k = p * 4 + c * 4 + f * 9;
   return {
-    protein: (parseFloat(nutritionData['Fehérje/100g'].replace(',', '.')) || 0) * quantityInGrams / 100,
-    carbs: (parseFloat(nutritionData['Szénhidrát/100g'].replace(',', '.')) || 0) * quantityInGrams / 100,
-    fat: (parseFloat(nutritionData['Zsir/100g'].replace(',', '.')) || 0) * quantityInGrams / 100,
-    calories:
-      ((parseFloat(nutritionData['Fehérje/100g'].replace(',', '.')) || 0) * 4 +
-       (parseFloat(nutritionData['Szénhidrát/100g'].replace(',', '.')) || 0) * 4 +
-       (parseFloat(nutritionData['Zsir/100g'].replace(',', '.')) || 0) * 9) * quantityInGrams / 100,
+    protein: (p * quantityInGrams) / 100,
+    carbs: (c * quantityInGrams) / 100,
+    fat: (f * quantityInGrams) / 100,
+    calories: (k * quantityInGrams) / 100,
   };
 };
 
@@ -183,6 +234,7 @@ function applyMinimumsToIngredients(ingredients: TestRecipeIngredient[]): TestRe
 const scaleRecipeProportionallyInternal = (input: ScalingInput): ScalingOutput => {
   const { ingredients, allNutritionData, targetMacros, limits } = input;
   const originalMacros = calculateTotalMacros(ingredients, allNutritionData);
+  log('[SCALE:PROP] original macros', originalMacros);
   
   if (originalMacros.protein === 0 && originalMacros.carbs === 0 && originalMacros.fat === 0) {
     return {
@@ -199,10 +251,14 @@ const scaleRecipeProportionallyInternal = (input: ScalingInput): ScalingOutput =
   let bestError = Infinity;
 
   for (let scale = limits.lower; scale <= limits.upper; scale += 0.01) {
-    const scaledIngredients = ingredients.map(ing => ({
-      ...ing,
-      Mennyiség: ing.Mennyiség * scale
-    }));
+    const scaledIngredients = ingredients.map(ing => {
+      const isBound = !!(ing as any).Arány_Csoport && (ing as any).Arány_Csoport !== 'UNBOUND';
+      const freezeSupplement = (ing as any).Skálázhatóság_Típus === 'KIEGÉSZÍTŐ' && !isBound;
+      return {
+        ...ing,
+        Mennyiség: freezeSupplement ? ing.Mennyiség : ing.Mennyiség * scale,
+      };
+    });
 
     const scaledMacros = calculateTotalMacros(scaledIngredients, allNutritionData);
     
@@ -218,18 +274,24 @@ const scaleRecipeProportionallyInternal = (input: ScalingInput): ScalingOutput =
     }
   }
 
-  const finalScaledIngredients = ingredients.map(ing => ({
-    ...ing,
-    Mennyiség: ing.Mennyiség * bestScale
-  }));
+  const finalScaledIngredients = ingredients.map(ing => {
+    const isBound = !!(ing as any).Arány_Csoport && (ing as any).Arány_Csoport !== 'UNBOUND';
+    const freezeSupplement = (ing as any).Skálázhatóság_Típus === 'KIEGÉSZÍTŐ' && !isBound;
+    return {
+      ...ing,
+      Mennyiség: freezeSupplement ? ing.Mennyiség : ing.Mennyiség * bestScale,
+    };
+  });
 
+  const scaledTotals = calculateTotalMacros(finalScaledIngredients, allNutritionData);
+  log('[SCALE:PROP] bestScale', bestScale, 'scaled:', scaledTotals);
   return {
     success: true,
     message: 'Proportionally scaled recipe.',
     scaledIngredients: finalScaledIngredients,
     originalIngredients: ingredients,
     originalMacros,
-    scaledMacros: calculateTotalMacros(finalScaledIngredients, allNutritionData)
+    scaledMacros: scaledTotals
   };
 };
 
@@ -240,19 +302,44 @@ const scaleRecipeByIngredients = (input: ScalingInput): ScalingOutput => {
 
   const { ingredients, allNutritionData, targetMacros, limits } = input;
   const originalMacros = calculateTotalMacros(ingredients, allNutritionData);
+  log('[SCALE:ING] original macros', originalMacros);
   let currentIngredients = JSON.parse(JSON.stringify(ingredients)) as TestRecipeIngredient[];
+
+  // Kötések alapján csoportosítás
+  const bindingGroups: Record<string, TestRecipeIngredient[]> = {};
+  ingredients.forEach(ing => {
+    const binding = ing.Arány_Csoport || 'UNBOUND';
+    if (!bindingGroups[binding]) {
+      bindingGroups[binding] = [];
+    }
+    bindingGroups[binding].push(ing);
+  });
+
+  // Csak akkor logoljuk, ha több mint 1 csoport van és van benne kötött alapanyag
+  const bindingGroupKeys = Object.keys(bindingGroups);
+  const hasBindings = bindingGroupKeys.some(key => key !== 'UNBOUND' && bindingGroups[key].length > 1);
+  
+  if (hasBindings) {
+    console.log('🔗 Kötési csoportok:', bindingGroupKeys.map(key => 
+      `${key}: ${bindingGroups[key].length} alapanyag`
+    ));
+  }
 
   const categorized = { 'FŐ_MAKRO': [], 'KIEGÉSZÍTŐ': [], 'ÍZESÍTŐ': [], 'KÖTÖTT': [] } as Record<ScalingCategory, TestRecipeIngredient[]>;
   ingredients.forEach(ing => categorized[ing.Skálázhatóság_Típus]?.push(ing));
 
-  const scaleableIngredients = [...categorized['FŐ_MAKRO'], ...categorized['KIEGÉSZÍTŐ']];
+  // Csak a fő makró összetevőket hangoljuk aktívan. A kiegészítők csak akkor változnak,
+  // ha kötési csoport arányosítás érinti őket.
+  const scaleableIngredients = [...categorized['FŐ_MAKRO']];
 
   if (scaleableIngredients.length === 0) {
     return scaleRecipeProportionallyInternal(input);
   }
   
-  for (let iteration = 0; iteration < 300; iteration++) {
+  // Csökkentett iterációk száma a gyorsabb futtatáshoz
+  for (let iteration = 0; iteration < 150; iteration++) {
     const currentMacros = calculateTotalMacros(currentIngredients, allNutritionData);
+    log('[SCALE:ING] iter', iteration, 'currentMacros', currentMacros);
     
     const proteinError = Math.abs(currentMacros.protein - targetMacros.protein) / (targetMacros.protein || 1);
     const carbsError = Math.abs(currentMacros.carbs - targetMacros.carbs) / (targetMacros.carbs || 1);
@@ -260,7 +347,8 @@ const scaleRecipeByIngredients = (input: ScalingInput): ScalingOutput => {
     
     const totalError = proteinError + carbsError + fatError;
     
-    if (totalError < 0.06) {
+    // Növelt tolerancia a gyorsabb konvergenciához
+    if (totalError < 0.08) {
       break;
     }
     
@@ -270,7 +358,8 @@ const scaleRecipeByIngredients = (input: ScalingInput): ScalingOutput => {
       const originalIng = ingredients.find(i => i.ID === ingredient.ID)!;
       const currentIng = currentIngredients.find(i => i.ID === ingredient.ID)!;
       
-      const stepSize = Math.max(1, Math.round(originalIng.Mennyiség * 0.08));
+      // Nagyobb lépések a gyorsabb konvergenciához
+      const stepSize = Math.max(1, Math.round(originalIng.Mennyiség * 0.12));
       
       const increasedQuantity = Math.min(currentIng.Mennyiség + stepSize, originalIng.Mennyiség * limits.upper);
       const increasedSim = currentIngredients.map(ing => ing.ID === ingredient.ID ? { ...ing, Mennyiség: increasedQuantity } : ing);
@@ -305,19 +394,34 @@ const scaleRecipeByIngredients = (input: ScalingInput): ScalingOutput => {
     }
   }
 
-  categorized['KÖTÖTT'].forEach(kötöttIng => {
-    if (!kötöttIng.Arány_Csoport) return;
-    const mainIngredient = categorized['FŐ_MAKRO'].find(main => main.Arány_Csoport === kötöttIng.Arány_Csoport);
-    if (!mainIngredient) return;
-
+  // Kötések kezelése - minden csoportot feldolgozunk, de csak jelentős változásnál logolunk
+  Object.entries(bindingGroups).forEach(([binding, groupIngredients]) => {
+    if (binding === 'UNBOUND' || groupIngredients.length <= 1) return;
+    
+    // Keressük meg a fő alapanyagot (FŐ_MAKRO vagy KÖTÖTT)
+    const mainIngredient = groupIngredients.find(ing => 
+      ing.Skálázhatóság_Típus === 'FŐ_MAKRO' || ing.Skálázhatóság_Típus === 'KÖTÖTT'
+    ) || groupIngredients[0];
+    
     const originalMain = ingredients.find(i => i.ID === mainIngredient.ID)!;
     const scaledMain = currentIngredients.find(i => i.ID === mainIngredient.ID)!;
-    const originalKötött = ingredients.find(i => i.ID === kötöttIng.ID)!;
     
-    if(originalMain.Mennyiség > 0) {
+    if (originalMain.Mennyiség > 0) {
       const ratio = scaledMain.Mennyiség / originalMain.Mennyiség;
-      const kötöttToUpdate = currentIngredients.find(i => i.ID === kötöttIng.ID)!;
-      kötöttToUpdate.Mennyiség = originalKötött.Mennyiség * ratio;
+      
+      // Skálázzuk a csoport többi alapanyagát ugyanazzal az aránnyal
+      groupIngredients.forEach(ing => {
+        if (ing.ID === mainIngredient.ID) return; // A fő alapanyag már skálázva van
+        // Kötési csoportban minden tag arányosodik (beleértve a kiegészítőket is)
+        const originalIng = ingredients.find(i => i.ID === ing.ID)!;
+        const scaledIng = currentIngredients.find(i => i.ID === ing.ID)!;
+        scaledIng.Mennyiség = originalIng.Mennyiség * ratio;
+      });
+      
+      // Csak akkor logoljuk, ha jelentős változás történt
+      if (Math.abs(ratio - 1.0) > 0.05) {
+        console.log(`🔗 Kötési csoport "${binding}" skálázva: ${ratio.toFixed(2)}x arány`);
+      }
     }
   });
 
@@ -327,13 +431,15 @@ const scaleRecipeByIngredients = (input: ScalingInput): ScalingOutput => {
   
   currentIngredients = applyMinimumsToIngredients(currentIngredients);
 
+  const finalScaled = calculateTotalMacros(currentIngredients, allNutritionData);
+  log('[SCALE:ING] final scaled', finalScaled);
   return {
     success: true,
-    message: 'Scaled by ingredients using optimized algorithm.',
+    message: 'Scaled by ingredients using optimized algorithm with binding groups.',
     scaledIngredients: currentIngredients,
     originalIngredients: ingredients,
     originalMacros,
-    scaledMacros: calculateTotalMacros(currentIngredients, allNutritionData)
+    scaledMacros: finalScaled
   };
 };
 
@@ -357,7 +463,7 @@ export const scaleRecipe = (input: ScalingInput): ScalingOutput => {
   // 1. Először próbáljuk arányosan szorozni az egész adagot, amíg a makrók aránya nem lépi túl a cél makrók 1%-os hibahatárát
   let proportionalResult = scaleRecipeProportionallyInternal({
     ...input,
-    limits: { upper: 50, lower: 0.01 }, // Növelve 30-ról 50-re
+    limits: { upper: 5.0, lower: 0.1 }, // Rögzített, ésszerű korlátok
   });
   const withinTolerance = (macro, target) => Math.abs(macro - target) / (target || 1) <= 0.01; // 1% tolerancia (csökkentve 2%-ról)
   const allMacrosWithin = proportionalResult.scaledMacros && input.targetMacros &&

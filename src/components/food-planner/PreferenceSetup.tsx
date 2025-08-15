@@ -172,6 +172,7 @@ export function PreferenceSetup({ user, onComplete }: PreferenceSetupProps) {
       await saveUserPreferences(user.id, preferencesToSave);
       console.log('✅ ÚJ preferenciák sikeresen elmentve');
 
+
       // Külön mentjük a kedvenceket az user_favorites táblába
       const favoritesToSave = Object.entries(favorites)
         .filter(([key, isFavorite]) => isFavorite)
@@ -280,6 +281,8 @@ export function PreferenceSetup({ user, onComplete }: PreferenceSetupProps) {
             onFavoriteChange={handleFavoriteChange}
             hideDisliked={false}
           />
+
+          
 
           {/* Navigation */}
           <PreferenceNavigation

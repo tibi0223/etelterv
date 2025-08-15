@@ -242,12 +242,7 @@ export function SingleRecipeApp({ user, onToggleDailyPlanner }: SingleRecipeAppP
       default:
         return (
           <>
-            <MealTypeSelector
-              selectedMealType={selectedMealType}
-              onSelectMealType={handleMealTypeSelect}
-              onGetRandomRecipe={handleGetRandomRecipe}
-              onShowMultiCategorySelection={handleShowIngredientSelection}
-            />
+            {/* Étkezés kiválasztó elrejtve */}
 
             {selectedMealType && showIngredientSelection && (
               <SharedIngredientSelector
@@ -302,8 +297,8 @@ export function SingleRecipeApp({ user, onToggleDailyPlanner }: SingleRecipeAppP
 
       {/* New Function Selector */}
       <FunctionSelector
-        selectedFunction={viewMode}
-        onFunctionSelect={setViewMode}
+        selectedFunction={'macro'}
+        onFunctionSelect={() => setViewMode('macro')}
       />
 
       {renderContent()}

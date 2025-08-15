@@ -9,10 +9,10 @@ import { RecipeModal } from "./RecipeModal";
 import { LoadingChef } from "@/components/ui/LoadingChef";
 import { useSupabaseData } from "@/hooks/useSupabaseData";
 import { useMultiDayPlanGeneration } from "@/hooks/useMultiDayPlanGeneration";
-import { SharedMealTypeSelector } from "./shared/SharedMealTypeSelector";
+// import { SharedMealTypeSelector } from "./shared/SharedMealTypeSelector";
 import { SharedIngredientSelector } from "./shared/SharedIngredientSelector";
 import { SharedGenerationButton } from "./shared/SharedGenerationButton";
-import { DayCountSelector } from "./DayCountSelector";
+// DayCountSelector removed – we always generate 7 days
 import { useToast } from "@/hooks/use-toast";
 
 interface MultiDayMealPlan {
@@ -37,8 +37,9 @@ interface MultiDayMealPlanGeneratorProps {
 }
 
 export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorProps) {
-  const [selectedDays, setSelectedDays] = useState(3);
   const [selectedMeals, setSelectedMeals] = useState<string[]>([]);
+  const [currentDayIndex, setCurrentDayIndex] = useState(0);
+  const [autoTriggered, setAutoTriggered] = useState(false);
   const [showIngredientSelection, setShowIngredientSelection] = useState(false);
   const [currentMealIngredients, setCurrentMealIngredients] = useState<MealIngredients>({});
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
@@ -90,6 +91,40 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
   // Define meal order for consistent display
   const mealOrder = ['reggeli', 'tízórai', 'ebéd', 'uzsonna', 'vacsora'];
 
+  // Load default meals per day from user metadata and set selected meals
+  useEffect(() => {
+    const loadDefaultMeals = async () => {
+      try {
+        const { supabase } = await import('@/integrations/supabase/client');
+        const { data: { user: authUser } } = await supabase.auth.getUser();
+        const mpd = Number((authUser?.user_metadata as any)?.meals_per_day);
+        const mapping: Record<number, string[]> = {
+          1: ['ebéd'],
+          2: ['ebéd', 'vacsora'],
+          3: ['reggeli', 'ebéd', 'vacsora'],
+          4: ['reggeli', 'tízórai', 'ebéd', 'vacsora'],
+          5: ['reggeli', 'tízórai', 'ebéd', 'uzsonna', 'vacsora']
+        };
+        const meals = mapping[mpd] || mapping[3];
+        setSelectedMeals(meals);
+      } catch {}
+    };
+    loadDefaultMeals();
+  }, []);
+
+  // Auto-generate a 7-day plan on first load when meals are known
+  useEffect(() => {
+    const maybeGenerate = async () => {
+      if (!autoTriggered && selectedMeals.length > 0 && multiDayPlan.length === 0 && !isGenerating) {
+        setAutoTriggered(true);
+        setCurrentDayIndex(0);
+        await generateMultiDayPlan(7, selectedMeals, currentMealIngredients);
+      }
+    };
+    maybeGenerate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedMeals.length]);
+
   const handleMealToggle = (mealKey: string) => {
     setSelectedMeals(prev => {
       const newSelectedMeals = prev.includes(mealKey) 
@@ -119,14 +154,15 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
   };
 
   const handleGenerateWithIngredients = async () => {
-    console.log(`🎯 ${selectedDays} napos étrend generálás alapanyagokkal:`, currentMealIngredients);
+    console.log(`🎯 7 napos étrend generálás alapanyagokkal:`, currentMealIngredients);
     
     if (selectedMeals.length === 0) {
       return;
     }
 
     // Don't clear ingredients - keep them persistent
-    await generateMultiDayPlan(selectedDays, selectedMeals, currentMealIngredients);
+    setCurrentDayIndex(0);
+    await generateMultiDayPlan(7, selectedMeals, currentMealIngredients);
   };
 
   const handleRecipeClick = (recipe: Recipe, day: number, mealType: string) => {
@@ -219,9 +255,7 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
       <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
         <div className="text-center">
           <LoadingChef />
-          <p className="text-white text-lg mt-4">
-            {selectedDays} napos étrend generálása...
-          </p>
+          <p className="text-white text-lg mt-4">Heti étrend generálása...</p>
           <p className="text-white/70 text-sm mt-2">
             Receptek kiválasztása preferenciáid alapján
           </p>
@@ -232,20 +266,7 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
 
   return (
     <div className="space-y-6 sm:space-y-8">
-      {/* Day Count Selector */}
-      <DayCountSelector
-        selectedDays={selectedDays}
-        onDaysChange={setSelectedDays}
-      />
-
-      {/* Shared Meal Type Selector */}
-      <SharedMealTypeSelector
-        selectedMeals={selectedMeals}
-        onMealToggle={handleMealToggle}
-        getRecipeCount={getRecipeCount}
-        title="Válaszd ki az étkezéseket"
-        subtitle="Kattints az étkezésekre a kiválasztáshoz"
-      />
+      {/* Étkezés-választó eltávolítva – meals_per_day metaadatot használunk; mindig 7 napot generálunk */}
 
       {/* Shared Ingredient Selector - Keep ingredients persistent */}
       <SharedIngredientSelector
@@ -264,7 +285,7 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
         selectedIngredients={Object.values(currentMealIngredients).flat()}
         isGenerating={isGenerating}
         onGenerate={handleGenerateWithIngredients}
-        buttonText={`${selectedDays} napos étrend generálása`}
+        buttonText={`Heti étrend generálása`}
         icon="calendar"
       />
 
@@ -302,7 +323,36 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
             </p>
           </div>
           
-          {multiDayPlan.map((dayPlan) => (
+          {/* Day navigation */}
+          <div className="flex items-center justify-center gap-3">
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={currentDayIndex <= 0}
+              onClick={() => setCurrentDayIndex((i) => Math.max(0, i - 1))}
+              className="bg-white/5 border-white/20 text-white hover:bg-white/15 hover:border-white/40 disabled:opacity-40"
+            >
+              ◀ Előző nap
+            </Button>
+            <div className="text-white/90 text-sm sm:text-base">
+              {multiDayPlan[currentDayIndex]?.date}
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={currentDayIndex >= multiDayPlan.length - 1}
+              onClick={() => setCurrentDayIndex((i) => Math.min(multiDayPlan.length - 1, i + 1))}
+              className="bg-white/5 border-white/20 text-white hover:bg-white/15 hover:border-white/40 disabled:opacity-40"
+            >
+              Következő nap ▶
+            </Button>
+          </div>
+
+          {/* Show only the selected day */}
+          {(() => {
+            const dayPlan = multiDayPlan[currentDayIndex];
+            if (!dayPlan) return null;
+            return (
             <Card key={dayPlan.day} className="bg-white/10 backdrop-blur-lg border-white/20 shadow-2xl">
               <CardHeader className="pb-4">
                 <CardTitle className="text-white text-xl font-bold flex items-center gap-2">
@@ -348,7 +398,8 @@ export function MultiDayMealPlanGenerator({ user }: MultiDayMealPlanGeneratorPro
                 </div>
               </CardContent>
             </Card>
-          ))}
+            );
+          })()}
 
           {/* Summary Statistics */}
           <Card className="bg-white/5 backdrop-blur-lg border-white/10 shadow-xl">

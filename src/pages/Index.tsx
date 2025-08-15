@@ -7,6 +7,7 @@ import { ModernAuthForm } from "@/components/auth/ModernAuthForm";
 import { PersonalInfoSetup } from "@/components/food-planner/PersonalInfoSetup";
 import { HealthConditionsSetup } from "@/components/food-planner/HealthConditionsSetup";
 import { PreferenceSetup } from "@/components/food-planner/PreferenceSetup";
+import { MealsPerDaySetup } from "@/components/food-planner/MealsPerDaySetup";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 import { supabase } from "@/integrations/supabase/client";
 import { fetchUserProfile } from "@/services/profileQueries";
@@ -19,7 +20,7 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [currentSetupStep, setCurrentSetupStep] = useState<'personal-info' | 'health-conditions' | 'preferences' | 'complete'>('complete');
+  const [currentSetupStep, setCurrentSetupStep] = useState<'personal-info' | 'health-conditions' | 'preferences' | 'meals-per-day' | 'complete'>('complete');
   const [checkingSetupStatus, setCheckingSetupStatus] = useState(false);
   const [setupCompleted, setSetupCompleted] = useState(false);
   const [preferencesJustCompleted, setPreferencesJustCompleted] = useState(false);
@@ -130,9 +131,36 @@ const Index = () => {
         return;
       }
 
-      // Ha személyes adatok megvannak, akkor a setup alapvetően kész
-      // Nem ellenőrizzük kötelezően a preferenciákat, csak ajánljuk
-      console.log('✅ Személyes adatok megvannak, setup befejezve');
+      // Preferenciák ellenőrzése – ha nincs, mutassuk a preferencia lépést
+      try {
+        const hasPrefs = await checkUserHasPreferences(user.id);
+        if (!hasPrefs) {
+          console.log('ℹ️ Nincsenek ételpreferenciák – preferenciák beállítása szükséges');
+          setCurrentSetupStep('preferences');
+          return;
+        }
+      } catch (e) {
+        console.warn('⚠️ Preferenciák ellenőrzése sikertelen, továbblépés meta ellenőrzésre');
+      }
+
+      // Étkezések száma és ebéd=vacsora meta ellenőrzése
+      try {
+        const { data: { user: authUser } } = await supabase.auth.getUser();
+        const meta: any = authUser?.user_metadata || {};
+        const mpd = Number(meta?.meals_per_day);
+        const sldDefined = typeof meta?.same_lunch_dinner !== 'undefined';
+        const mpdValid = Number.isFinite(mpd) && mpd >= 1 && mpd <= 5;
+
+        if (!mpdValid || !sldDefined) {
+          console.log('ℹ️ Hiányzó/érvénytelen étkezésszám vagy ebéd=vacsora beállítás – mutassuk a lépést');
+          setCurrentSetupStep('meals-per-day');
+          return;
+        }
+      } catch (e) {
+        console.warn('⚠️ Metaadat ellenőrzés sikertelen, setup folytatása teljesként');
+      }
+
+      console.log('✅ Személyes adatok és metaadatok rendben, setup befejezve');
       setCurrentSetupStep('complete');
       setSetupCompleted(true);
       
@@ -170,11 +198,16 @@ const Index = () => {
   };
 
   const handlePreferencesComplete = () => {
-    console.log('✅ Preferenciák befejezve, tovább az apphoz');
+    console.log('✅ Preferenciák befejezve, következő: Étkezések száma');
+    setCurrentSetupStep('meals-per-day');
+  };
+
+  const handleMealsPerDayComplete = () => {
+    console.log('✅ Étkezések száma beállítva, setup kész');
     setCurrentSetupStep('complete');
     setSetupCompleted(true);
     setPreferencesJustCompleted(true);
-    setSetupSkipped(true); // Jelöljük, hogy a setup befejezve
+    setSetupSkipped(true);
   };
 
   // Loading state
@@ -229,6 +262,15 @@ const Index = () => {
       <PreferenceSetup
         user={userProfile}
         onComplete={handlePreferencesComplete}
+      />
+    );
+  }
+
+  if (currentSetupStep === 'meals-per-day') {
+    return (
+      <MealsPerDaySetup
+        onBack={() => setCurrentSetupStep('preferences')}
+        onComplete={handleMealsPerDayComplete}
       />
     );
   }

@@ -376,6 +376,8 @@ export function ModernAuthForm({ onSuccess }: ModernAuthFormProps) {
                       <p className="text-sm text-red-500">A jelszavak nem egyeznek meg</p>
                     )}
                   </div>
+
+                  
                 </div>
 
                 <Button

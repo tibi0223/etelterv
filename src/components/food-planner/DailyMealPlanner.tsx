@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { RefreshCw } from "lucide-react";
-import { MealTypeCardSelector } from "./MealTypeCardSelector";
+// import { MealTypeCardSelector } from "./MealTypeCardSelector";
 import { MealPlanGenerationButton } from "./MealPlanGenerationButton";
 import { DailyMealHeader } from "./DailyMealHeader";
 import { GeneratedMealPlan } from "./GeneratedMealPlan";
@@ -216,11 +216,7 @@ export function DailyMealPlanner({ user, onToggleSingleRecipe }: DailyMealPlanne
     <div className="space-y-3 sm:space-y-8 max-w-6xl mx-auto p-2 sm:p-6">
       <DailyMealHeader onToggleSingleRecipe={onToggleSingleRecipe} />
 
-      <MealTypeCardSelector
-        selectedMeals={selectedMeals}
-        onMealToggle={handleMealToggle}
-        getRecipeCount={getRecipeCount}
-      />
+      {/* Étkezés-választó eltávolítva; meals_per_day metaadat alapján dolgozunk */}
 
       <div className="ingredient-selection-section">
         <SharedIngredientSelector

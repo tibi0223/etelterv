@@ -48,6 +48,8 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
   const [isSaving, setIsSaving] = useState(false);
   const [showAllRatings, setShowAllRatings] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const [mealsPerDay, setMealsPerDay] = useState<number>(3);
+  const [sameLunchDinner, setSameLunchDinner] = useState<boolean>(false);
   
   // Password change states
   const [currentPassword, setCurrentPassword] = useState("");
@@ -131,6 +133,14 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
 
         setTotalIngredientsCount(totalIngredients);
       }
+
+      // Napi étkezések száma és ebéd=vacsora a user metadata-ból
+      try {
+        const { data: { user: authUser } } = await supabase.auth.getUser();
+        const m = Number((authUser?.user_metadata as any)?.meals_per_day);
+        if (Number.isFinite(m) && m >= 1 && m <= 5) setMealsPerDay(m);
+        setSameLunchDinner(Boolean((authUser?.user_metadata as any)?.same_lunch_dinner));
+      } catch {}
       
     } catch (error) {
       console.error('Adatok betöltési hiba:', error);
@@ -299,8 +309,17 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
         target_protein: editableProfile?.target_protein || null,
         target_carbs: editableProfile?.target_carbs || null,
         target_fat: editableProfile?.target_fat || null,
-        target_calories: editableProfile?.target_calories || null
+        target_calories: Math.round(
+          (Number(editableProfile?.target_protein || 0) * 4) +
+          (Number(editableProfile?.target_carbs || 0) * 4) +
+          (Number(editableProfile?.target_fat || 0) * 9)
+        )
       });
+
+      // Update meals_per_day and same_lunch_dinner in user metadata
+      try {
+        await supabase.auth.updateUser({ data: { meals_per_day: mealsPerDay, same_lunch_dinner: sameLunchDinner } });
+      } catch {}
 
       // Password update if provided
       if (currentPassword && newPassword) {
@@ -740,17 +759,17 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
                           </div>
                           
                           <div>
-                            <Label htmlFor="targetCalories" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
-                              Kalória (kcal)
+                            <Label className="text-xs sm:text-sm font-medium text-white/70 mb-1 block profile-mobile-text">
+                              Kalória (kcal) – számolva (P*4 + C*4 + F*9)
                             </Label>
-                            <Input
-                              id="targetCalories"
-                              type="number"
-                              value={editableProfile?.target_calories || ''}
-                              onChange={(e) => handleInputChange('target_calories', parseInt(e.target.value) || '')}
-                              placeholder="1700"
-                              className="bg-white/10 border-white/20 text-white placeholder:text-white/50 text-xs sm:text-sm profile-mobile-input"
-                            />
+                            <div className="bg-white/10 border-white/20 text-white rounded-md px-3 py-2 text-xs sm:text-sm">
+                              {(() => {
+                                const p = Number(editableProfile?.target_protein || 0);
+                                const c = Number(editableProfile?.target_carbs || 0);
+                                const f = Number(editableProfile?.target_fat || 0);
+                                return Math.round(p * 4 + c * 4 + f * 9);
+                              })()} kcal
+                            </div>
                           </div>
                         </div>
                         
@@ -758,6 +777,46 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
                           <p className="text-xs sm:text-sm text-purple-300">
                             💡 <strong>Makró célok:</strong> Ezek az értékek lesznek használva az étrend tervezésnél. A makró skálázó automatikusan betölti ezeket az értékeket.
                           </p>
+                        </div>
+
+                        {/* Napi étkezések száma beállítás */}
+                        <div className="space-y-2 sm:space-y-3">
+                          <Label htmlFor="mealsPerDay" className="text-xs sm:text-sm font-medium text-white/70 mb-1 block">Napi étkezések száma</Label>
+                          <select
+                            id="mealsPerDay"
+                            value={mealsPerDay}
+                            onChange={(e) => setMealsPerDay(Math.max(1, Math.min(5, Number(e.target.value))))}
+                            className="w-full max-w-xs px-3 py-2 border border-white/20 bg-white/10 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+                          >
+                            <option value={1}>1 étkezés/nap</option>
+                            <option value={2}>2 étkezés/nap</option>
+                            <option value={3}>3 étkezés/nap</option>
+                            <option value={4}>4 étkezés/nap</option>
+                            <option value={5}>5 étkezés/nap</option>
+                          </select>
+                          <p className="text-xs text-white/60">Ez az érték lesz az alapértelmezett az étrend generálásakor. Bármikor módosítható.</p>
+                        </div>
+
+                        {/* Ebéd = Vacsora beállítás */}
+                        <div className="space-y-2 sm:space-y-3">
+                          <Label className="text-xs sm:text-sm font-medium text-white/70 mb-1 block">Szeretnéd, hogy az ebéded és a vacsorád ugyanaz legyen?</Label>
+                          <div className="flex gap-2">
+                            <button
+                              type="button"
+                              onClick={() => setSameLunchDinner(true)}
+                              className={`px-3 py-2 rounded-md border border-white/20 ${sameLunchDinner ? 'bg-emerald-600 text-white' : 'text-white/80 bg-white/10'}`}
+                            >
+                              Igen
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setSameLunchDinner(false)}
+                              className={`px-3 py-2 rounded-md border border-white/20 ${!sameLunchDinner ? 'bg-emerald-600 text-white' : 'text-white/80 bg-white/10'}`}
+                            >
+                              Nem
+                            </button>
+                          </div>
+                          {/* Extra magyarázat eltávolítva – csak a kérdés marad */}
                         </div>
                       </div>
 
@@ -858,6 +917,10 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
                             </p>
                           </div>
                         )}
+                        <div className="text-center p-2 sm:p-3 bg-purple-600/20 rounded-lg">
+                          <p className="text-xs sm:text-sm text-white/70 profile-portrait-stats">Napi étkezések száma</p>
+                          <p className="text-sm sm:text-lg font-semibold text-purple-300">{mealsPerDay} étkezés/nap</p>
+                        </div>
                       </div>
                     </>
                   )}
@@ -933,41 +996,7 @@ export function UserProfilePage({ user, onClose, onLogout }: UserProfilePageProp
             </Card>
           </div>
 
-          {/* Preferenciák diagram kategóriánként - TELJES SZÉLESSÉGŰ */}
-          {categoryStats.length > 0 && (
-            <Card className="bg-white/10 border-white/20 mb-6">
-              <CardHeader>
-                <CardTitle className="text-white flex items-center gap-2">
-                  <Utensils className="w-6 h-6 text-green-400" />
-                  Ételpreferenciák kategóriánként
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="w-full">
-                  <ChartContainer config={chartConfig} className="h-[400px] w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <BarChart data={categoryStats} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                        <XAxis 
-                          dataKey="category" 
-                          angle={-45}
-                          textAnchor="end"
-                          height={100}
-                          fontSize={12}
-                          stroke="#ffffff"
-                          tick={{ fill: '#ffffff' }}
-                        />
-                        <YAxis stroke="#ffffff" tick={{ fill: '#ffffff' }} />
-                        <ChartTooltip content={<ChartTooltipContent />} />
-                        <Bar dataKey="Kedvelem" fill="#10B981" />
-                        <Bar dataKey="Nem szeretem" fill="#EF4444" />
-                        <Bar dataKey="Semleges" fill="#6B7280" />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </ChartContainer>
-                </div>
-              </CardContent>
-            </Card>
-          )}
+          {/* Ételpreferenciák kategóriánként szekció eltávolítva a profil tisztításához */}
 
           {/* Csillagos értékelések - MINDEN KÁRTYÁRA KATTINTHATÓ */}
           <Card className="bg-white/10 border-white/20">

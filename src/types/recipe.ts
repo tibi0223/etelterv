@@ -1,7 +1,7 @@
 
 export interface Recipe {
   név: string;
-  hozzávalók: string[];
+  hozzávalók: any[]; // Módosítva: lehet string[] vagy objektum[]
   elkészítés: string;
   elkészítésiIdő?: string;
   főzésiIdő?: string; // Főzési idő hozzáadása
@@ -11,6 +11,7 @@ export interface Recipe {
   zsír?: string;
   kalória?: string;
   képUrl?: string;
+  kép?: string; // Hozzáadva: alternatív kép mező
   kategória?: string;
   típus?: string;
 }

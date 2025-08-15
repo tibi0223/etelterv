@@ -20,8 +20,8 @@ export function UnifiedMealTypeSelector({
   onMealToggle,
   onSelectMealType,
   getRecipeCount,
-  title = "Válaszd ki az étkezéseket",
-  subtitle = "Kattints az étkezésekre a kiválasztáshoz",
+  title = "",
+  subtitle = "",
   mode = 'multiple'
 }: UnifiedMealTypeSelectorProps) {
   const mealTypes = [

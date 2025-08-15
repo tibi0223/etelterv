@@ -7,7 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { ChefHat, Clock, RotateCcw, Trash2, Calculator, Target } from "lucide-react";
 import { RecipeContent } from "./RecipeContent";
 import { LoadingChef } from "@/components/ui/LoadingChef";
-import { SharedMealTypeSelector } from "./shared/SharedMealTypeSelector";
+// Removed meal type selector UI; use user metadata meals_per_day instead
 import { SharedIngredientSelector } from "./shared/SharedIngredientSelector";
 import { SharedGenerationButton } from "./shared/SharedGenerationButton";
 import { DayCountSelector } from "./DayCountSelector";
@@ -416,14 +416,7 @@ export function MultiDayMacroScaler({ user }: MultiDayMacroScalerProps) {
         onDaysChange={setSelectedDays}
       />
 
-      {/* Étkezés típus kiválasztó */}
-      <SharedMealTypeSelector
-        selectedMeals={selectedMeals}
-        onMealToggle={handleMealToggle}
-        getRecipeCount={getRecipeCount}
-        title="Válaszd ki az étkezéseket"
-        subtitle="Kattints az étkezésekre a kiválasztáshoz"
-      />
+      {/* Étkezés típus kiválasztó eltávolítva – a meals_per_day metaadat alapján történik */}
 
       {/* Alapanyag szűrő */}
       <SharedIngredientSelector

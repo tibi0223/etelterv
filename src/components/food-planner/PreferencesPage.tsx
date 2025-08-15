@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { Settings, Save, Utensils } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { Slider } from "@/components/ui/slider";
 import { 
   fetchUserPreferences, 
   updateUserPreference,
@@ -44,6 +46,17 @@ export function PreferencesPage({ user, onClose }: PreferencesPageProps) {
   const [saving, setSaving] = useState(false);
   const { toast } = useToast();
 
+  // Habits from registration/profile
+  const [mealsPerDay, setMealsPerDay] = useState<number>(3);
+  const [sameLunchDinner, setSameLunchDinner] = useState<boolean>(false);
+  const [repeatTol, setRepeatTol] = useState({
+    breakfast: [2, 5] as [number, number],
+    tizorai: [2, 5] as [number, number],
+    lunch: [1, 2] as [number, number],
+    uzsonna: [2, 5] as [number, number],
+    dinner: [1, 2] as [number, number],
+  });
+
   useEffect(() => {
     loadData();
   }, [user.id]);
@@ -59,6 +72,24 @@ export function PreferencesPage({ user, onClose }: PreferencesPageProps) {
         getUserFavorites(user.id),
         fetchIngredientCategories()
       ]);
+      // Load habits from user metadata
+      try {
+        const { data: { user: authUser } } = await supabase.auth.getUser();
+        const meta: any = authUser?.user_metadata || {};
+        const mpd = Number(meta.meals_per_day);
+        if (Number.isFinite(mpd) && mpd >= 1 && mpd <= 5) setMealsPerDay(mpd);
+        setSameLunchDinner(Boolean(meta.same_lunch_dinner));
+        if (meta.repeat_tolerance) {
+          const rt = meta.repeat_tolerance;
+          setRepeatTol({
+            breakfast: [rt.breakfast?.min ?? 2, rt.breakfast?.max ?? 5],
+            tizorai: [rt.tizorai?.min ?? 2, rt.tizorai?.max ?? 5],
+            lunch: [rt.lunch?.min ?? 1, rt.lunch?.max ?? 2],
+            uzsonna: [rt.uzsonna?.min ?? 2, rt.uzsonna?.max ?? 5],
+            dinner: [rt.dinner?.min ?? 1, rt.dinner?.max ?? 2],
+          });
+        }
+      } catch {}
 
       setUserPreferences(preferences);
       setUserFavorites(favorites);
@@ -289,6 +320,106 @@ export function PreferencesPage({ user, onClose }: PreferencesPageProps) {
             Ételpreferenciáim (ÚJ rendszer)
           </h1>
         </div>
+
+        {/* Habit settings mirrored from registration/profile */}
+        <Card className="bg-white/10 border-white/20 mb-8">
+          <CardHeader className="pb-4">
+            <CardTitle className="text-white">Szokások és alapbeállítások</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-0 text-white space-y-6">
+            <div className="space-y-2">
+              <div className="text-sm text-white/80">Napi étkezések száma</div>
+              <select
+                value={mealsPerDay}
+                onChange={(e) => setMealsPerDay(Math.max(1, Math.min(5, Number(e.target.value))))}
+                className="w-full max-w-xs px-3 py-2 border border-white/20 bg-white/10 text-white rounded-md text-sm"
+              >
+                <option value={1}>1 étkezés/nap</option>
+                <option value={2}>2 étkezés/nap</option>
+                <option value={3}>3 étkezés/nap</option>
+                <option value={4}>4 étkezés/nap</option>
+                <option value={5}>5 étkezés/nap</option>
+              </select>
+            </div>
+
+            <div className="space-y-2">
+              <div className="text-sm text-white/80">Szeretnéd, hogy az ebéded és a vacsorád ugyanaz legyen?</div>
+              <div className="flex gap-2">
+                <Button
+                  type="button"
+                  onClick={() => setSameLunchDinner(true)}
+                  className={`px-3 py-2 rounded-md border border-white/20 ${sameLunchDinner ? 'bg-emerald-600 text-white' : 'text-white/80 bg-white/10'}`}
+                >
+                  Igen
+                </Button>
+                <Button
+                  type="button"
+                  onClick={() => setSameLunchDinner(false)}
+                  className={`px-3 py-2 rounded-md border border-white/20 ${!sameLunchDinner ? 'bg-emerald-600 text-white' : 'text-white/80 bg-white/10'}`}
+                >
+                  Nem
+                </Button>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div className="text-sm text-white/80">Hány napig szeretnéd/tudnád ugyanazt enni étkezésenként?</div>
+              <div className="space-y-4">
+                <div>
+                  <div className="text-xs text-white/70 mb-1">Reggeli (1–7)</div>
+                  <Slider value={repeatTol.breakfast} min={1} max={7} step={1} showValue formatRange={(a,b)=>`${a}–${b}`}
+                    onValueChange={(v:any)=>setRepeatTol({ ...repeatTol, breakfast: [v[0], v[1]] as [number,number] })} />
+                </div>
+                <div>
+                  <div className="text-xs text-white/70 mb-1">Tízórai (1–7)</div>
+                  <Slider value={repeatTol.tizorai} min={1} max={7} step={1} showValue formatRange={(a,b)=>`${a}–${b}`}
+                    onValueChange={(v:any)=>setRepeatTol({ ...repeatTol, tizorai: [v[0], v[1]] as [number,number] })} />
+                </div>
+                <div>
+                  <div className="text-xs text-white/70 mb-1">Ebéd (1–3)</div>
+                  <Slider value={repeatTol.lunch} min={1} max={3} step={1} showValue formatRange={(a,b)=>`${a}–${b}`}
+                    onValueChange={(v:any)=>setRepeatTol({ ...repeatTol, lunch: [v[0], v[1]] as [number,number] })} />
+                </div>
+                <div>
+                  <div className="text-xs text-white/70 mb-1">Uzsonna (1–7)</div>
+                  <Slider value={repeatTol.uzsonna} min={1} max={7} step={1} showValue formatRange={(a,b)=>`${a}–${b}`}
+                    onValueChange={(v:any)=>setRepeatTol({ ...repeatTol, uzsonna: [v[0], v[1]] as [number,number] })} />
+                </div>
+                <div>
+                  <div className="text-xs text-white/70 mb-1">Vacsora (1–3)</div>
+                  <Slider value={repeatTol.dinner} min={1} max={3} step={1} showValue formatRange={(a,b)=>`${a}–${b}`}
+                    onValueChange={(v:any)=>setRepeatTol({ ...repeatTol, dinner: [v[0], v[1]] as [number,number] })} />
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-2">
+              <Button
+                onClick={async()=>{
+                  setSaving(true);
+                  try {
+                    await supabase.auth.updateUser({ data: {
+                      meals_per_day: mealsPerDay,
+                      same_lunch_dinner: sameLunchDinner,
+                      repeat_tolerance: {
+                        breakfast: { min: repeatTol.breakfast[0], max: repeatTol.breakfast[1] },
+                        tizorai: { min: repeatTol.tizorai[0], max: repeatTol.tizorai[1] },
+                        lunch: { min: repeatTol.lunch[0], max: repeatTol.lunch[1] },
+                        uzsonna: { min: repeatTol.uzsonna[0], max: repeatTol.uzsonna[1] },
+                        dinner: { min: repeatTol.dinner[0], max: repeatTol.dinner[1] },
+                      }
+                    }});
+                    toast({ title: 'Szokások elmentve' });
+                  } finally { setSaving(false); }
+                }}
+                disabled={saving}
+                className="bg-emerald-600 hover:bg-emerald-700"
+              >
+                {saving ? 'Mentés...' : 'Beállítások mentése'}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">

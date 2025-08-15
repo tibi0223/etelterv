@@ -427,6 +427,44 @@ export type Database = {
           },
         ]
       }
+      saved_meal_plans: {
+        Row: {
+          id: string
+          user_id: string
+          plan_name: string
+          plan_data: Json
+          target_macros: Json
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          plan_name: string
+          plan_data: Json
+          target_macros: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          plan_name?: string
+          plan_data?: Json
+          target_macros?: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "saved_meal_plans_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "admin_user_overview"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       recept_alapanyag: {
         Row: {
           "Élelmiszer ID": string | null

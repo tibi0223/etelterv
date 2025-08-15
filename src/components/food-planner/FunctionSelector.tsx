@@ -2,56 +2,30 @@
 import { cn } from "@/lib/utils";
 import { ChefHat, Calendar, CalendarDays, Scale, Calculator } from "lucide-react";
 
+type FunctionId = 'macro' | 'multi';
+
 interface FunctionSelectorProps {
-  selectedFunction: 'single' | 'daily' | 'multi' | 'macro' | 'multi-day-macro';
-  onFunctionSelect: (func: 'single' | 'daily' | 'multi' | 'macro' | 'multi-day-macro') => void;
+  selectedFunction: FunctionId;
+  onFunctionSelect: (func: FunctionId) => void;
 }
 
-const functionOptions = [
+const functionOptions: Array<{
+  id: FunctionId;
+  title: string;
+  subtitle: string;
+  icon: any;
+  gradient: string;
+  hoverGradient: string;
+  emoji: string;
+}> = [
   {
-    id: 'single' as const,
-    title: 'Egy recept',
-    subtitle: 'Generálj egy receptet alapanyagok alapján',
-    icon: ChefHat,
-    gradient: 'from-purple-500 to-pink-500',
-    hoverGradient: 'hover:from-purple-600 hover:to-pink-600',
-    emoji: '🍽️'
-  },
-  {
-    id: 'daily' as const,
-    title: 'Napi étrendtervező',
-    subtitle: 'Tervezz egy teljes napot étkezésekkel',
-    icon: Calendar,
-    gradient: 'from-blue-500 to-cyan-500',
-    hoverGradient: 'hover:from-blue-600 hover:to-cyan-600',
-    emoji: '📅'
-  },
-  {
-    id: 'multi' as const,
-    title: 'Többnapos tervező',
-    subtitle: 'Készíts több napra szóló étrendet',
-    icon: CalendarDays,
-    gradient: 'from-green-500 to-emerald-500',
-    hoverGradient: 'hover:from-green-600 hover:to-emerald-600',
-    emoji: '📊'
-  },
-  {
-    id: 'macro' as const,
+    id: 'macro',
     title: 'Makró Skálázó',
     subtitle: 'Étrend tervezése makró célok alapján',
     icon: Scale,
     gradient: 'from-orange-500 to-red-500',
     hoverGradient: 'hover:from-orange-600 hover:to-red-600',
     emoji: '⚖️'
-  },
-  {
-    id: 'multi-day-macro' as const,
-    title: 'Többnapos Makróskálázó',
-    subtitle: 'Több napra makróskálázott étrend',
-    icon: Calculator,
-    gradient: 'from-indigo-500 to-purple-500',
-    hoverGradient: 'hover:from-indigo-600 hover:to-purple-600',
-    emoji: '🧮'
   }
 ];
 

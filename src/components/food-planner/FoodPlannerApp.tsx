@@ -8,13 +8,14 @@ import { FavoritesPage } from "./FavoritesPage";
 import { PreferenceSetup } from "./PreferenceSetup";
 import { PreferencesPage } from "./PreferencesPage";
 import { AdminDashboard } from "../admin/AdminDashboard";
-import { User, Settings, Shield, Star, ChefHat, Calendar, Menu, X } from "lucide-react";
+import { User, Settings, Shield, Star, ChefHat, Calendar, Menu, X, Save } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { fetchUserProfile } from "@/services/profileQueries";
 import { checkUserHasPreferences } from "@/services/foodPreferencesQueries";
 import { checkIsAdmin } from "@/services/adminQueries";
 import { getFavorites } from "@/services/favoritesQueries";
 import { HealthConditionsSetup } from "./HealthConditionsSetup";
+import { SavedMealPlansPage } from "./SavedMealPlansPage";
 
 interface User {
   id: string;
@@ -30,7 +31,7 @@ interface FoodPlannerAppProps {
 }
 
 export function FoodPlannerApp({ user, onLogout, showPreferenceSetup = false, onPreferenceSetupComplete }: FoodPlannerAppProps) {
-  const [currentView, setCurrentView] = useState<'single' | 'daily' | 'profile' | 'favorites' | 'preference-setup' | 'health-conditions' | 'preferences' | 'admin'>('single');
+  const [currentView, setCurrentView] = useState<'single' | 'daily' | 'profile' | 'favorites' | 'preference-setup' | 'health-conditions' | 'preferences' | 'admin' | 'saved-meal-plans'>('single');
   const [userProfile, setUserProfile] = useState<any>(null);
   const [hasPreferences, setHasPreferences] = useState<boolean | null>(null);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
@@ -187,6 +188,12 @@ export function FoodPlannerApp({ user, onLogout, showPreferenceSetup = false, on
           title: "Profil",
           subtitle: "Beállítások"
         };
+      case 'saved-meal-plans':
+        return {
+          icon: <Save className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+          title: "Mentett Étrendek",
+          subtitle: "Skálázott étrendek"
+        };
       default:
         return null;
     }
@@ -236,6 +243,15 @@ export function FoodPlannerApp({ user, onLogout, showPreferenceSetup = false, on
             />
           </div>
         );
+      case 'saved-meal-plans':
+        return (
+          <div className="max-w-6xl mx-auto p-3 sm:p-6">
+            <SavedMealPlansPage
+              user={user}
+              onBack={() => setCurrentView('single')}
+            />
+          </div>
+        );
       case 'admin':
         return (
           <AdminDashboard
@@ -257,6 +273,7 @@ export function FoodPlannerApp({ user, onLogout, showPreferenceSetup = false, on
   const navItems = [
     { key: 'single', icon: ChefHat, label: 'Receptek', isActive: currentView === 'single' || currentView === 'daily' },
     { key: 'favorites', icon: Star, label: 'Kedvencek', isActive: currentView === 'favorites' },
+    { key: 'saved-meal-plans', icon: Save, label: 'Mentett Étrendek', isActive: currentView === 'saved-meal-plans' },
     { key: 'preferences', icon: Settings, label: 'Preferenciák', isActive: currentView === 'preferences' },
     { key: 'profile', icon: User, label: 'Profil', isActive: currentView === 'profile' },
     ...(isAdmin ? [{ key: 'admin', icon: Shield, label: 'Admin', isActive: currentView === 'admin' }] : [])

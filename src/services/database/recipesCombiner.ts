@@ -114,6 +114,24 @@ export const fetchCombinedRecipes = async (): Promise<CombinedRecipe[]> => {
       const hozzarendeltId = receptElelmiszerIds.join(',');
       
       console.log(`🔗 Recept ${receptId} (${receptName}) - Hozzarendelt_ID: "${hozzarendeltId}"`);
+      console.log(`🖼️ Recept ${receptId} (${receptName}) - Kép URL: "${recept['Kép'] || recept['kép'] || 'NINCS'}"`);
+      
+      // Kép URL generálása Supabase storage-ból a recept ID alapján
+      let imageUrl = '';
+      const imageFileName = `${receptId}.jpg`;
+      
+      // Generáljuk a Supabase storage URL-t a recept ID alapján
+      const { data } = supabase.storage
+        .from('receptek')
+        .getPublicUrl(imageFileName);
+      
+      if (data?.publicUrl) {
+        imageUrl = data.publicUrl;
+        console.log(`✅ Kép URL generálva: Recept ID ${receptId} -> ${imageFileName} -> ${imageUrl}`);
+      } else {
+        console.warn(`⚠️ Nem sikerült generálni a kép URL-t: Recept ID ${receptId} -> ${imageFileName}`);
+      }
+      
       const fehérjeValue = recept['Feherje_g'] || 0;
       const szénhidrátValue = recept['Szenhidrat_g'] || 0;
       const zsírValue = recept['Zsir_g'] || 0;
@@ -125,7 +143,7 @@ export const fetchCombinedRecipes = async (): Promise<CombinedRecipe[]> => {
         id: receptId,
         név: receptName,
         elkészítés: recept['Elkészítése'] || 'Nincs leírás',
-        kép: recept['Kép'] || '',
+        kép: imageUrl,
         szénhidrát: szénhidrátValue,
         fehérje: fehérjeValue,
         zsír: zsírValue,

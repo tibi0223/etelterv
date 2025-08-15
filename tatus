@@ -1,0 +1,5 @@
+[33m4f51bc6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Update meal plan generator with new features and bug fixes
+[33m7255cd9[m Add enhanced loading screen with animations and dynamic messages
+[33m5ad01b7[m Temporarily remove macro targets from profile save until database is updated
+[33m4ec462c[m Fix profile update function to handle missing columns gracefully
+[33mc058c6d[m Add macro targets to user profile system

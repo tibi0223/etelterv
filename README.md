@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ételtervező és Makró Skálázó
 
 ## 📋 Leírás
@@ -114,3 +115,6 @@ Ez a projekt MIT licenc alatt áll.
 ---
 
 **Megjegyzés**: Ez a projekt fejlesztés alatt áll. A funkciók folyamatosan bővülnek és javítódnak.
+=======
+# etelterv
+>>>>>>> b4d9e61e40817a3de1cbfa5c651d04e4cf5b100c

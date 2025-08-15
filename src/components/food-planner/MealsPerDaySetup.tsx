@@ -87,6 +87,8 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10 text-right">1</span>
                 <Slider value={tolerance.breakfast} min={1} max={7} step={1}
                   onValueChange={(v) => setTolerance({ ...tolerance, breakfast: [v[0], v[1]] as [number, number] })}
+                  showValue={true}
+                  formatRange={(a, b) => `${a}-${b}`}
                   className="flex-1" />
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10">7</span>
               </div>
@@ -102,6 +104,8 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10 text-right">1</span>
                 <Slider value={tolerance.tizorai} min={1} max={7} step={1}
                   onValueChange={(v) => setTolerance({ ...tolerance, tizorai: [v[0], v[1]] as [number, number] })}
+                  showValue={true}
+                  formatRange={(a, b) => `${a}-${b}`}
                   className="flex-1" />
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10">7</span>
               </div>
@@ -117,6 +121,8 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10 text-right">1</span>
                 <Slider value={tolerance.lunch} min={1} max={3} step={1}
                   onValueChange={(v) => setTolerance({ ...tolerance, lunch: [v[0], v[1]] as [number, number] })}
+                  showValue={true}
+                  formatRange={(a, b) => `${a}-${b}`}
                   className="flex-1" />
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10">3</span>
               </div>
@@ -132,6 +138,8 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10 text-right">1</span>
                 <Slider value={tolerance.uzsonna} min={1} max={7} step={1}
                   onValueChange={(v) => setTolerance({ ...tolerance, uzsonna: [v[0], v[1]] as [number, number] })}
+                  showValue={true}
+                  formatRange={(a, b) => `${a}-${b}`}
                   className="flex-1" />
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10">7</span>
               </div>
@@ -147,6 +155,8 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10 text-right">1</span>
                 <Slider value={tolerance.dinner} min={1} max={3} step={1}
                   onValueChange={(v) => setTolerance({ ...tolerance, dinner: [v[0], v[1]] as [number, number] })}
+                  showValue={true}
+                  formatRange={(a, b) => `${a}-${b}`}
                   className="flex-1" />
                 <span className="text-[10px] sm:text-xs text-gray-500 w-6 sm:w-10">3</span>
               </div>
@@ -157,17 +167,66 @@ export function MealsPerDaySetup({ onBack, onComplete }: MealsPerDaySetupProps) 
         )}
 
         {step === 1 && (
-          <select
-            value={mealsPerDay}
-            onChange={(e) => setMealsPerDay(Math.max(1, Math.min(5, Number(e.target.value))))}
-            className="w-full h-12 border-gray-300 rounded-md px-3"
-          >
-            <option value={1}>1 étkezés/nap</option>
-            <option value={2}>2 étkezés/nap</option>
-            <option value={3}>3 étkezés/nap</option>
-            <option value={4}>4 étkezés/nap</option>
-            <option value={5}>5 étkezés/nap</option>
-          </select>
+          <div className="space-y-2">
+            <label className="block text-sm font-medium text-gray-700 mb-3">Válaszd ki a napi étkezések számát:</label>
+            <div className="grid grid-cols-1 gap-2">
+              <button
+                type="button"
+                onClick={() => setMealsPerDay(1)}
+                className={`w-full h-12 border-2 rounded-md px-3 text-left font-medium transition-colors ${
+                  mealsPerDay === 1 
+                    ? 'bg-emerald-600 text-white border-emerald-600' 
+                    : 'bg-white text-gray-900 border-gray-300 hover:border-emerald-500'
+                }`}
+              >
+                1 étkezés/nap
+              </button>
+              <button
+                type="button"
+                onClick={() => setMealsPerDay(2)}
+                className={`w-full h-12 border-2 rounded-md px-3 text-left font-medium transition-colors ${
+                  mealsPerDay === 2 
+                    ? 'bg-emerald-600 text-white border-emerald-600' 
+                    : 'bg-white text-gray-900 border-gray-300 hover:border-emerald-500'
+                }`}
+              >
+                2 étkezés/nap
+              </button>
+              <button
+                type="button"
+                onClick={() => setMealsPerDay(3)}
+                className={`w-full h-12 border-2 rounded-md px-3 text-left font-medium transition-colors ${
+                  mealsPerDay === 3 
+                    ? 'bg-emerald-600 text-white border-emerald-600' 
+                    : 'bg-white text-gray-900 border-gray-300 hover:border-emerald-500'
+                }`}
+              >
+                3 étkezés/nap
+              </button>
+              <button
+                type="button"
+                onClick={() => setMealsPerDay(4)}
+                className={`w-full h-12 border-2 rounded-md px-3 text-left font-medium transition-colors ${
+                  mealsPerDay === 4 
+                    ? 'bg-emerald-600 text-white border-emerald-600' 
+                    : 'bg-white text-gray-900 border-gray-300 hover:border-emerald-500'
+                }`}
+              >
+                4 étkezés/nap
+              </button>
+              <button
+                type="button"
+                onClick={() => setMealsPerDay(5)}
+                className={`w-full h-12 border-2 rounded-md px-3 text-left font-medium transition-colors ${
+                  mealsPerDay === 5 
+                    ? 'bg-emerald-600 text-white border-emerald-600' 
+                    : 'bg-white text-gray-900 border-gray-300 hover:border-emerald-500'
+                }`}
+              >
+                5 étkezés/nap
+              </button>
+            </div>
+          </div>
         )}
 
         {step === 2 && (

@@ -329,17 +329,63 @@ export function PreferencesPage({ user, onClose }: PreferencesPageProps) {
           <CardContent className="pt-0 text-white space-y-6">
             <div className="space-y-2">
               <div className="text-sm text-white/80">Napi étkezések száma</div>
-              <select
-                value={mealsPerDay}
-                onChange={(e) => setMealsPerDay(Math.max(1, Math.min(5, Number(e.target.value))))}
-                className="w-full max-w-xs px-3 py-2 border border-white/20 bg-white/10 text-white rounded-md text-sm"
-              >
-                <option value={1}>1 étkezés/nap</option>
-                <option value={2}>2 étkezés/nap</option>
-                <option value={3}>3 étkezés/nap</option>
-                <option value={4}>4 étkezés/nap</option>
-                <option value={5}>5 étkezés/nap</option>
-              </select>
+              <div className="grid grid-cols-1 gap-2 max-w-xs">
+                <button
+                  type="button"
+                  onClick={() => setMealsPerDay(1)}
+                  className={`w-full px-3 py-2 border-2 rounded-md text-left font-medium transition-colors ${
+                    mealsPerDay === 1 
+                      ? 'bg-emerald-600 text-white border-emerald-600' 
+                      : 'bg-white/10 text-white border-white/20 hover:border-emerald-500'
+                  }`}
+                >
+                  1 étkezés/nap
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMealsPerDay(2)}
+                  className={`w-full px-3 py-2 border-2 rounded-md text-left font-medium transition-colors ${
+                    mealsPerDay === 2 
+                      ? 'bg-emerald-600 text-white border-emerald-600' 
+                      : 'bg-white/10 text-white border-white/20 hover:border-emerald-500'
+                  }`}
+                >
+                  2 étkezés/nap
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMealsPerDay(3)}
+                  className={`w-full px-3 py-2 border-2 rounded-md text-left font-medium transition-colors ${
+                    mealsPerDay === 3 
+                      ? 'bg-emerald-600 text-white border-emerald-600' 
+                      : 'bg-white/10 text-white border-white/20 hover:border-emerald-500'
+                  }`}
+                >
+                  3 étkezés/nap
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMealsPerDay(4)}
+                  className={`w-full px-3 py-2 border-2 rounded-md text-left font-medium transition-colors ${
+                    mealsPerDay === 4 
+                      ? 'bg-emerald-600 text-white border-emerald-600' 
+                      : 'bg-white/10 text-white border-white/20 hover:border-emerald-500'
+                  }`}
+                >
+                  4 étkezés/nap
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMealsPerDay(5)}
+                  className={`w-full px-3 py-2 border-2 rounded-md text-left font-medium transition-colors ${
+                    mealsPerDay === 5 
+                      ? 'bg-emerald-600 text-white border-emerald-600' 
+                      : 'bg-white/10 text-white border-white/20 hover:border-emerald-500'
+                  }`}
+                >
+                  5 étkezés/nap
+                </button>
+              </div>
             </div>
 
             <div className="space-y-2">
